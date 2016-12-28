@@ -33,8 +33,18 @@ $lite-green: #2ecc71;
     transform: $transform;
 }
 
+@mixin transition($transition){
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
 /*imports*/
+@import 'diminsion';
 @import 'menu';
+
 
 body{
   margin: 0;
