@@ -1,11 +1,11 @@
 @include keyframes(horizontal-move-down){
-    0%{@include transform(translateY(-8px))}
+  	0%{@include transform(translateY(-8px))}
 	50%{@include transform(translateY(0px))}
 	100%{@include transform(rotate(-45deg))}
 }
 
 @include keyframes(horizontal-move-up){
-    0%{@include transform(translateY(8px))}
+  	0%{@include transform(translateY(8px))}
 	50%{@include transform(translateY(0px))}
 	100%{@include transform(rotate(45deg))}
 }
@@ -40,7 +40,7 @@
 	height: 48px;
 	float: right;
 	margin-right: 134px;
-    z-index: 2;
+  	z-index: 2;
 }
 
 .menu-button-open .horizontal-line{
@@ -65,7 +65,7 @@
 }
 
 .horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line{
-    @include transition(all 277ms ease-in-out);
+	@include transition(all 277ms ease-in-out);
 }
 
 .menu-button:hover{
@@ -91,9 +91,9 @@
 }
 
 .menu-button.menu-button-open .horizontal-top-line{
-    @include animation(horizontal-move-down 500s forwards);
+	@include animation(horizontal-move-down 500ms forwards);
 }
 
 .menu-button.menu-button-open .horizontal-bottom-line{
-    @include animation(horizontal-move-up 500s forwards);
+	@include animation(horizontal-move-up 500ms forwards);
 }

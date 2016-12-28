@@ -302,20 +302,20 @@
 
 /* line 93, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-top-line {
-  -webkit-animation: horizontal-move-down 500s forwards;
-  -moz-animation: horizontal-move-down 500s forwards;
-  -o-animation: horizontal-move-down 500s forwards;
-  -ms-animation: horizontal-move-down 500s forwards;
-  animation: horizontal-move-down 500s forwards;
+  -webkit-animation: horizontal-move-down 500ms forwards;
+  -moz-animation: horizontal-move-down 500ms forwards;
+  -o-animation: horizontal-move-down 500ms forwards;
+  -ms-animation: horizontal-move-down 500ms forwards;
+  animation: horizontal-move-down 500ms forwards;
 }
 
 /* line 97, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
-  -webkit-animation: horizontal-move-up 500s forwards;
-  -moz-animation: horizontal-move-up 500s forwards;
-  -o-animation: horizontal-move-up 500s forwards;
-  -ms-animation: horizontal-move-up 500s forwards;
-  animation: horizontal-move-up 500s forwards;
+  -webkit-animation: horizontal-move-up 500ms forwards;
+  -moz-animation: horizontal-move-up 500ms forwards;
+  -o-animation: horizontal-move-up 500ms forwards;
+  -ms-animation: horizontal-move-up 500ms forwards;
+  animation: horizontal-move-up 500ms forwards;
 }
 
 /*Mixins*/
