@@ -41,9 +41,30 @@ $lite-green: #2ecc71;
     transition: $transition;
 }
 
+@mixin angle-after($skew) {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; // for Chrome Windows
+	  bottom: 0;
+	  transform: skewY($skew);
+	  transform-origin: 100%;
+    }
+}
+
 /*imports*/
 @import 'diminsion';
 @import 'menu';
+@import 'skills';
 
 
 body{

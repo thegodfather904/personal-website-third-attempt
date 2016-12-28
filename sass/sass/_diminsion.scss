@@ -13,6 +13,7 @@
 .alternate-diminsion-section{
   background-color: #2C1B3D;
   height: 800px;
+  @include angle-after(-4deg);
 }
 
 .diminsion-title{
@@ -44,11 +45,11 @@
 }
 
 .menu-button-open .horizontal-line{
-  background-color: #2ecc71;
+  background-color: $lite-green;
 }
 
 .horizontal-line{
-	background-color: #2ecc71;
+	background-color: $lite-green;
 	width: 48%;
 	height: 2px;
 	position: absolute;
@@ -74,16 +75,16 @@
 
 .menu-button:hover .horizontal-top-line{
 	@include transform(translateY(-10px));
-	background-color: #2ecc71;
+	background-color: $lite-green;
 }
 
 .menu-button:hover .horizontal-middle-line{
-	background-color: #2ecc71;
+	background-color: $lite-green;
 }
 
 .menu-button:hover .horizontal-bottom-line{
 	@include transform(translateY(10px));
-	background-color: #2ecc71;
+	background-color: $lite-green;
 }
 
 .menu-button.menu-button-open .horizontal-middle-line{

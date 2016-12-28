@@ -189,9 +189,26 @@
 .alternate-diminsion-section {
   background-color: #2C1B3D;
   height: 800px;
+  position: relative;
+  z-index: 1;
+}
+/* line 48, ../../sass/sass/app.scss */
+.alternate-diminsion-section:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  bottom: 0;
+  transform: skewY(-4deg);
+  transform-origin: 100%;
 }
 
-/* line 18, ../../sass/sass/_diminsion.scss */
+/* line 19, ../../sass/sass/_diminsion.scss */
 .diminsion-title {
   color: #fff;
   font-size: 50px;
@@ -200,18 +217,18 @@
   padding-top: 300px;
 }
 
-/* line 26, ../../sass/sass/_diminsion.scss */
+/* line 27, ../../sass/sass/_diminsion.scss */
 .diminsion-title span {
   display: block;
   text-align: center;
 }
 
-/* line 31, ../../sass/sass/_diminsion.scss */
+/* line 32, ../../sass/sass/_diminsion.scss */
 .diminsion-title span:first-child {
   margin-bottom: 12px;
 }
 
-/* line 35, ../../sass/sass/_diminsion.scss */
+/* line 36, ../../sass/sass/_diminsion.scss */
 .menu-button {
   position: fixed;
   top: 48px;
@@ -223,12 +240,12 @@
   z-index: 2;
 }
 
-/* line 46, ../../sass/sass/_diminsion.scss */
+/* line 47, ../../sass/sass/_diminsion.scss */
 .menu-button-open .horizontal-line {
   background-color: #2ecc71;
 }
 
-/* line 50, ../../sass/sass/_diminsion.scss */
+/* line 51, ../../sass/sass/_diminsion.scss */
 .horizontal-line {
   background-color: #2ecc71;
   width: 48%;
@@ -238,7 +255,7 @@
   margin-left: 19px;
 }
 
-/* line 59, ../../sass/sass/_diminsion.scss */
+/* line 60, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
@@ -247,7 +264,7 @@
   transform: translateY(-8px);
 }
 
-/* line 63, ../../sass/sass/_diminsion.scss */
+/* line 64, ../../sass/sass/_diminsion.scss */
 .horizontal-bottom-line {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
@@ -256,7 +273,7 @@
   transform: translateY(8px);
 }
 
-/* line 67, ../../sass/sass/_diminsion.scss */
+/* line 68, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line {
   -webkit-transition: all 277ms ease-in-out;
   -moz-transition: all 277ms ease-in-out;
@@ -265,12 +282,12 @@
   transition: all 277ms ease-in-out;
 }
 
-/* line 71, ../../sass/sass/_diminsion.scss */
+/* line 72, ../../sass/sass/_diminsion.scss */
 .menu-button:hover {
   cursor: pointer;
 }
 
-/* line 75, ../../sass/sass/_diminsion.scss */
+/* line 76, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-top-line {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -280,12 +297,12 @@
   background-color: #2ecc71;
 }
 
-/* line 80, ../../sass/sass/_diminsion.scss */
+/* line 81, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-middle-line {
   background-color: #2ecc71;
 }
 
-/* line 84, ../../sass/sass/_diminsion.scss */
+/* line 85, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-bottom-line {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -295,12 +312,12 @@
   background-color: #2ecc71;
 }
 
-/* line 89, ../../sass/sass/_diminsion.scss */
+/* line 90, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-middle-line {
   visibility: hidden;
 }
 
-/* line 93, ../../sass/sass/_diminsion.scss */
+/* line 94, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -309,7 +326,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 97, ../../sass/sass/_diminsion.scss */
+/* line 98, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;
@@ -529,7 +546,17 @@
   border-left: 4px solid #2ecc71;
 }
 
-/* line 49, ../../sass/sass/app.scss */
+/* line 1, ../../sass/sass/_skills.scss */
+.skills-section {
+  height: 800px;
+}
+
+/* line 5, ../../sass/sass/_skills.scss */
+.test-sass {
+  color: red;
+}
+
+/* line 70, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -537,12 +564,12 @@ body {
   overflow-x: hidden;
 }
 
-/* line 56, ../../sass/sass/app.scss */
+/* line 77, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 60, ../../sass/sass/app.scss */
+/* line 81, ../../sass/sass/app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
