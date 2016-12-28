@@ -1,7 +1,57 @@
-.skills-section{
-    height: 800px;
+@include keyframes(rotate-html){
+    from{@include transform(rotate(0deg) translateX(150px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateX(150px) rotate(-360deg))}
 }
 
-.test-sass{
-    color: red;
+@include keyframes(rotate-css){
+    from{@include transform(rotate(0deg) translateX(-150px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateX(-150px) rotate(-360deg))}
+}
+
+@include keyframes(rotate-js){
+    from{@include transform(rotate(0deg) translateY(-150px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateY(-150px) rotate(-360deg))}
+}
+
+@include keyframes(rotate-java){
+    from{@include transform(rotate(0deg) translateY(150px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateY(150px) rotate(-360deg))}
+}
+
+.skills-section{
+    height: 800px;
+    padding-top: 150px;
+}
+
+.rotating-skills-container{
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    margin-left: 20%;
+    position: relative;
+}
+
+.rotating-skill{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+.html-skill{
+    @include animation(rotate-html 12s linear infinite);
+}
+
+.css-skill{
+    @include animation(rotate-css 12s linear infinite);
+}
+
+.js-skill{
+    @include animation(rotate-js 12s linear infinite);
+}
+
+.java-skill{
+    @include animation(rotate-java 12s linear infinite);
 }
