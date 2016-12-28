@@ -1,27 +1,6 @@
 
 /*CSS3 Animations*/
-@-webkit-keyframes horizontal-move-down{
-	0%{transform: translateY(-8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(-45deg);}
-}
 
-@keyframes horizontal-move-down{
-	0%{transform: translateY(-8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(-45deg);}
-}
-
-@-webkit-keyframes horizontal-move-up{
-	0%{transform: translateY(8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(45deg);}
-}
-@keyframes horizontal-move-up{
-	0%{transform: translateY(8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(45deg);}
-}
 
 @keyframes planet-rotation{
   0%{transform: rotate(0deg) translateZ(0);}
@@ -30,103 +9,7 @@
 
 /*alternate diminsion section*/
 
-.alternate-diminsion-section{
-  /*background-color: #1F3A93;*/
-  /*background-image: linear-gradient(to bottom, #102770 0%, #003780 50%, #0057A0 100%);*/
-  /*background-image: linear-gradient(to bottom, #000 0%, #253536 100%);*/
-  background-color: #2C1B3D;
-  height: 800px;
-}
 
-.diminsion-title{
-  color: #fff;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-top: 300px;
-}
-
-.diminsion-title span{
-  display: block;
-  text-align: center;
-}
-
-.diminsion-title span:first-child{
-  margin-bottom: 12px;
-}
-
-.menu-button{
-	position: fixed;
-	top: 48px;
-	right: 0;
-	width: 74px;
-	height: 48px;
-	float: right;
-	margin-right: 134px;
-  z-index: 2;
-}
-
-.menu-button-open .horizontal-line{
-  background-color: #2ecc71;
-}
-
-.horizontal-line{
-	background-color: #2ecc71;
-	width: 48%;
-	height: 2px;
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 19px;
-}
-
-.horizontal-top-line{
-	transform: translateY(-8px);
-}
-
-.horizontal-bottom-line{
-	transform: translateY(8px);
-}
-
-.horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line{
-	-webkit-transition: all 277ms ease-in-out;
-	-moz-transition: all 277ms ease-in-out;
-	-ms-transition: all 277ms ease-in-out;
-	-o-transition: all 277ms ease-in-out;
-	transition: all 277ms ease-in-out;
-}
-
-.menu-button:hover{
-	cursor: pointer;
-	cursor: hand;
-}
-
-.menu-button:hover .horizontal-top-line{
-	transform: translateY(-10px);
-	background-color: #2ecc71;
-}
-
-.menu-button:hover .horizontal-middle-line{
-	background-color: #2ecc71;
-}
-
-.menu-button:hover .horizontal-bottom-line{
-	transform: translateY(10px);
-	background-color: #2ecc71;
-}
-
-.menu-button.menu-button-open .horizontal-middle-line{
-	visibility: hidden;
-}
-
-.menu-button.menu-button-open .horizontal-top-line{
-	-webkit-animation: horizontal-move-down 500s forwards;
-	animation: horizontal-move-down 500ms forwards;
-}
-
-.menu-button.menu-button-open .horizontal-bottom-line{
-	-webkit-animation: horizontal-move-up 500s forwards;
-	animation: horizontal-move-up 500ms forwards;
-}
 
 /*menu*/
 
