@@ -821,46 +821,54 @@
 .rotating-skill {
   width: 50px;
   height: 50px;
-  border: 1px solid green;
   position: absolute;
   top: 250px;
   left: 250px;
 }
 
-/* line 43, ../../sass/sass/_skills.scss */
+/* line 42, ../../sass/sass/_skills.scss */
 .html-skill {
-  -webkit-animation: rotate-html 12s linear infinite;
-  -moz-animation: rotate-html 12s linear infinite;
-  -o-animation: rotate-html 12s linear infinite;
-  -ms-animation: rotate-html 12s linear infinite;
-  animation: rotate-html 12s linear infinite;
+  -webkit-animation: rotate-html 24s linear infinite;
+  -moz-animation: rotate-html 24s linear infinite;
+  -o-animation: rotate-html 24s linear infinite;
+  -ms-animation: rotate-html 24s linear infinite;
+  animation: rotate-html 24s linear infinite;
 }
 
-/* line 47, ../../sass/sass/_skills.scss */
+/* line 46, ../../sass/sass/_skills.scss */
 .css-skill {
-  -webkit-animation: rotate-css 12s linear infinite;
-  -moz-animation: rotate-css 12s linear infinite;
-  -o-animation: rotate-css 12s linear infinite;
-  -ms-animation: rotate-css 12s linear infinite;
-  animation: rotate-css 12s linear infinite;
+  -webkit-animation: rotate-css 24s linear infinite;
+  -moz-animation: rotate-css 24s linear infinite;
+  -o-animation: rotate-css 24s linear infinite;
+  -ms-animation: rotate-css 24s linear infinite;
+  animation: rotate-css 24s linear infinite;
 }
 
-/* line 51, ../../sass/sass/_skills.scss */
+/* line 50, ../../sass/sass/_skills.scss */
 .js-skill {
-  -webkit-animation: rotate-js 12s linear infinite;
-  -moz-animation: rotate-js 12s linear infinite;
-  -o-animation: rotate-js 12s linear infinite;
-  -ms-animation: rotate-js 12s linear infinite;
-  animation: rotate-js 12s linear infinite;
+  -webkit-animation: rotate-js 24s linear infinite;
+  -moz-animation: rotate-js 24s linear infinite;
+  -o-animation: rotate-js 24s linear infinite;
+  -ms-animation: rotate-js 24s linear infinite;
+  animation: rotate-js 24s linear infinite;
 }
 
-/* line 55, ../../sass/sass/_skills.scss */
+/* line 54, ../../sass/sass/_skills.scss */
 .java-skill {
-  -webkit-animation: rotate-java 12s linear infinite;
-  -moz-animation: rotate-java 12s linear infinite;
-  -o-animation: rotate-java 12s linear infinite;
-  -ms-animation: rotate-java 12s linear infinite;
-  animation: rotate-java 12s linear infinite;
+  -webkit-animation: rotate-java 24s linear infinite;
+  -moz-animation: rotate-java 24s linear infinite;
+  -o-animation: rotate-java 24s linear infinite;
+  -ms-animation: rotate-java 24s linear infinite;
+  animation: rotate-java 24s linear infinite;
+}
+
+/* line 58, ../../sass/sass/_skills.scss */
+.git-skill {
+  -webkit-animation: rotate-git 24s linear infinite;
+  -moz-animation: rotate-git 24s linear infinite;
+  -o-animation: rotate-git 24s linear infinite;
+  -ms-animation: rotate-git 24s linear infinite;
+  animation: rotate-git 24s linear infinite;
 }
 
 /* line 70, ../../sass/sass/app.scss */
