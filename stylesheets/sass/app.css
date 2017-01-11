@@ -802,13 +802,269 @@
     transform: rotate(360deg) translateY(150px) rotate(-360deg);
   }
 }
-/* line 21, ../../sass/sass/_skills.scss */
+@-webkit-keyframes rotate-git {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+  }
+}
+@-moz-keyframes rotate-git {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+  }
+}
+@-o-keyframes rotate-git {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+  }
+}
+@keyframes rotate-git {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotate-linux {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@-moz-keyframes rotate-linux {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@-o-keyframes rotate-linux {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@keyframes rotate-linux {
+  from {
+    -webkit-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotate-primefaces {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@-moz-keyframes rotate-primefaces {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@-o-keyframes rotate-primefaces {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@keyframes rotate-primefaces {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotate-sass {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+  }
+}
+@-moz-keyframes rotate-sass {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+  }
+}
+@-o-keyframes rotate-sass {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+  }
+}
+@keyframes rotate-sass {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    -ms-transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+    transform: rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg);
+  }
+}
+/* line 41, ../../sass/sass/_skills.scss */
 .skills-section {
   height: 800px;
   padding-top: 150px;
 }
 
-/* line 26, ../../sass/sass/_skills.scss */
+/* line 46, ../../sass/sass/_skills.scss */
 .rotating-skills-container {
   width: 500px;
   height: 500px;
@@ -817,7 +1073,7 @@
   position: relative;
 }
 
-/* line 34, ../../sass/sass/_skills.scss */
+/* line 54, ../../sass/sass/_skills.scss */
 .rotating-skill {
   width: 50px;
   height: 50px;
@@ -826,49 +1082,76 @@
   left: 250px;
 }
 
-/* line 42, ../../sass/sass/_skills.scss */
+/* line 62, ../../sass/sass/_skills.scss */
 .html-skill {
-  -webkit-animation: rotate-html 24s linear infinite;
-  -moz-animation: rotate-html 24s linear infinite;
-  -o-animation: rotate-html 24s linear infinite;
-  -ms-animation: rotate-html 24s linear infinite;
-  animation: rotate-html 24s linear infinite;
+  -webkit-animation: rotate-html 36s linear infinite;
+  -moz-animation: rotate-html 36s linear infinite;
+  -o-animation: rotate-html 36s linear infinite;
+  -ms-animation: rotate-html 36s linear infinite;
+  animation: rotate-html 36s linear infinite;
 }
 
-/* line 46, ../../sass/sass/_skills.scss */
+/* line 66, ../../sass/sass/_skills.scss */
 .css-skill {
-  -webkit-animation: rotate-css 24s linear infinite;
-  -moz-animation: rotate-css 24s linear infinite;
-  -o-animation: rotate-css 24s linear infinite;
-  -ms-animation: rotate-css 24s linear infinite;
-  animation: rotate-css 24s linear infinite;
+  -webkit-animation: rotate-css 36s linear infinite;
+  -moz-animation: rotate-css 36s linear infinite;
+  -o-animation: rotate-css 36s linear infinite;
+  -ms-animation: rotate-css 36s linear infinite;
+  animation: rotate-css 36s linear infinite;
 }
 
-/* line 50, ../../sass/sass/_skills.scss */
+/* line 70, ../../sass/sass/_skills.scss */
 .js-skill {
-  -webkit-animation: rotate-js 24s linear infinite;
-  -moz-animation: rotate-js 24s linear infinite;
-  -o-animation: rotate-js 24s linear infinite;
-  -ms-animation: rotate-js 24s linear infinite;
-  animation: rotate-js 24s linear infinite;
+  -webkit-animation: rotate-js 36s linear infinite;
+  -moz-animation: rotate-js 36s linear infinite;
+  -o-animation: rotate-js 36s linear infinite;
+  -ms-animation: rotate-js 36s linear infinite;
+  animation: rotate-js 36s linear infinite;
 }
 
-/* line 54, ../../sass/sass/_skills.scss */
+/* line 74, ../../sass/sass/_skills.scss */
 .java-skill {
-  -webkit-animation: rotate-java 24s linear infinite;
-  -moz-animation: rotate-java 24s linear infinite;
-  -o-animation: rotate-java 24s linear infinite;
-  -ms-animation: rotate-java 24s linear infinite;
-  animation: rotate-java 24s linear infinite;
+  -webkit-animation: rotate-java 36s linear infinite;
+  -moz-animation: rotate-java 36s linear infinite;
+  -o-animation: rotate-java 36s linear infinite;
+  -ms-animation: rotate-java 36s linear infinite;
+  animation: rotate-java 36s linear infinite;
 }
 
-/* line 58, ../../sass/sass/_skills.scss */
+/* line 78, ../../sass/sass/_skills.scss */
 .git-skill {
-  -webkit-animation: rotate-git 24s linear infinite;
-  -moz-animation: rotate-git 24s linear infinite;
-  -o-animation: rotate-git 24s linear infinite;
-  -ms-animation: rotate-git 24s linear infinite;
-  animation: rotate-git 24s linear infinite;
+  -webkit-animation: rotate-git 36s linear infinite;
+  -moz-animation: rotate-git 36s linear infinite;
+  -o-animation: rotate-git 36s linear infinite;
+  -ms-animation: rotate-git 36s linear infinite;
+  animation: rotate-git 36s linear infinite;
+}
+
+/* line 82, ../../sass/sass/_skills.scss */
+.linux-skill {
+  -webkit-animation: rotate-linux 36s linear infinite;
+  -moz-animation: rotate-linux 36s linear infinite;
+  -o-animation: rotate-linux 36s linear infinite;
+  -ms-animation: rotate-linux 36s linear infinite;
+  animation: rotate-linux 36s linear infinite;
+}
+
+/* line 86, ../../sass/sass/_skills.scss */
+.primefaces-skill {
+  -webkit-animation: rotate-primefaces 36s linear infinite;
+  -moz-animation: rotate-primefaces 36s linear infinite;
+  -o-animation: rotate-primefaces 36s linear infinite;
+  -ms-animation: rotate-primefaces 36s linear infinite;
+  animation: rotate-primefaces 36s linear infinite;
+}
+
+/* line 90, ../../sass/sass/_skills.scss */
+.sass-skill {
+  -webkit-animation: rotate-sass 36s linear infinite;
+  -moz-animation: rotate-sass 36s linear infinite;
+  -o-animation: rotate-sass 36s linear infinite;
+  -ms-animation: rotate-sass 36s linear infinite;
+  animation: rotate-sass 36s linear infinite;
 }
 
 /* line 70, ../../sass/sass/app.scss */

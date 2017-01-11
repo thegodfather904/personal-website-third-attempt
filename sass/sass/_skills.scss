@@ -18,6 +18,26 @@
     to{@include transform(rotate(360deg) translateY(150px) rotate(-360deg))}
 }
 
+@include keyframes(rotate-git){
+    from{@include transform(rotate(0deg) translateX(110px) translateY(110px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg))}
+}
+
+@include keyframes(rotate-linux){
+    from{@include transform(rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg))}
+}
+
+@include keyframes(rotate-primefaces){
+    from{@include transform(rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg))}
+}
+
+@include keyframes(rotate-sass){
+    from{@include transform(rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg))}
+    to{@include transform(rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg))}
+}
+
 .skills-section{
     height: 800px;
     padding-top: 150px;
@@ -40,21 +60,33 @@
 }
 
 .html-skill{
-    @include animation(rotate-html 24s linear infinite);
+    @include animation(rotate-html 36s linear infinite);
 }
 
 .css-skill{
-    @include animation(rotate-css 24s linear infinite);
+    @include animation(rotate-css 36s linear infinite);
 }
 
 .js-skill{
-    @include animation(rotate-js 24s linear infinite);
+    @include animation(rotate-js 36s linear infinite);
 }
 
 .java-skill{
-    @include animation(rotate-java 24s linear infinite);
+    @include animation(rotate-java 36s linear infinite);
 }
 
 .git-skill{
-    @include animation(rotate-git 24s linear infinite);
+    @include animation(rotate-git 36s linear infinite);
+}
+
+.linux-skill{
+    @include animation(rotate-linux 36s linear infinite);
+}
+
+.primefaces-skill{
+    @include animation(rotate-primefaces 36s linear infinite);
+}
+
+.sass-skill{
+    @include animation(rotate-sass 36s linear infinite);
 }
