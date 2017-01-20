@@ -192,7 +192,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 48, ../../sass/sass/app.scss */
+/* line 50, ../../sass/sass/app.scss */
 .alternate-diminsion-section:after {
   background: inherit;
   content: '';
@@ -1154,7 +1154,7 @@
   animation: rotate-sass 36s linear infinite;
 }
 
-/* line 70, ../../sass/sass/app.scss */
+/* line 72, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1162,12 +1162,12 @@ body {
   overflow-x: hidden;
 }
 
-/* line 77, ../../sass/sass/app.scss */
+/* line 79, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 81, ../../sass/sass/app.scss */
+/* line 83, ../../sass/sass/app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
