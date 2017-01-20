@@ -1,0 +1,83 @@
+/*Site colors*/
+$lite-green: #2ecc71;
+
+/*Mixins*/
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin animation($animation){
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -o-animation: $animation;
+    -ms-animation: $animation;
+    animation: $animation;
+}
+
+@mixin transform($transform){
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -o-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
+@mixin transition($transition){
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+@mixin angle-after($skew) {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; // for Chrome Windows
+	  bottom: 0;
+	  transform: skewY($skew);
+	  transform-origin: 100%;
+    }
+}
+
+/*imports*/
+@import 'diminsion';
+@import 'menu';
+@import 'skills';
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
