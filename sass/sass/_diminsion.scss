@@ -1,3 +1,5 @@
+$purple: #2C1B3D;
+
 @include keyframes(horizontal-move-down){
   	0%{@include transform(translateY(-8px))}
 	50%{@include transform(translateY(0px))}
@@ -11,9 +13,9 @@
 }
 
 .alternate-diminsion-section{
-  background-color: #2C1B3D;
+  background-color: $purple;
   height: 800px;
-  @include angle-after(-4deg);
+  @include angle-after(-4deg, 50%, $purple);
 }
 
 .diminsion-title{

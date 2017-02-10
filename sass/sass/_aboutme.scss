@@ -6,6 +6,7 @@
 .about-me-section{
     padding-top: 250px;
     height: 800px;
+    margin-bottom: 140px;
 }
 
 .about-me-description{
@@ -46,7 +47,7 @@
 .planet{
   width: 480px;
   height: 480px;
-  @include animation(planet-rotation 20s linear infinite);
+  //@include animation(planet-rotation 20s linear infinite);
   position: absolute;
   bottom: 24px;
   margin-left: -134px

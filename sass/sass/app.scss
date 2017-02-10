@@ -1,5 +1,6 @@
 /*Site colors*/
 $lite-green: #2ecc71;
+$purple: #2C1B3D;
 
 //test-comment
 
@@ -43,15 +44,15 @@ $lite-green: #2ecc71;
     transition: $transition;
 }
 
-@mixin angle-after($skew) {
+@mixin angle-after($skew, $height, $background-color) {
     position: relative;
-    z-index: 1;
+    z-index: 1; 
 
     &:after {
       background: inherit;
       content: '';
       display: block;
-      height: 50%;
+      height: $height;
       left: 0;
       position: absolute;
       right: 0;
@@ -60,6 +61,28 @@ $lite-green: #2ecc71;
 	  bottom: 0;
 	  transform: skewY($skew);
 	  transform-origin: 100%;
+      background-color: $background-color;
+    }
+}
+
+@mixin angle-before($skew, $height, $background-color) {
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      background: inherit;
+      content: '';
+      display: block;
+      height: $height;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; // for Chrome Windows
+	  top: 0;
+	  transform: skewY($skew);
+	  transform-origin: 100%;
+      background-color: $background-color;
     }
 }
 
@@ -68,6 +91,7 @@ $lite-green: #2ecc71;
 @import 'menu';
 @import 'skills';
 @import 'aboutme';
+@import 'divider';
 
 
 body{
