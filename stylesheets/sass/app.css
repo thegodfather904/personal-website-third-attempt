@@ -210,6 +210,11 @@
 }
 
 /* line 21, ../../sass/sass/_diminsion.scss */
+.alternate-diminsion-section:after {
+  box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 25, ../../sass/sass/_diminsion.scss */
 .diminsion-title {
   color: #fff;
   font-size: 50px;
@@ -218,18 +223,18 @@
   padding-top: 300px;
 }
 
-/* line 29, ../../sass/sass/_diminsion.scss */
+/* line 33, ../../sass/sass/_diminsion.scss */
 .diminsion-title span {
   display: block;
   text-align: center;
 }
 
-/* line 34, ../../sass/sass/_diminsion.scss */
+/* line 38, ../../sass/sass/_diminsion.scss */
 .diminsion-title span:first-child {
   margin-bottom: 12px;
 }
 
-/* line 38, ../../sass/sass/_diminsion.scss */
+/* line 42, ../../sass/sass/_diminsion.scss */
 .menu-button {
   position: fixed;
   top: 48px;
@@ -241,12 +246,12 @@
   z-index: 3;
 }
 
-/* line 49, ../../sass/sass/_diminsion.scss */
+/* line 53, ../../sass/sass/_diminsion.scss */
 .menu-button-open .horizontal-line {
   background-color: #2ecc71;
 }
 
-/* line 53, ../../sass/sass/_diminsion.scss */
+/* line 57, ../../sass/sass/_diminsion.scss */
 .horizontal-line {
   background-color: #2ecc71;
   width: 48%;
@@ -256,7 +261,7 @@
   margin-left: 19px;
 }
 
-/* line 62, ../../sass/sass/_diminsion.scss */
+/* line 66, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
@@ -265,7 +270,7 @@
   transform: translateY(-8px);
 }
 
-/* line 66, ../../sass/sass/_diminsion.scss */
+/* line 70, ../../sass/sass/_diminsion.scss */
 .horizontal-bottom-line {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
@@ -274,7 +279,7 @@
   transform: translateY(8px);
 }
 
-/* line 70, ../../sass/sass/_diminsion.scss */
+/* line 74, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line {
   -webkit-transition: all 277ms ease-in-out;
   -moz-transition: all 277ms ease-in-out;
@@ -283,12 +288,12 @@
   transition: all 277ms ease-in-out;
 }
 
-/* line 74, ../../sass/sass/_diminsion.scss */
+/* line 78, ../../sass/sass/_diminsion.scss */
 .menu-button:hover {
   cursor: pointer;
 }
 
-/* line 78, ../../sass/sass/_diminsion.scss */
+/* line 82, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-top-line {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -298,12 +303,12 @@
   background-color: #2ecc71;
 }
 
-/* line 83, ../../sass/sass/_diminsion.scss */
+/* line 87, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-middle-line {
   background-color: #2ecc71;
 }
 
-/* line 87, ../../sass/sass/_diminsion.scss */
+/* line 91, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-bottom-line {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -313,12 +318,12 @@
   background-color: #2ecc71;
 }
 
-/* line 92, ../../sass/sass/_diminsion.scss */
+/* line 96, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-middle-line {
   visibility: hidden;
 }
 
-/* line 96, ../../sass/sass/_diminsion.scss */
+/* line 100, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -327,7 +332,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 100, ../../sass/sass/_diminsion.scss */
+/* line 104, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;

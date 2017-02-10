@@ -18,6 +18,10 @@ $purple: #2C1B3D;
   @include angle-after(-4deg, 50%, $purple);
 }
 
+.alternate-diminsion-section:after{
+	box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.50)
+}
+
 .diminsion-title{
   color: #fff;
   font-size: 50px;
