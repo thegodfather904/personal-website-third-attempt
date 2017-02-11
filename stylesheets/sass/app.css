@@ -185,14 +185,14 @@
     transform: rotate(45deg);
   }
 }
-/* line 13, ../../sass/sass/_diminsion.scss */
+/* line 15, ../../sass/sass/_diminsion.scss */
 .alternate-diminsion-section {
   background-color: #2C1B3D;
   height: 800px;
   position: relative;
   z-index: 1;
 }
-/* line 50, ../../sass/sass/app.scss */
+/* line 51, ../../sass/sass/app.scss */
 .alternate-diminsion-section:after {
   background: inherit;
   content: '';
@@ -206,9 +206,15 @@
   bottom: 0;
   transform: skewY(-4deg);
   transform-origin: 100%;
+  background-color: #2C1B3D;
 }
 
-/* line 19, ../../sass/sass/_diminsion.scss */
+/* line 21, ../../sass/sass/_diminsion.scss */
+.alternate-diminsion-section:after {
+  box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 25, ../../sass/sass/_diminsion.scss */
 .diminsion-title {
   color: #fff;
   font-size: 50px;
@@ -217,18 +223,18 @@
   padding-top: 300px;
 }
 
-/* line 27, ../../sass/sass/_diminsion.scss */
+/* line 33, ../../sass/sass/_diminsion.scss */
 .diminsion-title span {
   display: block;
   text-align: center;
 }
 
-/* line 32, ../../sass/sass/_diminsion.scss */
+/* line 38, ../../sass/sass/_diminsion.scss */
 .diminsion-title span:first-child {
   margin-bottom: 12px;
 }
 
-/* line 36, ../../sass/sass/_diminsion.scss */
+/* line 42, ../../sass/sass/_diminsion.scss */
 .menu-button {
   position: fixed;
   top: 48px;
@@ -240,12 +246,12 @@
   z-index: 3;
 }
 
-/* line 47, ../../sass/sass/_diminsion.scss */
+/* line 53, ../../sass/sass/_diminsion.scss */
 .menu-button-open .horizontal-line {
   background-color: #2ecc71;
 }
 
-/* line 51, ../../sass/sass/_diminsion.scss */
+/* line 57, ../../sass/sass/_diminsion.scss */
 .horizontal-line {
   background-color: #2ecc71;
   width: 48%;
@@ -255,7 +261,7 @@
   margin-left: 19px;
 }
 
-/* line 60, ../../sass/sass/_diminsion.scss */
+/* line 66, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
@@ -264,7 +270,7 @@
   transform: translateY(-8px);
 }
 
-/* line 64, ../../sass/sass/_diminsion.scss */
+/* line 70, ../../sass/sass/_diminsion.scss */
 .horizontal-bottom-line {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
@@ -273,7 +279,7 @@
   transform: translateY(8px);
 }
 
-/* line 68, ../../sass/sass/_diminsion.scss */
+/* line 74, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line {
   -webkit-transition: all 277ms ease-in-out;
   -moz-transition: all 277ms ease-in-out;
@@ -282,12 +288,12 @@
   transition: all 277ms ease-in-out;
 }
 
-/* line 72, ../../sass/sass/_diminsion.scss */
+/* line 78, ../../sass/sass/_diminsion.scss */
 .menu-button:hover {
   cursor: pointer;
 }
 
-/* line 76, ../../sass/sass/_diminsion.scss */
+/* line 82, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-top-line {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -297,12 +303,12 @@
   background-color: #2ecc71;
 }
 
-/* line 81, ../../sass/sass/_diminsion.scss */
+/* line 87, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-middle-line {
   background-color: #2ecc71;
 }
 
-/* line 85, ../../sass/sass/_diminsion.scss */
+/* line 91, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-bottom-line {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -312,12 +318,12 @@
   background-color: #2ecc71;
 }
 
-/* line 90, ../../sass/sass/_diminsion.scss */
+/* line 96, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-middle-line {
   visibility: hidden;
 }
 
-/* line 94, ../../sass/sass/_diminsion.scss */
+/* line 100, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -326,7 +332,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 98, ../../sass/sass/_diminsion.scss */
+/* line 104, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;
@@ -1223,40 +1229,41 @@
 .about-me-section {
   padding-top: 250px;
   height: 800px;
+  margin-bottom: 140px;
 }
 
-/* line 11, ../../sass/sass/_aboutme.scss */
+/* line 12, ../../sass/sass/_aboutme.scss */
 .about-me-description {
   float: right;
   width: 50%;
   padding-right: 10%;
 }
 
-/* line 17, ../../sass/sass/_aboutme.scss */
+/* line 18, ../../sass/sass/_aboutme.scss */
 .title-upper, .title-lower {
   font-size: 44px;
   font-style: italic;
 }
 
-/* line 22, ../../sass/sass/_aboutme.scss */
+/* line 23, ../../sass/sass/_aboutme.scss */
 .title-lower {
   float: right;
   padding-top: 24px;
 }
 
-/* line 27, ../../sass/sass/_aboutme.scss */
+/* line 28, ../../sass/sass/_aboutme.scss */
 .description {
   clear: both;
   font-size: 20px;
   line-height: 40px;
 }
 
-/* line 33, ../../sass/sass/_aboutme.scss */
+/* line 34, ../../sass/sass/_aboutme.scss */
 .first-description {
   padding: 60px 0 32px 0;
 }
 
-/* line 37, ../../sass/sass/_aboutme.scss */
+/* line 38, ../../sass/sass/_aboutme.scss */
 .planet-container {
   width: 300px;
   height: 300px;
@@ -1266,34 +1273,29 @@
   float: left;
 }
 
-/* line 46, ../../sass/sass/_aboutme.scss */
+/* line 47, ../../sass/sass/_aboutme.scss */
 .planet {
   width: 480px;
   height: 480px;
-  -webkit-animation: planet-rotation 20s linear infinite;
-  -moz-animation: planet-rotation 20s linear infinite;
-  -o-animation: planet-rotation 20s linear infinite;
-  -ms-animation: planet-rotation 20s linear infinite;
-  animation: planet-rotation 20s linear infinite;
   position: absolute;
   bottom: 24px;
   margin-left: -134px;
 }
 
-/* line 55, ../../sass/sass/_aboutme.scss */
+/* line 56, ../../sass/sass/_aboutme.scss */
 .planet-image {
   width: 100%;
   height: 100%;
 }
 
-/* line 60, ../../sass/sass/_aboutme.scss */
+/* line 61, ../../sass/sass/_aboutme.scss */
 .planet-overlay {
   position: absolute;
   bottom: 0;
   z-index: 2;
 }
 
-/* line 66, ../../sass/sass/_aboutme.scss */
+/* line 67, ../../sass/sass/_aboutme.scss */
 .planet-container-inner {
   width: 300px;
   height: 300px;
@@ -1302,7 +1304,60 @@
   position: absolute;
 }
 
-/* line 73, ../../sass/sass/app.scss */
+/* line 1, ../../sass/sass/_divider.scss */
+.divider-section {
+  background-color: #2C1B3D;
+  height: 110px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+}
+/* line 51, ../../sass/sass/app.scss */
+.divider-section:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 106px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  bottom: 0;
+  transform: skewY(-4deg);
+  transform-origin: 100%;
+  background-color: #2C1B3D;
+}
+/* line 72, ../../sass/sass/app.scss */
+.divider-section:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 106px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  top: 0;
+  transform: skewY(4deg);
+  transform-origin: 100%;
+  background-color: #2C1B3D;
+}
+
+/* line 9, ../../sass/sass/_divider.scss */
+.divider-section:before {
+  box-shadow: inset 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 14, ../../sass/sass/_divider.scss */
+.divider-section:after {
+  box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 97, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1310,12 +1365,12 @@ body {
   overflow-x: hidden;
 }
 
-/* line 80, ../../sass/sass/app.scss */
+/* line 104, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 84, ../../sass/sass/app.scss */
+/* line 108, ../../sass/sass/app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
