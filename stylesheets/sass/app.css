@@ -1275,11 +1275,16 @@
 
 /* line 47, ../../sass/sass/_aboutme.scss */
 .planet {
-  width: 480px;
-  height: 480px;
+  width: 540px;
+  height: 540px;
+  -webkit-animation: planet-rotation 30s linear infinite;
+  -moz-animation: planet-rotation 30s linear infinite;
+  -o-animation: planet-rotation 30s linear infinite;
+  -ms-animation: planet-rotation 30s linear infinite;
+  animation: planet-rotation 30s linear infinite;
   position: absolute;
-  bottom: 24px;
-  margin-left: -134px;
+  bottom: -4px;
+  margin-left: -177px;
 }
 
 /* line 56, ../../sass/sass/_aboutme.scss */
