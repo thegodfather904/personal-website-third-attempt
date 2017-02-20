@@ -341,6 +341,11 @@
   animation: horizontal-move-up 500ms forwards;
 }
 
+/* line 108, ../../sass/sass/_diminsion.scss */
+.star-canvas {
+  position: absolute;
+}
+
 /*Mixins*/
 /*Keyframes*/
 @-webkit-keyframes menu-box-rotation-clockwise {
