@@ -33,28 +33,36 @@ function drawParticles(){
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
     for(var i = 0; i < particles.length; i++){
-        drawOneStroke(i);
+        if(!particles[i].shootingStar)
+            drawOneStroke(i);
+        else
+            drawShootingStar(i);
+
+        //if off the screen, create a new particle and add it to that spot
+        if(particles[i].x > canvasWidth || particles[i].y < 0 )
+            particles[i] = new randomParticleAtStart();
     }
 }
 
 function drawOneStroke(i){
         ctx.beginPath();
         ctx.arc(particles[i].x, particles[i].y, particles[i].radius, 0, Math.PI * 2, true);
-        // ctx.fillStyle = 'white';
         ctx.fillStyle = "rgba(255, 255, 255, " + particles[i].opacity + ")";
 
         ctx.fill();
         particles[i].x = particles[i].x + 0.75;
         particles[i].y = particles[i].y - 0.25;
+}
 
-        if(particles[i].shootingStar){
-            particles[i].x = particles[i].x + 60;
-            particles[i].y = particles[i].y - 20;
-        }
-            
-        //if off the screen, create a new particle and add it to that spot
-        if(particles[i].x > canvasWidth || particles[i].y < 0 )
-            particles[i] = new randomParticleAtStart();
+function drawShootingStar(i){
+    ctx.beginPath();
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = 'white';
+    ctx.moveTo(particles[i].x, particles[i].y);
+    particles[i].x = particles[i].x + 45;
+    particles[i].y = particles[i].y - 10;
+    ctx.lineTo(particles[i].x , particles[i].y);
+    ctx.stroke();
 }
 
 function randomParticle(){
@@ -70,10 +78,7 @@ function randomParticleAtStart(){
     this.y = Math.random() * canvasHeight;
     this.radius = Math.floor(Math.random() * radius + 1);
     this.shootingStar = shootingStar(0.95);
-    if(this.shootingStar)
-        this.opacity = 1
-    else
-        this.opacity = Math.random().toFixed(2);
+    this.opacity = Math.random().toFixed(2);
 }
 
 function shootingStar(seed){
