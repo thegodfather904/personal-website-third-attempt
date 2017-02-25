@@ -104,3 +104,7 @@ $purple: #2C1B3D;
 .menu-button.menu-button-open .horizontal-bottom-line{
 	@include animation(horizontal-move-up 500ms forwards);
 }
+
+.star-canvas{
+	position: absolute;
+}

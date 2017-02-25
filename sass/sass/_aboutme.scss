@@ -45,12 +45,12 @@
 }
 
 .planet{
-  width: 480px;
-  height: 480px;
-  //@include animation(planet-rotation 20s linear infinite);
+  width: 540px;
+  height: 540px;
+  // @include animation(planet-rotation 30s linear infinite);
   position: absolute;
-  bottom: 24px;
-  margin-left: -134px
+  bottom: -4px;
+  margin-left: -177px
 }
 
 .planet-image{
