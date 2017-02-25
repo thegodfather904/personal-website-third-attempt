@@ -1,6 +1,7 @@
 /*Site colors*/
 $lite-green: #2ecc71;
 $purple: #2C1B3D;
+$white: #fff;
 
 //test-comment
 
@@ -44,7 +45,7 @@ $purple: #2C1B3D;
     transition: $transition;
 }
 
-@mixin angle-after($skew, $height, $background-color) {
+@mixin angle-after($skew, $height, $transformOrigin, $background-color) {
     position: relative;
     z-index: 1; 
 
@@ -60,12 +61,12 @@ $purple: #2C1B3D;
       -webkit-backface-visibility: hidden; // for Chrome Windows
 	  bottom: 0;
 	  transform: skewY($skew);
-	  transform-origin: 100%;
+	  transform-origin: $transformOrigin;
       background-color: $background-color;
     }
 }
 
-@mixin angle-before($skew, $height, $background-color) {
+@mixin angle-before($skew, $height, $transformOrigin, $background-color) {
     position: relative;
     z-index: 1;
 
@@ -81,7 +82,7 @@ $purple: #2C1B3D;
       -webkit-backface-visibility: hidden; // for Chrome Windows
 	  top: 0;
 	  transform: skewY($skew);
-	  transform-origin: 100%;
+	  transform-origin: $transformOrigin;
       background-color: $background-color;
     }
 }
