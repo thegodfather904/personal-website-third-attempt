@@ -4,9 +4,19 @@
 }
 
 .about-me-section{
-    padding-top: 250px;
-    height: 800px;
-    margin-bottom: 140px;
+    padding-top: 16px;
+    height: 500px;
+    @include angle-before(-4deg, 20%, -2%, $white);
+    @include angle-after(4deg, 20%, -2%, $white);
+}
+
+.about-me-section:before{
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.about-me-section:after{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .about-me-description{

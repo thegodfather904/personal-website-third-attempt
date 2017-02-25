@@ -2,6 +2,7 @@ var radius = 2;
 
 $(function(){
     canvasDiminsionSection();
+    canvasDividerSection();
 });
 
 function canvasDiminsionSection(){
@@ -9,6 +10,23 @@ function canvasDiminsionSection(){
     let ctx = canvas.getContext('2d');
     let canvasWidth = $('#alternateDimension').outerWidth(true);
     let canvasHeight = $('#alternateDimension').outerHeight(true);
+    canvas.width = canvasWidth;
+    canvas.height = canvasHeight;
+
+    //get the particles for the screen
+    let particles = setUpParticles(canvasWidth, canvasHeight);
+
+    let speed = 50;
+    draw = setInterval(function(){
+        update(particles, ctx, canvasWidth, canvasHeight);
+    }, speed);
+}
+
+function canvasDividerSection(){
+    let canvas = $('#dividerCanvas').get(0);
+    let ctx = canvas.getContext('2d');
+    let canvasWidth = $('#dividerCanvas').outerWidth(true);
+    let canvasHeight = $('#dividerCanvas').outerHeight(true);
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
 

@@ -15,11 +15,11 @@ $purple: #2C1B3D;
 .alternate-diminsion-section{
   background-color: $purple;
   height: 800px;
-  @include angle-after(-4deg, 50%, $purple);
+//   @include angle-after(-4deg, 50%, $purple);
 }
 
 .alternate-diminsion-section:after{
-	box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.50)
+	// box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.50)
 }
 
 .diminsion-title{
