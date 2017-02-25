@@ -1,0 +1,16 @@
+.divider-section{
+    background-color: $purple;
+    height: 110px;
+    width: 100%;
+    @include angle-after(-4deg, 106px, $purple);
+    @include angle-before(4deg, 106px, $purple);
+}
+
+.divider-section:before{
+    box-shadow: inset 0px 6px 10px 0px rgba(0, 0, 0, 0.50)
+}
+
+
+.divider-section:after{
+    box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.50)
+}

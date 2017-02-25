@@ -60,33 +60,33 @@
 }
 
 .html-skill{
-    @include animation(rotate-html 36s linear infinite);
+    @include animation(rotate-html 50s linear infinite);
 }
 
 .css-skill{
-    @include animation(rotate-css 36s linear infinite);
+    @include animation(rotate-css 50s linear infinite);
 }
 
 .js-skill{
-    @include animation(rotate-js 36s linear infinite);
+    @include animation(rotate-js 50s linear infinite);
 }
 
 .java-skill{
-    @include animation(rotate-java 36s linear infinite);
+    @include animation(rotate-java 50s linear infinite);
 }
 
 .git-skill{
-    @include animation(rotate-git 36s linear infinite);
+    @include animation(rotate-git 50s linear infinite);
 }
 
 .linux-skill{
-    @include animation(rotate-linux 36s linear infinite);
+    @include animation(rotate-linux 50s linear infinite);
 }
 
 .primefaces-skill{
-    @include animation(rotate-primefaces 36s linear infinite);
+    @include animation(rotate-primefaces 50s linear infinite);
 }
 
 .sass-skill{
-    @include animation(rotate-sass 36s linear infinite);
+    @include animation(rotate-sass 50s linear infinite);
 }
