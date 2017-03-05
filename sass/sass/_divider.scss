@@ -18,4 +18,19 @@
 .divider-section canvas{
     width: 100%;
     height: 300px;
+    position: absolute;
+}
+
+.divider-ufo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.divider-ufo path{
+    fill: #fff;
+}
+
+.divider-ufo text{
+    display: none;
 }

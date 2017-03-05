@@ -1375,6 +1375,24 @@
 .divider-section canvas {
   width: 100%;
   height: 300px;
+  position: absolute;
+}
+
+/* line 24, ../../sass/sass/_divider.scss */
+.divider-ufo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 30, ../../sass/sass/_divider.scss */
+.divider-ufo path {
+  fill: #fff;
+}
+
+/* line 34, ../../sass/sass/_divider.scss */
+.divider-ufo text {
+  display: none;
 }
 
 /* line 98, ../../sass/sass/app.scss */

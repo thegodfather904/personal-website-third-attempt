@@ -1,5 +1,6 @@
 $(function(){
   addClickEvents();
+  setTimeout(moveDividerUfoLeft, 100);
 });
 
 function addClickEvents(){
@@ -21,5 +22,25 @@ function menuClick(){
       menu.fadeIn();
     }
 
+  });
+}
+
+function moveDividerUfoLeft(){
+  let ufo = $('#dividerUFO');
+  let width = $(document).width();
+  ufo.animate({
+    left: width
+  }, 10000, function(){
+    setTimeout(moveDividerUfoRight, 50);
+  });
+}
+
+function moveDividerUfoRight(){
+  let ufo = $('#dividerUFO');
+  let width = $(document).width();
+  ufo.animate({
+    left: 0
+  }, 5000, function(){
+    setTimeout(moveDividerUfoLeft, 50);
   });
 }
