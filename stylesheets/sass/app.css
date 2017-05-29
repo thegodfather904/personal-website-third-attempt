@@ -1395,7 +1395,81 @@
   display: none;
 }
 
-/* line 98, ../../sass/sass/app.scss */
+/* line 1, ../../sass/sass/_contact.scss */
+.cool-project-text, .email-container {
+  text-align: center;
+}
+
+/* line 5, ../../sass/sass/_contact.scss */
+.email-container {
+  margin: 40px 0;
+}
+
+/* line 9, ../../sass/sass/_contact.scss */
+.email-icon {
+  margin: 8px 0;
+}
+
+/* line 13, ../../sass/sass/_contact.scss */
+.share-me {
+  width: 312px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 19, ../../sass/sass/_contact.scss */
+.share-me-title {
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin: 0 auto;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
+/* line 27, ../../sass/sass/_contact.scss */
+.share-me span {
+  display: block;
+  float: left;
+  padding: 20px 20px;
+  margin: 0 25px;
+  border-radius: 5px;
+}
+
+/* line 35, ../../sass/sass/_contact.scss */
+.share-me span:hover {
+  cursor: pointer;
+  cursor: hand;
+  color: #fff;
+}
+
+/* line 41, ../../sass/sass/_contact.scss */
+.share-me-link {
+  color: #000;
+}
+
+/* line 45, ../../sass/sass/_contact.scss */
+#shareMeTwitter:hover {
+  background-color: #00aced;
+}
+
+/* line 49, ../../sass/sass/_contact.scss */
+#shareMeFacebook:hover {
+  background-color: #3b5998;
+}
+
+/* line 52, ../../sass/sass/_contact.scss */
+#shareMeGit:hover {
+  background-color: #66B849;
+}
+
+/* line 56, ../../sass/sass/_contact.scss */
+.copyright {
+  padding-bottom: 5px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* line 99, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1403,12 +1477,12 @@ body {
   overflow-x: hidden;
 }
 
-/* line 105, ../../sass/sass/app.scss */
+/* line 106, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 109, ../../sass/sass/app.scss */
+/* line 110, ../../sass/sass/app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
