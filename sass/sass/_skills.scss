@@ -42,6 +42,8 @@
     height: 800px;
     padding-top: 150px;
     @include angle-before(-4deg, 20%, -2%, $white);
+    @include angle-after(4deg, 20%, -2%, $white);
+    display: none;
 }
 
 .skills-section:before{
