@@ -1055,7 +1055,6 @@
   z-index: 1;
   position: relative;
   z-index: 1;
-  display: none;
 }
 /* line 73, ../../sass/sass/app.scss */
 .skills-section:before {
@@ -1090,30 +1089,29 @@
   background-color: #fff;
 }
 
-/* line 49, ../../sass/sass/_skills.scss */
+/* line 48, ../../sass/sass/_skills.scss */
 .skills-section:before {
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 53, ../../sass/sass/_skills.scss */
+/* line 52, ../../sass/sass/_skills.scss */
 .rotating-skills-container {
   width: 500px;
   height: 500px;
   border: 1px solid red;
-  margin-left: 20%;
   position: relative;
 }
 
-/* line 61, ../../sass/sass/_skills.scss */
+/* line 59, ../../sass/sass/_skills.scss */
 .rotating-skill {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 250px;
-  left: 250px;
+  top: 212px;
+  left: 212px;
 }
 
-/* line 69, ../../sass/sass/_skills.scss */
+/* line 67, ../../sass/sass/_skills.scss */
 .html-skill {
   -webkit-animation: rotate-html 50s linear infinite;
   -moz-animation: rotate-html 50s linear infinite;
@@ -1122,7 +1120,7 @@
   animation: rotate-html 50s linear infinite;
 }
 
-/* line 73, ../../sass/sass/_skills.scss */
+/* line 71, ../../sass/sass/_skills.scss */
 .css-skill {
   -webkit-animation: rotate-css 50s linear infinite;
   -moz-animation: rotate-css 50s linear infinite;
@@ -1131,7 +1129,7 @@
   animation: rotate-css 50s linear infinite;
 }
 
-/* line 77, ../../sass/sass/_skills.scss */
+/* line 75, ../../sass/sass/_skills.scss */
 .js-skill {
   -webkit-animation: rotate-js 50s linear infinite;
   -moz-animation: rotate-js 50s linear infinite;
@@ -1140,7 +1138,7 @@
   animation: rotate-js 50s linear infinite;
 }
 
-/* line 81, ../../sass/sass/_skills.scss */
+/* line 79, ../../sass/sass/_skills.scss */
 .java-skill {
   -webkit-animation: rotate-java 50s linear infinite;
   -moz-animation: rotate-java 50s linear infinite;
@@ -1149,7 +1147,7 @@
   animation: rotate-java 50s linear infinite;
 }
 
-/* line 85, ../../sass/sass/_skills.scss */
+/* line 83, ../../sass/sass/_skills.scss */
 .git-skill {
   -webkit-animation: rotate-git 50s linear infinite;
   -moz-animation: rotate-git 50s linear infinite;
@@ -1158,7 +1156,7 @@
   animation: rotate-git 50s linear infinite;
 }
 
-/* line 89, ../../sass/sass/_skills.scss */
+/* line 87, ../../sass/sass/_skills.scss */
 .linux-skill {
   -webkit-animation: rotate-linux 50s linear infinite;
   -moz-animation: rotate-linux 50s linear infinite;
@@ -1167,7 +1165,7 @@
   animation: rotate-linux 50s linear infinite;
 }
 
-/* line 93, ../../sass/sass/_skills.scss */
+/* line 91, ../../sass/sass/_skills.scss */
 .primefaces-skill {
   -webkit-animation: rotate-primefaces 50s linear infinite;
   -moz-animation: rotate-primefaces 50s linear infinite;
@@ -1176,13 +1174,26 @@
   animation: rotate-primefaces 50s linear infinite;
 }
 
-/* line 97, ../../sass/sass/_skills.scss */
+/* line 95, ../../sass/sass/_skills.scss */
 .sass-skill {
   -webkit-animation: rotate-sass 50s linear infinite;
   -moz-animation: rotate-sass 50s linear infinite;
   -o-animation: rotate-sass 50s linear infinite;
   -ms-animation: rotate-sass 50s linear infinite;
   animation: rotate-sass 50s linear infinite;
+}
+
+/* line 99, ../../sass/sass/_skills.scss */
+.skills-callout {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 220px;
+}
+
+/* line 106, ../../sass/sass/_skills.scss */
+.skills-callout {
+  display: none;
 }
 
 @-webkit-keyframes planet-rotation {

@@ -1,5 +1,6 @@
 $(function(){
   addClickEvents();
+  skillsCalloutFader();
 });
 
 function addClickEvents(){
