@@ -678,6 +678,11 @@
   margin: 48px 0 0 60px;
 }
 
+/* line 56, ../../sass/sass/_skills.scss */
+.skills-column {
+  float: left;
+}
+
 @-webkit-keyframes planet-rotation {
   0% {
     -webkit-transform: rotate(0deg) translateZ(0);
