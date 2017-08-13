@@ -1,41 +1,6 @@
-@include keyframes(rotate-html){
-    from{@include transform(rotate(0deg) translateX(150px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateX(150px) rotate(-360deg))}
-}
-
-@include keyframes(rotate-css){
-    from{@include transform(rotate(0deg) translateX(-150px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateX(-150px) rotate(-360deg))}
-}
-
-@include keyframes(rotate-js){
-    from{@include transform(rotate(0deg) translateY(-150px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateY(-150px) rotate(-360deg))}
-}
-
-@include keyframes(rotate-java){
-    from{@include transform(rotate(0deg) translateY(150px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateY(150px) rotate(-360deg))}
-}
-
-@include keyframes(rotate-git){
-    from{@include transform(rotate(0deg) translateX(110px) translateY(110px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateX(110px) translateY(110px) rotate(-360deg))}
-}
-
-@include keyframes(rotate-linux){
-    from{@include transform(rotate(0deg) translateX(110px) translateY(-110px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateX(110px) translateY(-110px) rotate(-360deg))}
-}
-
-@include keyframes(rotate-primefaces){
-    from{@include transform(rotate(0deg) translateX(-110px) translateY(-110px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateX(-110px) translateY(-110px) rotate(-360deg))}
-}
-
-@include keyframes(rotate-sass){
-    from{@include transform(rotate(0deg) translateX(-110px) translateY(110px) rotate(0deg))}
-    to{@include transform(rotate(360deg) translateX(-110px) translateY(110px) rotate(-360deg))}
+@include keyframes(menu-box-rotation-clockwise){
+  0%{@include transform(rotate(45deg) translateZ(0))}
+  100%{@include transform(rotate(135deg) translateZ(0))}
 }
 
 .skills-section{
@@ -48,50 +13,42 @@
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-.rotating-skills-container{
-    width: 500px;
-    height: 500px;
-    border: 1px solid red;
-    margin-left: 20%;
+.skills-section-inner{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.skills-square{
     position: relative;
+    width: 200px;
+    height: 200px;
 }
 
-.rotating-skill{
-    width: 50px;
-    height: 50px;
+.skill-square-outer{
+    width: 100%;
+    height: 100%;
+    border: 3px solid $lite-green;
+    position: relative;
+    background-color: rgba(44,27,61, 0.4);
+    @include transform(rotate(-45deg) translateZ(0));
+}
+.skills-square-inner{
     position: absolute;
-    top: 250px;
-    left: 250px;
+    top: -14px;
+    left: 14px;
+    border: 3px solid #28af60;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44,27,61, 0.4);
+    z-index: -1;
 }
 
-.html-skill{
-    @include animation(rotate-html 50s linear infinite);
+.skills-square-content{
+    position: absolute;
+    top: 0;
 }
 
-.css-skill{
-    @include animation(rotate-css 50s linear infinite);
-}
-
-.js-skill{
-    @include animation(rotate-js 50s linear infinite);
-}
-
-.java-skill{
-    @include animation(rotate-java 50s linear infinite);
-}
-
-.git-skill{
-    @include animation(rotate-git 50s linear infinite);
-}
-
-.linux-skill{
-    @include animation(rotate-linux 50s linear infinite);
-}
-
-.primefaces-skill{
-    @include animation(rotate-primefaces 50s linear infinite);
-}
-
-.sass-skill{
-    @include animation(rotate-sass 50s linear infinite);
+.skills-icons{
+    margin: 48px 0 0 60px;
 }
