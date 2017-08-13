@@ -1,5 +1,6 @@
 $(function(){
   addClickEvents();
+  skillsCalloutFader();
 });
 
 function addClickEvents(){
@@ -23,3 +24,4 @@ function menuClick(){
 
   });
 }
+
