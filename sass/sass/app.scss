@@ -2,8 +2,7 @@
 $lite-green: #2ecc71;
 $purple: #2C1B3D;
 $white: #fff;
-
-//test-comment
+$lite-grey: #57595B;
 
 /*Mixins*/
 @mixin keyframes($animationName) {
@@ -93,6 +92,7 @@ $white: #fff;
 @import 'skills';
 @import 'aboutme';
 @import 'divider';
+@import 'contact';
 
 
 body{
