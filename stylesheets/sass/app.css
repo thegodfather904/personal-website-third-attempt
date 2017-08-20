@@ -753,7 +753,12 @@
 }
 
 /* line 70, ../../sass/sass/_skills.scss */
-.skills-square:hover .skill-square-outer {
+.skills-square:hover {
+  cursor: pointer;
+}
+
+/* line 74, ../../sass/sass/_skills.scss */
+.skills-square:hover .skill-square-outer, .skills-square.active-skill .skill-square-outer {
   -webkit-animation: menu-box-rotation-clockwise 1200ms forwards;
   -moz-animation: menu-box-rotation-clockwise 1200ms forwards;
   -o-animation: menu-box-rotation-clockwise 1200ms forwards;
@@ -762,8 +767,8 @@
   background-color: #2ecc71;
 }
 
-/* line 74, ../../sass/sass/_skills.scss */
-.skills-square:hover .skills-square-inner {
+/* line 80, ../../sass/sass/_skills.scss */
+.skills-square:hover .skills-square-inner, .skills-square.active-skill .skills-square-inner {
   -webkit-animation: menu-box-rotation-counter 1200ms forwards;
   -moz-animation: menu-box-rotation-counter 1200ms forwards;
   -o-animation: menu-box-rotation-counter 1200ms forwards;

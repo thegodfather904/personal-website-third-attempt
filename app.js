@@ -23,3 +23,15 @@ function menuClick(){
 
   });
 }
+
+function skillsSquareClick(element){
+  $(element).addClass('active-skill');
+
+  $('.skills-section-inner .skills-column').children().each(function(index){
+    if(!$(this).hasClass('active-skill')){
+      $(this).delay(100 * index).animate({
+        opacity: 0
+      })
+    }
+  })
+}

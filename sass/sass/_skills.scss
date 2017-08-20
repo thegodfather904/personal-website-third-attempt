@@ -67,11 +67,17 @@
     margin-top: 84px;
 }
 
-.skills-square:hover .skill-square-outer{
+.skills-square:hover{
+    cursor: pointer;
+}
+
+.skills-square:hover .skill-square-outer, .skills-square.active-skill .skill-square-outer{
     @include animation(menu-box-rotation-clockwise 1200ms forwards); 
     background-color: $lite-green;
 }
-.skills-square:hover .skills-square-inner{
+
+
+.skills-square:hover .skills-square-inner, .skills-square.active-skill .skills-square-inner{
     @include animation(menu-box-rotation-counter 1200ms forwards); 
     background-color: $purple;
 }
