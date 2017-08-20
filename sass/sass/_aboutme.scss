@@ -6,8 +6,8 @@
 .about-me-section{
     padding-top: 16px;
     height: 500px;
-    @include angle-before(-4deg, 20%, -2%, $white);
-    @include angle-after(4deg, 20%, -2%, $white);
+    @include angle-before(-4deg, 35%, -2%, $white);
+    @include angle-after(4deg, 35%, -2%, $white);
 }
 
 .about-me-section:before{
