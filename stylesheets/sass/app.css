@@ -777,6 +777,72 @@
   background-color: #2C1B3D;
 }
 
+@media only screen and (max-width: 1200px) {
+  /* line 88, ../../sass/sass/_skills.scss */
+  .skills-section-inner {
+    width: 950px;
+  }
+
+  /* line 92, ../../sass/sass/_skills.scss */
+  .skills-square {
+    width: 190px;
+    height: 190px;
+  }
+
+  /* line 97, ../../sass/sass/_skills.scss */
+  .skills-icons {
+    margin: 62px 0 0 60px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  /* line 103, ../../sass/sass/_skills.scss */
+  .skills-section-inner .skills-column:nth-of-type(3) {
+    clear: left;
+  }
+
+  /* line 107, ../../sass/sass/_skills.scss */
+  .skills-section-inner .skills-column:nth-of-type(3), .skills-section-inner .skills-column:nth-of-type(4) {
+    margin-top: 78px;
+  }
+
+  /* line 111, ../../sass/sass/_skills.scss */
+  .skills-square {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* line 116, ../../sass/sass/_skills.scss */
+  .skills-icons {
+    margin: 86px 0 0 86px;
+  }
+
+  /* line 120, ../../sass/sass/_skills.scss */
+  .skills-section-inner {
+    width: 578px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 127, ../../sass/sass/_skills.scss */
+  .skills-square {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* line 132, ../../sass/sass/_skills.scss */
+  .skills-icons {
+    margin: 48px 0 0 46px;
+  }
+
+  /* line 136, ../../sass/sass/_skills.scss */
+  .skills-column .skills-square:nth-of-type(2) {
+    margin-top: 42px;
+  }
+
+  /* line 140, ../../sass/sass/_skills.scss */
+  .skills-section-inner {
+    width: 420px;
+  }
+}
 @-webkit-keyframes planet-rotation {
   0% {
     -webkit-transform: rotate(0deg) translateZ(0);
