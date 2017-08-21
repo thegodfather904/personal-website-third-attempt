@@ -33,5 +33,14 @@ function skillsSquareClick(element){
         opacity: 0
       })
     }
-  })
+  });
+
+  setTimeout(function(){
+    $('.skills-section-inner').addClass('skill-is-active');
+    $(element).animate({
+      width: '100%',
+      height: '100%'
+    });
+  }, 1000);
+
 }

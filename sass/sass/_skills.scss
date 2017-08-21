@@ -5,7 +5,7 @@
 
 @include keyframes(menu-box-rotation-counter){
     0%{@include transform(rotate(-45deg) translateZ(0))}
-    100%{@include transform(rotate(-135deg) translateZ(0))}
+    100%{@include transform(rotate(0deg) translateZ(0))}
   }
 
 .skills-section{
@@ -34,7 +34,7 @@
     width: 100%;
     height: 100%;
     border: 3px solid $lite-green;
-    position: relative;
+    position: absolute;
     background-color: rgba(44,27,61, 0.4);
     @include transform(rotate(-45deg) translateZ(0));
 }
@@ -46,7 +46,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(44,27,61, 0.4);
-    z-index: -1;
+    @include transform(rotate(-45deg) translateZ(0));
 }
 
 .skills-square-content{
@@ -82,6 +82,30 @@
     background-color: $purple;
 }
 
+
+
+.skills-section-inner.skill-is-active{
+    height: 500px;
+}
+
+.skills-section-inner.skill-is-active .skills-column{
+    float: none;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-section-inner.skill-is-active .skill-square-outer{
+    width: 240px;
+    height: 240px;
+}
+
+.skills-section-inner.skill-is-active .skills-square{
+    /* width: 100%;
+    height: 100%; */
+    width: 240px;
+    height: 240px;
+    overflow: visible !important;
+}
 
 @media only screen and(max-width: 1200px){
 
