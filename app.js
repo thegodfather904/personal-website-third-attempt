@@ -50,7 +50,7 @@ function skillsSquareClick(element, skillsColumnIndex) {
       width: '100%',
       height: '100%'
     }, function() {
-      currentInterval = generateParticelForId('htmlCanvas');
+      currentInterval = generateParticelForId($(element).find('canvas').attr('id'));
     });
     $(element).find('.skills-square-content').fadeOut();
     $(element).find('.skills-square-inner-hidden').fadeIn();
