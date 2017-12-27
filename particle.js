@@ -1,8 +1,8 @@
 var radius = 2;
 
 $(function(){
-    generateParticelForId('alternateDiminsionStar');
-    generateParticelForId('dividerCanvas');
+    var diminsionInterval = generateParticelForId('alternateDiminsionStar');
+    //generateParticelForId('dividerCanvas');
 });
 
 function generateParticelForId(id) {
@@ -20,6 +20,8 @@ function generateParticelForId(id) {
     draw = setInterval(function(){
         update(particles, ctx, canvasWidth, canvasHeight);
     }, speed);
+
+    return draw;
 }
 
 function update(particles, ctx, canvasWidth, canvasHeight){

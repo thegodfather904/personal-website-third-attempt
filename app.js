@@ -1,3 +1,5 @@
+var currentInterval;
+
 $(function () {
   addClickEvents();
 });
@@ -47,14 +49,19 @@ function skillsSquareClick(element, skillsColumnIndex) {
     $(element).animate({
       width: '100%',
       height: '100%'
+    }, function() {
+      currentInterval = generateParticelForId('htmlCanvas');
     });
     $(element).find('.skills-square-content').fadeOut();
     $(element).find('.skills-square-inner-hidden').fadeIn();
   }, 1000);
+
 }
 
 $(".skills-close-container").click(function (event) {
   event.stopPropagation();
+
+  clearInterval(currentInterval);
 
   var skillsSquare = $(this).closest('.skills-square');
   skillsSquare.find('.skills-square-inner-hidden').fadeOut();
