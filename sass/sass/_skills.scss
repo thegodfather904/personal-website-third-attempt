@@ -70,6 +70,10 @@
     cursor: pointer;
 }
 
+.skills-square.active-skill:hover {
+    cursor: default;
+}
+
 .skills-square:hover .skill-square-outer, .skills-square.active-skill .skill-square-outer{
     @include animation(menu-box-rotation-clockwise 1200ms forwards); 
     background-color: $lite-green;
@@ -178,6 +182,22 @@
     overflow: hidden;
     background-color: #000;
     position: absolute;
+  }
+
+  .skills-close-container {
+      position: absolute;
+      right: 0;
+      padding: 20px;
+  }
+
+  .skills-close-container i {
+      color: #fff;
+      font-size: 30px;
+  }
+
+  .skills-close-container:hover i{
+      color: $lite-green;
+      cursor: pointer;
   }
 
 @media only screen and(max-width: 1200px){
