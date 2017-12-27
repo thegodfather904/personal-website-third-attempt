@@ -42,6 +42,7 @@ function skillsSquareClick(element){
       height: '100%'
     });
     $(element).find('.skills-square-content').fadeOut();
+    $(element).find('.skills-square-inner-hidden').fadeIn();
   }, 1000);
 
 }
