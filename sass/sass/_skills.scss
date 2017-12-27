@@ -48,6 +48,10 @@
     overflow: hidden;
 }
 
+.skill-square-outer, .skills-square-inner {
+    border-radius: 12px;
+}
+
 .skills-square-content{
     position: absolute;
     top: 0;

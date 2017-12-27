@@ -734,38 +734,43 @@
 }
 
 /* line 51, ../../sass/sass/_skills.scss */
+.skill-square-outer, .skills-square-inner {
+  border-radius: 12px;
+}
+
+/* line 55, ../../sass/sass/_skills.scss */
 .skills-square-content {
   position: absolute;
   top: 0;
 }
 
-/* line 56, ../../sass/sass/_skills.scss */
+/* line 60, ../../sass/sass/_skills.scss */
 .skills-icons {
   margin: 86px 0 0 86px;
 }
 
-/* line 60, ../../sass/sass/_skills.scss */
+/* line 64, ../../sass/sass/_skills.scss */
 .skills-column {
   float: left;
   padding: 0 22px;
 }
 
-/* line 65, ../../sass/sass/_skills.scss */
+/* line 69, ../../sass/sass/_skills.scss */
 .skills-column .skills-square:nth-of-type(2) {
   margin-top: 84px;
 }
 
-/* line 69, ../../sass/sass/_skills.scss */
+/* line 73, ../../sass/sass/_skills.scss */
 .skills-square:hover {
   cursor: pointer;
 }
 
-/* line 73, ../../sass/sass/_skills.scss */
+/* line 77, ../../sass/sass/_skills.scss */
 .skills-square.active-skill:hover {
   cursor: default;
 }
 
-/* line 77, ../../sass/sass/_skills.scss */
+/* line 81, ../../sass/sass/_skills.scss */
 .skills-square:hover .skill-square-outer, .skills-square.active-skill .skill-square-outer {
   -webkit-animation: menu-box-rotation-clockwise 1200ms forwards;
   -moz-animation: menu-box-rotation-clockwise 1200ms forwards;
@@ -775,7 +780,7 @@
   background-color: #2ecc71;
 }
 
-/* line 82, ../../sass/sass/_skills.scss */
+/* line 86, ../../sass/sass/_skills.scss */
 .skills-square:hover .skills-square-inner, .skills-square.active-skill .skills-square-inner {
   -webkit-animation: menu-box-rotation-counter 1200ms forwards;
   -moz-animation: menu-box-rotation-counter 1200ms forwards;
@@ -785,32 +790,32 @@
   background-color: #2C1B3D;
 }
 
-/* line 87, ../../sass/sass/_skills.scss */
+/* line 91, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active {
   height: 500px;
 }
 
-/* line 91, ../../sass/sass/_skills.scss */
+/* line 95, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skills-column {
   float: none;
   width: 100%;
   height: 100%;
 }
 
-/* line 97, ../../sass/sass/_skills.scss */
+/* line 101, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skill-square-outer {
   width: 240px;
   height: 240px;
 }
 
-/* line 102, ../../sass/sass/_skills.scss */
+/* line 106, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skills-square {
   width: 240px;
   height: 240px;
   overflow: visible !important;
 }
 
-/* line 108, ../../sass/sass/_skills.scss */
+/* line 112, ../../sass/sass/_skills.scss */
 .skills-square-inner-hidden {
   display: none;
   height: 100%;
@@ -849,7 +854,7 @@
     width: 730px;
     height: 730px;
 } */
-/* line 147, ../../sass/sass/_skills.scss */
+/* line 151, ../../sass/sass/_skills.scss */
 .planet-container {
   width: 300px;
   height: 300px;
@@ -859,7 +864,7 @@
   float: left;
 }
 
-/* line 156, ../../sass/sass/_skills.scss */
+/* line 160, ../../sass/sass/_skills.scss */
 .planet {
   width: 570px;
   height: 570px;
@@ -873,13 +878,13 @@
   left: -204px;
 }
 
-/* line 165, ../../sass/sass/_skills.scss */
+/* line 169, ../../sass/sass/_skills.scss */
 .planet-image {
   width: 100%;
   height: 100%;
 }
 
-/* line 170, ../../sass/sass/_skills.scss */
+/* line 174, ../../sass/sass/_skills.scss */
 .planet-overlay {
   position: absolute;
   top: 0;
@@ -889,7 +894,7 @@
   height: 301px;
 }
 
-/* line 179, ../../sass/sass/_skills.scss */
+/* line 183, ../../sass/sass/_skills.scss */
 .planet-container-inner {
   width: 300px;
   height: 300px;
@@ -898,87 +903,87 @@
   position: absolute;
 }
 
-/* line 187, ../../sass/sass/_skills.scss */
+/* line 191, ../../sass/sass/_skills.scss */
 .skills-close-container {
   position: absolute;
   right: 0;
   padding: 20px;
 }
 
-/* line 193, ../../sass/sass/_skills.scss */
+/* line 197, ../../sass/sass/_skills.scss */
 .skills-close-container i {
   color: #fff;
   font-size: 30px;
 }
 
-/* line 198, ../../sass/sass/_skills.scss */
+/* line 202, ../../sass/sass/_skills.scss */
 .skills-close-container:hover i {
   color: #2ecc71;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 205, ../../sass/sass/_skills.scss */
+  /* line 209, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 950px;
   }
 
-  /* line 209, ../../sass/sass/_skills.scss */
+  /* line 213, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 190px;
     height: 190px;
   }
 
-  /* line 214, ../../sass/sass/_skills.scss */
+  /* line 218, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 62px 0 0 60px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 220, ../../sass/sass/_skills.scss */
+  /* line 224, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3) {
     clear: left;
   }
 
-  /* line 224, ../../sass/sass/_skills.scss */
+  /* line 228, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3), .skills-section-inner .skills-column:nth-of-type(4) {
     margin-top: 78px;
   }
 
-  /* line 228, ../../sass/sass/_skills.scss */
+  /* line 232, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 240px;
     height: 240px;
   }
 
-  /* line 233, ../../sass/sass/_skills.scss */
+  /* line 237, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 86px 0 0 86px;
   }
 
-  /* line 237, ../../sass/sass/_skills.scss */
+  /* line 241, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 578px;
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 244, ../../sass/sass/_skills.scss */
+  /* line 248, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 160px;
     height: 160px;
   }
 
-  /* line 249, ../../sass/sass/_skills.scss */
+  /* line 253, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 48px 0 0 46px;
   }
 
-  /* line 253, ../../sass/sass/_skills.scss */
+  /* line 257, ../../sass/sass/_skills.scss */
   .skills-column .skills-square:nth-of-type(2) {
     margin-top: 42px;
   }
 
-  /* line 257, ../../sass/sass/_skills.scss */
+  /* line 261, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 420px;
   }
