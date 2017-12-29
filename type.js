@@ -1,56 +1,95 @@
-var TxtType = function (el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = period;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
+(function(){
+    diminsionTypeTextStart();
+})();
 
-TxtType.prototype.tick = function () {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+function diminsionTypeTextStart() {
+    var element = $('#typewriteTitle');
+    var toRotate = ["hello.", "my name is tony.", "i like to", "be creative.", "build things.", "innovate.", "let's build something, together."];
+    var period = 1000;
+    var isDeleting = false;
+    var loopNum = 0;
+    var txt = '';
+    typeText(element, toRotate, period, isDeleting, loopNum, txt, diminsionTypeTextMiddle);
+}
 
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+function diminsionTypeTextMiddle() {
+    $('#typewriteTitle').hide();
+    var element = $('#buildTitle');
+    var toRotate = ["building the web"];
+    var period = 1000;
+    var isDeleting = false;
+    var loopNum = 0;
+    var txt = '';
+    typeTextNoDeleting(element, toRotate, period, loopNum, txt, diminsionTypeTextEnd); 
+}
+function diminsionTypeTextEnd() {
+    $('#buildTitle span').removeClass('wrap');
+    $('#buildTitle').first('span').removeClass('wrap');
+    var element = $('#diminsionTitle');
+    var toRotate = ["from an alternate diminsion"];
+    var period = 1000;
+    var isDeleting = false;
+    var loopNum = 0;
+    var txt = '';
+    typeTextNoDeleting(element, toRotate, period, loopNum, txt, null);  
+}
+
+function typeText(el, toRotate, period, isDeleting, loopNum, txt, callBack) {
+    var i = loopNum % toRotate.length;
+    var fullTxt = toRotate[i];
+
+    if (isDeleting) {
+        txt = fullTxt.substring(0, txt.length - 1);
     } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        txt = fullTxt.substring(0, txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+    $(el).html('<span class="wrap">' + txt + '</span>');
 
-    var that = this;
     var delta = 200 - Math.random() * 100;
 
-    if (this.isDeleting) {
+    if (isDeleting) {
         delta /= 2;
     }
 
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
+    if (!isDeleting && txt === fullTxt) {
+        delta = period;
+        isDeleting = true;
+    } else if (isDeleting && txt === '') {
+        isDeleting = false;
+        loopNum++;
         delta = 500;
     }
 
-    if (this.loopNum < this.toRotate.length) {
+    if (loopNum < toRotate.length) {
         setTimeout(function () {
-            that.tick();
+            typeText(el, toRotate, period, isDeleting, loopNum, txt, callBack);
         }, delta);
+    } else if (callBack) {
+        callBack();
     }
-    else{
-        $('.typewriter-container').hide();
-        $('.diminsion-title').fadeIn();
+}
+
+function typeTextNoDeleting(el, toRotate, period, loopNum, txt, callBack) {
+    var i = loopNum % toRotate.length;
+    var fullTxt = toRotate[i];
+
+    txt = fullTxt.substring(0, txt.length + 1);
+
+    $(el).html('<span class="wrap">' + txt + '</span>');
+
+    var delta = 200 - Math.random() * 100;
+
+    if (txt === fullTxt) {
+        delta = period;
+        loopNum++;
     }
 
-};
-
-window.onload = function () {
-    var element = document.getElementById('typewriteTitle');
-    var toRotate = ["hello.", "my name is tony.", "i like to", "be creative.", "build things.", "innovate.", "let's build something, together."];
-    var period = 1000;
-    new TxtType(element, toRotate, period);
-};
+    if (loopNum < toRotate.length) {
+        setTimeout(function () {
+            typeTextNoDeleting(el, toRotate, period, loopNum, txt, callBack);
+        }, delta);
+    } else if (callBack) {
+        callBack();
+    } 
+}

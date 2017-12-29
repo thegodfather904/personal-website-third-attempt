@@ -329,22 +329,23 @@
 /* line 115, ../../sass/sass/_diminsion.scss */
 .typewrite {
   color: #fff;
-  font-size: 50px;
+  font-size: 60px;
   float: left;
   width: 100%;
-  padding-top: 300px;
   font-weight: bold;
 }
 
-/* line 124, ../../sass/sass/_diminsion.scss */
+/* line 123, ../../sass/sass/_diminsion.scss */
 .typewriter-container {
   text-align: center;
   overflow: hidden;
+  padding-top: 300px;
 }
 
 /* line 129, ../../sass/sass/_diminsion.scss */
 .wrap {
   border-right: 1px solid #fff;
+  padding-right: 2px;
 }
 
 /*Mixins*/
