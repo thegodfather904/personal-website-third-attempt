@@ -12,6 +12,15 @@ $purple: #2C1B3D;
 	100%{@include transform(rotate(45deg))}
 }
 
+@include keyframes(blinking-cursor){
+	0% {
+		box-shadow: 1px 0 #fff;
+	}
+	100% {
+		box-shadow: 0 0 #fff;
+	}
+}
+
 .alternate-diminsion-section{
   background-color: $purple;
   height: 800px;
@@ -127,7 +136,7 @@ $purple: #2C1B3D;
 }
 
 .wrap {
-	border-right: 1px solid #fff;
+	@include animation(blinking-cursor 1200ms infinite);
 	padding-right: 2px;
 }
 

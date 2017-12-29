@@ -4,7 +4,8 @@
 
 function diminsionTypeTextStart() {
     var element = $('#typewriteTitle');
-    var toRotate = ["hello.", "my name is tony.", "i like to", "be creative.", "build things.", "innovate.", "let's build something, together."];
+    //var toRotate = ["hello.", "my name is tony.", "i like to", "be creative.", "build things.", "innovate.", "let's build something, together."];
+    var toRotate = ["t"]; 
     var period = 1000;
     var isDeleting = false;
     var loopNum = 0;

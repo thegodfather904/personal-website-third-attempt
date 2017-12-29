@@ -185,13 +185,45 @@
     transform: rotate(45deg);
   }
 }
-/* line 15, ../../sass/sass/_diminsion.scss */
+@-webkit-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #fff;
+  }
+  100% {
+    box-shadow: 0 0 #fff;
+  }
+}
+@-moz-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #fff;
+  }
+  100% {
+    box-shadow: 0 0 #fff;
+  }
+}
+@-o-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #fff;
+  }
+  100% {
+    box-shadow: 0 0 #fff;
+  }
+}
+@keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #fff;
+  }
+  100% {
+    box-shadow: 0 0 #fff;
+  }
+}
+/* line 24, ../../sass/sass/_diminsion.scss */
 .alternate-diminsion-section {
   background-color: #2C1B3D;
   height: 800px;
 }
 
-/* line 25, ../../sass/sass/_diminsion.scss */
+/* line 34, ../../sass/sass/_diminsion.scss */
 .diminsion-title {
   color: #fff;
   font-size: 50px;
@@ -201,18 +233,18 @@
   display: none;
 }
 
-/* line 34, ../../sass/sass/_diminsion.scss */
+/* line 43, ../../sass/sass/_diminsion.scss */
 .diminsion-title span {
   display: block;
   text-align: center;
 }
 
-/* line 39, ../../sass/sass/_diminsion.scss */
+/* line 48, ../../sass/sass/_diminsion.scss */
 .diminsion-title span:first-child {
   margin-bottom: 12px;
 }
 
-/* line 43, ../../sass/sass/_diminsion.scss */
+/* line 52, ../../sass/sass/_diminsion.scss */
 .menu-button {
   position: fixed;
   top: 48px;
@@ -224,12 +256,12 @@
   z-index: 3;
 }
 
-/* line 54, ../../sass/sass/_diminsion.scss */
+/* line 63, ../../sass/sass/_diminsion.scss */
 .menu-button-open .horizontal-line {
   background-color: #2ecc71;
 }
 
-/* line 58, ../../sass/sass/_diminsion.scss */
+/* line 67, ../../sass/sass/_diminsion.scss */
 .horizontal-line {
   background-color: #2ecc71;
   width: 48%;
@@ -239,7 +271,7 @@
   margin-left: 19px;
 }
 
-/* line 67, ../../sass/sass/_diminsion.scss */
+/* line 76, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
@@ -248,7 +280,7 @@
   transform: translateY(-8px);
 }
 
-/* line 71, ../../sass/sass/_diminsion.scss */
+/* line 80, ../../sass/sass/_diminsion.scss */
 .horizontal-bottom-line {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
@@ -257,7 +289,7 @@
   transform: translateY(8px);
 }
 
-/* line 75, ../../sass/sass/_diminsion.scss */
+/* line 84, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line {
   -webkit-transition: all 277ms ease-in-out;
   -moz-transition: all 277ms ease-in-out;
@@ -266,12 +298,12 @@
   transition: all 277ms ease-in-out;
 }
 
-/* line 79, ../../sass/sass/_diminsion.scss */
+/* line 88, ../../sass/sass/_diminsion.scss */
 .menu-button:hover {
   cursor: pointer;
 }
 
-/* line 83, ../../sass/sass/_diminsion.scss */
+/* line 92, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-top-line {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -281,12 +313,12 @@
   background-color: #2ecc71;
 }
 
-/* line 88, ../../sass/sass/_diminsion.scss */
+/* line 97, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-middle-line {
   background-color: #2ecc71;
 }
 
-/* line 92, ../../sass/sass/_diminsion.scss */
+/* line 101, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-bottom-line {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -296,12 +328,12 @@
   background-color: #2ecc71;
 }
 
-/* line 97, ../../sass/sass/_diminsion.scss */
+/* line 106, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-middle-line {
   visibility: hidden;
 }
 
-/* line 101, ../../sass/sass/_diminsion.scss */
+/* line 110, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -310,7 +342,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 105, ../../sass/sass/_diminsion.scss */
+/* line 114, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;
@@ -319,14 +351,14 @@
   animation: horizontal-move-up 500ms forwards;
 }
 
-/* line 109, ../../sass/sass/_diminsion.scss */
+/* line 118, ../../sass/sass/_diminsion.scss */
 .star-canvas {
   position: absolute;
   width: 100%;
   height: 800px;
 }
 
-/* line 115, ../../sass/sass/_diminsion.scss */
+/* line 124, ../../sass/sass/_diminsion.scss */
 .typewrite {
   color: #fff;
   font-size: 60px;
@@ -335,16 +367,20 @@
   font-weight: bold;
 }
 
-/* line 123, ../../sass/sass/_diminsion.scss */
+/* line 132, ../../sass/sass/_diminsion.scss */
 .typewriter-container {
   text-align: center;
   overflow: hidden;
   padding-top: 300px;
 }
 
-/* line 129, ../../sass/sass/_diminsion.scss */
+/* line 138, ../../sass/sass/_diminsion.scss */
 .wrap {
-  border-right: 1px solid #fff;
+  -webkit-animation: blinking-cursor 1200ms infinite;
+  -moz-animation: blinking-cursor 1200ms infinite;
+  -o-animation: blinking-cursor 1200ms infinite;
+  -ms-animation: blinking-cursor 1200ms infinite;
+  animation: blinking-cursor 1200ms infinite;
   padding-right: 2px;
 }
 
