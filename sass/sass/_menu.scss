@@ -32,11 +32,10 @@
 }
 
 .box-outline{
-  border: 1px solid $lite-green;
+  border: 4px solid $lite-green;
   width: 400px;
   height: 400px;
   position: absolute;
-  opacity: .5;
   @include animation(menu-box-rotation-clockwise 1200ms forwards); 
 }
 
@@ -47,6 +46,10 @@
   position: absolute;
   background-color: #2C1B3D;
   @include animation(menu-box-rotation-counter 1200ms forwards);
+}
+
+.box-outline, .box-outline-shadow {
+  border-radius: 12px;
 }
 
 .menu-items{
