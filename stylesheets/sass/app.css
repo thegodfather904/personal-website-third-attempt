@@ -198,20 +198,21 @@
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 300px;
+  display: none;
 }
 
-/* line 33, ../../sass/sass/_diminsion.scss */
+/* line 34, ../../sass/sass/_diminsion.scss */
 .diminsion-title span {
   display: block;
   text-align: center;
 }
 
-/* line 38, ../../sass/sass/_diminsion.scss */
+/* line 39, ../../sass/sass/_diminsion.scss */
 .diminsion-title span:first-child {
   margin-bottom: 12px;
 }
 
-/* line 42, ../../sass/sass/_diminsion.scss */
+/* line 43, ../../sass/sass/_diminsion.scss */
 .menu-button {
   position: fixed;
   top: 48px;
@@ -223,12 +224,12 @@
   z-index: 3;
 }
 
-/* line 53, ../../sass/sass/_diminsion.scss */
+/* line 54, ../../sass/sass/_diminsion.scss */
 .menu-button-open .horizontal-line {
   background-color: #2ecc71;
 }
 
-/* line 57, ../../sass/sass/_diminsion.scss */
+/* line 58, ../../sass/sass/_diminsion.scss */
 .horizontal-line {
   background-color: #2ecc71;
   width: 48%;
@@ -238,7 +239,7 @@
   margin-left: 19px;
 }
 
-/* line 66, ../../sass/sass/_diminsion.scss */
+/* line 67, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
@@ -247,7 +248,7 @@
   transform: translateY(-8px);
 }
 
-/* line 70, ../../sass/sass/_diminsion.scss */
+/* line 71, ../../sass/sass/_diminsion.scss */
 .horizontal-bottom-line {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
@@ -256,7 +257,7 @@
   transform: translateY(8px);
 }
 
-/* line 74, ../../sass/sass/_diminsion.scss */
+/* line 75, ../../sass/sass/_diminsion.scss */
 .horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line {
   -webkit-transition: all 277ms ease-in-out;
   -moz-transition: all 277ms ease-in-out;
@@ -265,12 +266,12 @@
   transition: all 277ms ease-in-out;
 }
 
-/* line 78, ../../sass/sass/_diminsion.scss */
+/* line 79, ../../sass/sass/_diminsion.scss */
 .menu-button:hover {
   cursor: pointer;
 }
 
-/* line 82, ../../sass/sass/_diminsion.scss */
+/* line 83, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-top-line {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -280,12 +281,12 @@
   background-color: #2ecc71;
 }
 
-/* line 87, ../../sass/sass/_diminsion.scss */
+/* line 88, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-middle-line {
   background-color: #2ecc71;
 }
 
-/* line 91, ../../sass/sass/_diminsion.scss */
+/* line 92, ../../sass/sass/_diminsion.scss */
 .menu-button:hover .horizontal-bottom-line {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -295,12 +296,12 @@
   background-color: #2ecc71;
 }
 
-/* line 96, ../../sass/sass/_diminsion.scss */
+/* line 97, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-middle-line {
   visibility: hidden;
 }
 
-/* line 100, ../../sass/sass/_diminsion.scss */
+/* line 101, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -309,7 +310,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 104, ../../sass/sass/_diminsion.scss */
+/* line 105, ../../sass/sass/_diminsion.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;
@@ -318,11 +319,32 @@
   animation: horizontal-move-up 500ms forwards;
 }
 
-/* line 108, ../../sass/sass/_diminsion.scss */
+/* line 109, ../../sass/sass/_diminsion.scss */
 .star-canvas {
   position: absolute;
   width: 100%;
   height: 800px;
+}
+
+/* line 115, ../../sass/sass/_diminsion.scss */
+.typewrite {
+  color: #fff;
+  font-size: 50px;
+  float: left;
+  width: 100%;
+  padding-top: 300px;
+  font-weight: bold;
+}
+
+/* line 124, ../../sass/sass/_diminsion.scss */
+.typewriter-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 129, ../../sass/sass/_diminsion.scss */
+.wrap {
+  border-right: 1px solid #fff;
 }
 
 /*Mixins*/

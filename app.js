@@ -97,3 +97,4 @@ $(".skills-close-container").click(function (event) {
     $('.skills-section-inner').removeClass('skill-is-active');
   }, 400);
 });
+
