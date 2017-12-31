@@ -4,7 +4,6 @@ $purple: #2C1B3D;
 $white: #fff;
 $lite-grey: #57595B;
 
-
 /*Mixins*/
 @mixin keyframes($animationName) {
     @-webkit-keyframes #{$animationName} {

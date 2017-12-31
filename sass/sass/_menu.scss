@@ -11,8 +11,6 @@
   100%{@include transform(rotate(-135deg) translateZ(0))}
 }
 
-
-
 .menu{
   position: fixed;
   top: 0;
@@ -32,12 +30,11 @@
 }
 
 .box-outline{
-  border: 1px solid $lite-green;
-  /*transform: rotate(45deg) translateZ(0);*/
+  border: 4px solid $lite-green;
+  background-color: $lite-green;
   width: 400px;
   height: 400px;
   position: absolute;
-  opacity: .5;
   @include animation(menu-box-rotation-clockwise 1200ms forwards); 
 }
 
@@ -48,6 +45,11 @@
   position: absolute;
   background-color: #2C1B3D;
   @include animation(menu-box-rotation-counter 1200ms forwards);
+  z-index: 2;
+}
+
+.box-outline, .box-outline-shadow {
+  border-radius: 12px;
 }
 
 .menu-items{
@@ -55,6 +57,7 @@
   position: absolute;
   width: 246px;
   margin-left: 53px;
+  z-index: 3;
 }
 
 .menu-item{
@@ -74,6 +77,10 @@
   cursor: pointer;
 }
 
+.menu-item:hover a{
+  box-shadow: -4px 0 $lite-green;
+}
+
 .current-section{
-  border-left: 4px solid $lite-green;
+  box-shadow: -4px 0 $lite-green;
 }
