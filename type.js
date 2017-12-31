@@ -4,7 +4,7 @@
 
 function diminsionTypeTextStart() {
     var element = $('#typewriteTitle');
-    var toRotate = ["hello.", "my name is tony.", "i like to", "be creative.", "build things.", "innovate.", "let's build something, together."];
+    var toRotate = ["hello.", "my name is tony.", "i like to be creative.", "to build things.", "innovate.", "let's build something, together."];
     var period = 1000;
     var isDeleting = false;
     var loopNum = 0;
@@ -22,7 +22,7 @@ function diminsionTypeTextMiddle() {
         var loopNum = 0;
         var txt = '';
         typeTextNoDeleting(element, toRotate, period, loopNum, txt, diminsionTypeTextEnd); 
-    }, 5000);
+    }, 500);
 
 }
 function diminsionTypeTextEnd() {
@@ -56,7 +56,7 @@ function typeText(el, toRotate, period, isDeleting, loopNum, txt, callBack) {
     }
 
     if (!isDeleting && txt === fullTxt) {
-        delta = period + 500;
+        delta = period;
         isDeleting = true;
     } else if (isDeleting && txt === '') {
         isDeleting = false;

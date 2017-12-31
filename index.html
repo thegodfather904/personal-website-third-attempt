@@ -13,7 +13,7 @@
 
 <body>
     <header class="page-header">
-        <div class="menu-button">
+        <div class="menu-button" onclick="menuClick();">
             <span class="horizontal-line horizontal-top-line"></span>
             <span class="horizontal-line horizontal-middle-line"></span>
             <span class="horizontal-line horizontal-bottom-line"></span>
@@ -25,17 +25,17 @@
                 <div class="box-outline-shadow"></div>
                 <div class="box-outline"></div>
                 <div class="menu-items">
-                    <ul>
-                        <li class="menu-item">
+                    <ul id="menuList">
+                        <li class="menu-item" onclick="menuItemClick('alternateDimension', this)">
                             <a class="current-section">Home</a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item" onclick="menuItemClick('aboutMeSection', this)">
                             <a>About Me</a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item" onclick="menuItemClick('skillsSection', this)">
                             <a>My Skillset</a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item" onclick="menuItemClick('contactSection', this)">
                             <a>Contact</a>
                         </li>
                     </ul>
@@ -52,7 +52,7 @@
                 <div id="diminsionTitle" class="typewrite"></div>
             </div>
         </section>
-        <section class="about-me-section">
+        <section id="aboutMeSection" class="about-me-section">
             <div class="about-me-description">
                 <div class="title-upper">hello and welcome </div>
                 <div class="title-lower">to the other side</div>
@@ -67,7 +67,7 @@
         <section class="divider-section">
             <canvas id="dividerCanvas"></canvas>
         </section>
-        <section class="skills-section">
+        <section id="skillsSection" class="skills-section">
             <div class="skills-section-inner">
                 <div class="skills-column">
                     <div class="skills-square" onclick="skillsSquareClick(this, 0)">
@@ -259,7 +259,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section id="contactSection" class="contact-section">
             <div class="cool-project-text">got a cool project for me to work on?</div>
             <div class="email-container">
                 <a href="mailto:tonywritescode@gmail.com">

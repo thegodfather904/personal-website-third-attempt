@@ -1,28 +1,31 @@
 var currentInterval;
 
-$(function () {
-  addClickEvents();
-});
+function menuClick() {
 
-function addClickEvents() {
-  menuClick();
+  var menu = $('.menu');
+  var menuButton = $('.menu-button');
+
+  if (menuButton.hasClass('menu-button-open')) {
+    menuButton.removeClass('menu-button-open');
+    menu.fadeOut();
+  } else {
+    menuButton.addClass('menu-button-open');
+    menu.fadeIn();
+  }
 }
 
-function menuClick() {
-  $('.menu-button').click(function () {
+function menuItemClick(scrollTo, el) {
 
-    var menu = $('.menu');
-    var menuButton = $('.menu-button');
+  $('#menuList').find('.current-section').removeClass('current-section');
+  $(el).find('a').addClass('current-section');
 
-    if (menuButton.hasClass('menu-button-open')) {
-      menuButton.removeClass('menu-button-open');
-      menu.fadeOut();
-    } else {
-      menuButton.addClass('menu-button-open');
-      menu.fadeIn();
-    }
+  menuClick();
 
-  });
+  var scrollEl = $('#' + scrollTo);
+
+  $('html, body').animate({
+    scrollTop: scrollEl.offset().top
+  }, 1000);
 }
 
 function skillsSquareClick(element, skillsColumnIndex) {
@@ -35,10 +38,10 @@ function skillsSquareClick(element, skillsColumnIndex) {
       });
     }
   });
- 
-  setTimeout(function() {
+
+  setTimeout(function () {
     $('.skills-section-inner .skills-column').each(function (index) {
-      if(index !== skillsColumnIndex) {
+      if (index !== skillsColumnIndex) {
         $(this).fadeOut();
       }
     });
@@ -49,7 +52,7 @@ function skillsSquareClick(element, skillsColumnIndex) {
     $(element).animate({
       width: '100%',
       height: '100%'
-    }, function() {
+    }, function () {
       currentInterval = generateParticelForId($(element).find('canvas').attr('id'));
     });
     $(element).find('.skills-square-content').fadeOut();
@@ -73,19 +76,19 @@ $(".skills-close-container").click(function (event) {
   skillsSquare.css({
     overflow: 'initial'
   });
-  
-  setTimeout(function() {
+
+  setTimeout(function () {
     $('.skills-section-inner .skills-column').each(function (index) {
-        $(this).fadeIn();
+      $(this).fadeIn();
     });
   }, 400);
 
-  setTimeout(function() {
+  setTimeout(function () {
     skillsSquare.removeClass('active-skill');
     skillsSquare.find('.skills-square-content').fadeIn();
   }, 400);
 
-  setTimeout(function() {
+  setTimeout(function () {
     $('.skills-section-inner .skills-column').children().each(function (index) {
       if (!$(this).hasClass('active-skill')) {
         $(this).delay(100 * index).animate({
@@ -93,8 +96,7 @@ $(".skills-close-container").click(function (event) {
         });
       }
     });
-  
+
     $('.skills-section-inner').removeClass('skill-is-active');
   }, 400);
 });
-
