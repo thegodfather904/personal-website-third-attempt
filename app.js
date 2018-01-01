@@ -1,5 +1,20 @@
 var currentInterval;
 
+(function(){
+  titleOverlaySlideDown();  
+}());
+
+function titleOverlaySlideDown() {
+  var overlay = $('#titleOverlay');
+  var afterWidth = window.getComputedStyle(document.querySelector('#titleOverlay'), ':after').width.split('p')[0];
+  var finalWidth = overlay.width() + parseInt(afterWidth);
+  var width = '-' + finalWidth + 'px';
+  overlay.css({left: width, display: 'block'});
+  overlay.animate({
+    left: '0'
+  }, 500);
+}
+
 function menuClick() {
 
   var menu = $('.menu');
@@ -100,3 +115,11 @@ $(".skills-close-container").click(function (event) {
     $('.skills-section-inner').removeClass('skill-is-active');
   }, 400);
 });
+
+/*$('.stars-container').hover(function(){
+  console.log('stars-in');
+  $('.stars-container').css('background-color', '#2C1B3D');
+},function(){
+  console.log('stars-out');
+  $('.stars-container').css('background-color', '#e21838');
+});*/
