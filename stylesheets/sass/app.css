@@ -319,6 +319,38 @@
   animation: horizontal-move-up 500ms forwards;
 }
 
+@-webkit-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
+@-moz-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
+@-o-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
+@keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
 @-webkit-keyframes pulse-arrow {
   0% {
     bottom: 40px;
@@ -363,41 +395,14 @@
     bottom: 40px;
   }
 }
-/* line 13, ../../sass/sass/_diminsion.scss */
-.alternate-diminsion-section {
-  background-color: #2C1B3D;
-  height: 800px;
-}
-
-/* line 18, ../../sass/sass/_diminsion.scss */
-.diminsion-title {
-  color: #fff;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-top: 300px;
-  display: none;
-}
-
-/* line 27, ../../sass/sass/_diminsion.scss */
-.diminsion-title span {
-  display: block;
-  text-align: center;
-}
-
-/* line 32, ../../sass/sass/_diminsion.scss */
-.diminsion-title span:first-child {
-  margin-bottom: 12px;
-}
-
-/* line 36, ../../sass/sass/_diminsion.scss */
+/* line 22, ../../sass/sass/_diminsion.scss */
 .star-canvas {
   position: absolute;
   width: 100%;
   height: 800px;
 }
 
-/* line 42, ../../sass/sass/_diminsion.scss */
+/* line 28, ../../sass/sass/_diminsion.scss */
 .typewrite {
   color: #000;
   font-size: 60px;
@@ -407,13 +412,13 @@
   text-align: left;
 }
 
-/* line 51, ../../sass/sass/_diminsion.scss */
+/* line 37, ../../sass/sass/_diminsion.scss */
 .typewriter-container {
   text-align: center;
   overflow: hidden;
 }
 
-/* line 56, ../../sass/sass/_diminsion.scss */
+/* line 42, ../../sass/sass/_diminsion.scss */
 .wrap {
   -webkit-animation: blinking-cursor 1200ms infinite;
   -moz-animation: blinking-cursor 1200ms infinite;
@@ -423,14 +428,14 @@
   padding-right: 2px;
 }
 
-/* line 67, ../../sass/sass/_diminsion.scss */
+/* line 53, ../../sass/sass/_diminsion.scss */
 .title-section {
   width: 100%;
   height: 100vh;
   border-bottom: 1px solid red;
 }
 
-/* line 73, ../../sass/sass/_diminsion.scss */
+/* line 59, ../../sass/sass/_diminsion.scss */
 .title-overlay {
   width: 60%;
   float: left;
@@ -443,7 +448,7 @@
   display: none;
 }
 
-/* line 85, ../../sass/sass/_diminsion.scss */
+/* line 71, ../../sass/sass/_diminsion.scss */
 .title-overlay:after {
   content: '';
   position: absolute;
@@ -460,7 +465,7 @@
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 97, ../../sass/sass/_diminsion.scss */
+/* line 83, ../../sass/sass/_diminsion.scss */
 .stars-container {
   width: 100%;
   height: 100%;
@@ -468,7 +473,7 @@
   position: absolute;
 }
 
-/* line 104, ../../sass/sass/_diminsion.scss */
+/* line 90, ../../sass/sass/_diminsion.scss */
 .title-type-container {
   position: absolute;
   width: 60%;
@@ -484,7 +489,7 @@
   margin-top: -50px;
 }
 
-/* line 115, ../../sass/sass/_diminsion.scss */
+/* line 101, ../../sass/sass/_diminsion.scss */
 .pulse-arrow-container {
   position: absolute;
   z-index: 2;
@@ -501,13 +506,13 @@
   color: #e21838;
 }
 
-/* line 127, ../../sass/sass/_diminsion.scss */
+/* line 113, ../../sass/sass/_diminsion.scss */
 .pulse-arrow-container:hover {
   color: #000;
   cursor: pointer;
 }
 
-/* line 132, ../../sass/sass/_diminsion.scss */
+/* line 118, ../../sass/sass/_diminsion.scss */
 .type-last-word {
   color: #e21838;
 }
