@@ -1,8 +1,19 @@
 var currentInterval;
 
 (function(){
-  titleOverlaySlideDown();  
+  onPageLoad();
 }());
+
+function onPageLoad() {
+  setTimeout(function(){
+    titleOverlaySlideDown();
+  }, 500);
+
+  setTimeout(function(){
+    diminsionTypeTextStart();
+    headerFadeIn();
+  },1500);
+}
 
 function titleOverlaySlideDown() {
   var overlay = $('#titleOverlay');
@@ -12,8 +23,33 @@ function titleOverlaySlideDown() {
   overlay.css({left: width, display: 'block'});
   overlay.animate({
     left: '0'
-  }, 500);
+  }, 750);
 }
+
+function headerFadeIn() {
+  $('#pageHeader').fadeIn();
+}
+
+var lastScrollTop = 0;
+$(window).scroll(function(){
+  var currentScrollTop = $(this).scrollTop();
+  var pageHeaderHeight = $('#pageHeader').outerHeight();
+  if(($('#pageHeader').hasClass('up-scroll')  || $('#pageHeader').hasClass('top')) && currentScrollTop > lastScrollTop){
+    $('#pageHeader').removeClass('up-scroll top').addClass('down-scroll');
+    $('#pageHeader').animate({
+      top: '-' + pageHeaderHeight + 'px'
+    }, 500);    
+  } else if($('#pageHeader').hasClass('down-scroll') && currentScrollTop < lastScrollTop){
+    $('#pageHeader').removeClass('down-scroll').addClass('up-scroll');
+    $('#pageHeader').animate({
+      top: '0'
+    }, 500);    
+  }
+  lastScrollTop = currentScrollTop;
+  if(lastScrollTop === 0){
+    $('#pageHeader').removeClass('up-scroll').addClass('top');
+  }
+});
 
 function menuClick() {
 

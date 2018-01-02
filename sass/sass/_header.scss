@@ -1,0 +1,112 @@
+@include keyframes(horizontal-move-down) {
+    0% {
+        @include transform(translateY(-8px))
+    }
+    50% {
+        @include transform(translateY(0px))
+    }
+    100% {
+        @include transform(rotate(-45deg))
+    }
+}
+
+@include keyframes(horizontal-move-up) {
+    0% {
+        @include transform(translateY(8px))
+    }
+    50% {
+        @include transform(translateY(0px))
+    }
+    100% {
+        @include transform(rotate(45deg))
+    }
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px 50px;
+    display: none;
+}
+
+.page-header.up-scroll {
+    background-color: #fff;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    opacity: .9;
+}
+
+.page-header.up-scroll .horizontal-line {
+    background-color: #000;
+}
+
+.my-name-container span {
+    color: $red;
+}
+
+.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 74px;
+    height: 48px;
+}
+
+.menu-button-open .horizontal-line {
+    background-color: #fff;
+}
+
+.horizontal-line {
+    background-color: #fff;
+    width: 48%;
+    height: 2px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 19px;
+}
+
+.horizontal-top-line {
+    @include transform(translateY(-8px));
+}
+
+.horizontal-bottom-line {
+    @include transform(translateY(8px));
+}
+
+.horizontal-top-line,
+.horizontal-middle-line,
+.horizontal-bottom-line {
+    @include transition(all 277ms ease-in-out);
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.menu-button:hover .horizontal-top-line {
+    @include transform(translateY(-10px));
+    background-color: #fff;
+}
+
+.menu-button:hover .horizontal-middle-line {
+    background-color: #fff;
+}
+
+.menu-button:hover .horizontal-bottom-line {
+    @include transform(translateY(10px));
+    background-color: #fff;
+}
+
+.menu-button.menu-button-open .horizontal-middle-line {
+    visibility: hidden;
+}
+
+.menu-button.menu-button-open .horizontal-top-line {
+    @include animation(horizontal-move-down 500ms forwards);
+}
+
+.menu-button.menu-button-open .horizontal-bottom-line {
+    @include animation(horizontal-move-up 500ms forwards);
+}

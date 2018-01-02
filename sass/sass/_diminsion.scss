@@ -1,24 +1,3 @@
-@include keyframes(horizontal-move-down){
-  	0%{@include transform(translateY(-8px))}
-	50%{@include transform(translateY(0px))}
-	100%{@include transform(rotate(-45deg))}
-}
-
-@include keyframes(horizontal-move-up){
-  	0%{@include transform(translateY(8px))}
-	50%{@include transform(translateY(0px))}
-	100%{@include transform(rotate(45deg))}
-}
-
-@include keyframes(blinking-cursor){
-	0% {
-		box-shadow: 1px 0 #000;
-	}
-	100% {
-		box-shadow: 0 0 #000;
-	}
-}
-
 @include keyframes(pulse-arrow){
 	0% {
 		bottom: 40px;	
@@ -52,72 +31,6 @@
 
 .diminsion-title span:first-child{
   margin-bottom: 12px;
-}
-
-.menu-button{
-	position: fixed;
-	top: 48px;
-	right: 0;
-	width: 74px;
-	height: 48px;
-	float: right;
-	margin-right: 134px;
-  	z-index: 3;
-}
-
-.menu-button-open .horizontal-line{
-  background-color: $lite-green;
-}
-
-.horizontal-line{
-	background-color: $lite-green;
-	width: 48%;
-	height: 2px;
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 19px;
-}
-
-.horizontal-top-line{
-	@include transform(translateY(-8px));
-}
-
-.horizontal-bottom-line{
-	@include transform(translateY(8px));
-}
-
-.horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line{
-	@include transition(all 277ms ease-in-out);
-}
-
-.menu-button:hover{
-	cursor: pointer;
-}
-
-.menu-button:hover .horizontal-top-line{
-	@include transform(translateY(-10px));
-	background-color: $lite-green;
-}
-
-.menu-button:hover .horizontal-middle-line{
-	background-color: $lite-green;
-}
-
-.menu-button:hover .horizontal-bottom-line{
-	@include transform(translateY(10px));
-	background-color: $lite-green;
-}
-
-.menu-button.menu-button-open .horizontal-middle-line{
-	visibility: hidden;
-}
-
-.menu-button.menu-button-open .horizontal-top-line{
-	@include animation(horizontal-move-down 500ms forwards);
-}
-
-.menu-button.menu-button-open .horizontal-bottom-line{
-	@include animation(horizontal-move-up 500ms forwards);
 }
 
 .star-canvas{
