@@ -14,7 +14,8 @@
 <body>
     <header id="pageHeader" class="page-header top">
         <div class="my-name-container">
-            tony<span>writes</span>code
+            tony
+            <span>writes</span>code
         </div>
         <div class="menu-button" onclick="menuClick();">
             <span class="horizontal-line horizontal-top-line"></span>
@@ -47,7 +48,6 @@
         </div>
     </nav>
     <main id="mainPageContent" class="main-page-content">
-
         <section class="title-section">
             <div id="titleOverlay" class="title-overlay"></div>
             <div class="stars-container">
@@ -74,9 +74,13 @@
                 </div>
             </div>
         </section>
-        <section class="divider-section">
-            <canvas id="dividerCanvas"></canvas>
-        </section>
+        <div class="divider-section-wrapper">
+            <section class="divider-section">
+                <canvas id="dividerCanvas"></canvas>
+            </section>
+            <div id="dividerOverlay" class="divider-overlay"></div>
+        </div>
+
         <section id="skillsSection" class="skills-section">
             <div class="skills-section-inner">
                 <div class="skills-column">

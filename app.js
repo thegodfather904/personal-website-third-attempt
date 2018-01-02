@@ -32,7 +32,12 @@ function headerFadeIn() {
 
 var lastScrollTop = 0;
 $(window).scroll(function(){
-  var currentScrollTop = $(this).scrollTop();
+  slideUpDownHeader();
+  dividerSlideIn();
+});
+
+function slideUpDownHeader() {
+  var currentScrollTop = $(document).scrollTop();
   var pageHeaderHeight = $('#pageHeader').outerHeight();
   if(($('#pageHeader').hasClass('up-scroll')  || $('#pageHeader').hasClass('top')) && currentScrollTop > lastScrollTop){
     $('#pageHeader').removeClass('up-scroll top').addClass('down-scroll');
@@ -49,7 +54,18 @@ $(window).scroll(function(){
   if(lastScrollTop === 0){
     $('#pageHeader').removeClass('up-scroll').addClass('top');
   }
-});
+}
+
+function dividerSlideIn() {
+  var currentScrollTop = $(document).scrollTop();
+  var pageBottom = currentScrollTop + $(window).height();
+  var dividerPosition = $('#dividerOverlay').position().top;
+  if(dividerPosition < pageBottom) {
+    $('#dividerOverlay').animate({
+      width: '0%'
+    }, 1750);
+  }
+}
 
 function menuClick() {
 
