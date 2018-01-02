@@ -3,6 +3,7 @@ $lite-green: #2ecc71;
 $purple: #2C1B3D;
 $white: #fff;
 $lite-grey: #57595B;
+$red: #e21838;
 
 /*Mixins*/
 @mixin keyframes($animationName) {
@@ -87,6 +88,7 @@ $lite-grey: #57595B;
 }
 
 /*imports*/
+@import 'header';
 @import 'diminsion';
 @import 'menu';
 @import 'skills';

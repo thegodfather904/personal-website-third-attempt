@@ -185,85 +185,51 @@
     transform: rotate(45deg);
   }
 }
-@-webkit-keyframes blinking-cursor {
-  0% {
-    box-shadow: 1px 0 #fff;
-  }
-  100% {
-    box-shadow: 0 0 #fff;
-  }
-}
-@-moz-keyframes blinking-cursor {
-  0% {
-    box-shadow: 1px 0 #fff;
-  }
-  100% {
-    box-shadow: 0 0 #fff;
-  }
-}
-@-o-keyframes blinking-cursor {
-  0% {
-    box-shadow: 1px 0 #fff;
-  }
-  100% {
-    box-shadow: 0 0 #fff;
-  }
-}
-@keyframes blinking-cursor {
-  0% {
-    box-shadow: 1px 0 #fff;
-  }
-  100% {
-    box-shadow: 0 0 #fff;
-  }
-}
-/* line 24, ../../sass/sass/_diminsion.scss */
-.alternate-diminsion-section {
-  background-color: #2C1B3D;
-  height: 800px;
-}
-
-/* line 34, ../../sass/sass/_diminsion.scss */
-.diminsion-title {
-  color: #fff;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-top: 300px;
+/* line 25, ../../sass/sass/_header.scss */
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 20px 50px;
   display: none;
 }
 
-/* line 43, ../../sass/sass/_diminsion.scss */
-.diminsion-title span {
-  display: block;
-  text-align: center;
+/* line 35, ../../sass/sass/_header.scss */
+.page-header.up-scroll {
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  opacity: .9;
 }
 
-/* line 48, ../../sass/sass/_diminsion.scss */
-.diminsion-title span:first-child {
-  margin-bottom: 12px;
+/* line 41, ../../sass/sass/_header.scss */
+.page-header.up-scroll .horizontal-line {
+  background-color: #000;
 }
 
-/* line 52, ../../sass/sass/_diminsion.scss */
+/* line 45, ../../sass/sass/_header.scss */
+.my-name-container span {
+  color: #e21838;
+}
+
+/* line 49, ../../sass/sass/_header.scss */
 .menu-button {
-  position: fixed;
-  top: 48px;
+  position: absolute;
+  top: 20px;
   right: 0;
   width: 74px;
   height: 48px;
-  float: right;
-  margin-right: 134px;
-  z-index: 3;
 }
 
-/* line 63, ../../sass/sass/_diminsion.scss */
+/* line 57, ../../sass/sass/_header.scss */
 .menu-button-open .horizontal-line {
-  background-color: #2ecc71;
+  background-color: #fff;
 }
 
-/* line 67, ../../sass/sass/_diminsion.scss */
+/* line 61, ../../sass/sass/_header.scss */
 .horizontal-line {
-  background-color: #2ecc71;
+  background-color: #fff;
   width: 48%;
   height: 2px;
   position: absolute;
@@ -271,7 +237,7 @@
   margin-left: 19px;
 }
 
-/* line 76, ../../sass/sass/_diminsion.scss */
+/* line 70, ../../sass/sass/_header.scss */
 .horizontal-top-line {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
@@ -280,7 +246,7 @@
   transform: translateY(-8px);
 }
 
-/* line 80, ../../sass/sass/_diminsion.scss */
+/* line 74, ../../sass/sass/_header.scss */
 .horizontal-bottom-line {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
@@ -289,8 +255,10 @@
   transform: translateY(8px);
 }
 
-/* line 84, ../../sass/sass/_diminsion.scss */
-.horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line {
+/* line 78, ../../sass/sass/_header.scss */
+.horizontal-top-line,
+.horizontal-middle-line,
+.horizontal-bottom-line {
   -webkit-transition: all 277ms ease-in-out;
   -moz-transition: all 277ms ease-in-out;
   -o-transition: all 277ms ease-in-out;
@@ -298,42 +266,42 @@
   transition: all 277ms ease-in-out;
 }
 
-/* line 88, ../../sass/sass/_diminsion.scss */
+/* line 84, ../../sass/sass/_header.scss */
 .menu-button:hover {
   cursor: pointer;
 }
 
-/* line 92, ../../sass/sass/_diminsion.scss */
+/* line 88, ../../sass/sass/_header.scss */
 .menu-button:hover .horizontal-top-line {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -o-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   transform: translateY(-10px);
-  background-color: #2ecc71;
+  background-color: #fff;
 }
 
-/* line 97, ../../sass/sass/_diminsion.scss */
+/* line 93, ../../sass/sass/_header.scss */
 .menu-button:hover .horizontal-middle-line {
-  background-color: #2ecc71;
+  background-color: #fff;
 }
 
-/* line 101, ../../sass/sass/_diminsion.scss */
+/* line 97, ../../sass/sass/_header.scss */
 .menu-button:hover .horizontal-bottom-line {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
   -o-transform: translateY(10px);
   -ms-transform: translateY(10px);
   transform: translateY(10px);
-  background-color: #2ecc71;
+  background-color: #fff;
 }
 
-/* line 106, ../../sass/sass/_diminsion.scss */
+/* line 102, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-middle-line {
   visibility: hidden;
 }
 
-/* line 110, ../../sass/sass/_diminsion.scss */
+/* line 106, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -342,7 +310,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 114, ../../sass/sass/_diminsion.scss */
+/* line 110, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;
@@ -351,30 +319,106 @@
   animation: horizontal-move-up 500ms forwards;
 }
 
-/* line 118, ../../sass/sass/_diminsion.scss */
+@-webkit-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
+@-moz-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
+@-o-keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
+@keyframes blinking-cursor {
+  0% {
+    box-shadow: 1px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 #000;
+  }
+}
+@-webkit-keyframes pulse-arrow {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  to {
+    bottom: 40px;
+  }
+}
+@-moz-keyframes pulse-arrow {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  to {
+    bottom: 40px;
+  }
+}
+@-o-keyframes pulse-arrow {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  to {
+    bottom: 40px;
+  }
+}
+@keyframes pulse-arrow {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  to {
+    bottom: 40px;
+  }
+}
+/* line 22, ../../sass/sass/_diminsion.scss */
 .star-canvas {
   position: absolute;
   width: 100%;
   height: 800px;
 }
 
-/* line 124, ../../sass/sass/_diminsion.scss */
+/* line 28, ../../sass/sass/_diminsion.scss */
 .typewrite {
-  color: #fff;
+  color: #000;
   font-size: 60px;
   float: left;
   width: 100%;
   font-weight: bold;
+  text-align: left;
 }
 
-/* line 132, ../../sass/sass/_diminsion.scss */
+/* line 37, ../../sass/sass/_diminsion.scss */
 .typewriter-container {
   text-align: center;
   overflow: hidden;
-  padding-top: 300px;
 }
 
-/* line 138, ../../sass/sass/_diminsion.scss */
+/* line 42, ../../sass/sass/_diminsion.scss */
 .wrap {
   -webkit-animation: blinking-cursor 1200ms infinite;
   -moz-animation: blinking-cursor 1200ms infinite;
@@ -382,6 +426,95 @@
   -ms-animation: blinking-cursor 1200ms infinite;
   animation: blinking-cursor 1200ms infinite;
   padding-right: 2px;
+}
+
+/* line 53, ../../sass/sass/_diminsion.scss */
+.title-section {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid red;
+}
+
+/* line 59, ../../sass/sass/_diminsion.scss */
+.title-overlay {
+  width: 60%;
+  float: left;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+  display: none;
+}
+
+/* line 71, ../../sass/sass/_diminsion.scss */
+.title-overlay:after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  right: -125px;
+  -webkit-transform: skewX(-16deg);
+  -moz-transform: skewX(-16deg);
+  -o-transform: skewX(-16deg);
+  -ms-transform: skewX(-16deg);
+  transform: skewX(-16deg);
+  height: 100%;
+  width: 250px;
+  transform-origin: 100%;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 83, ../../sass/sass/_diminsion.scss */
+.stars-container {
+  width: 100%;
+  height: 100%;
+  background-color: #e21838;
+  position: absolute;
+}
+
+/* line 90, ../../sass/sass/_diminsion.scss */
+.title-type-container {
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+
+/* line 101, ../../sass/sass/_diminsion.scss */
+.pulse-arrow-container {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 60px;
+  width: 60%;
+  text-align: center;
+  font-size: 70px;
+  -webkit-animation: pulse-arrow 2000ms ease-in-out infinite;
+  -moz-animation: pulse-arrow 2000ms ease-in-out infinite;
+  -o-animation: pulse-arrow 2000ms ease-in-out infinite;
+  -ms-animation: pulse-arrow 2000ms ease-in-out infinite;
+  animation: pulse-arrow 2000ms ease-in-out infinite;
+  color: #e21838;
+}
+
+/* line 113, ../../sass/sass/_diminsion.scss */
+.pulse-arrow-container:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+/* line 118, ../../sass/sass/_diminsion.scss */
+.type-last-word {
+  color: #e21838;
 }
 
 /*Mixins*/
@@ -762,7 +895,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 72, ../../sass/sass/app.scss */
+/* line 73, ../../sass/sass/app.scss */
 .skills-section:before {
   background: inherit;
   content: '';
@@ -1158,7 +1291,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 72, ../../sass/sass/app.scss */
+/* line 73, ../../sass/sass/app.scss */
 .about-me-section:before {
   background: inherit;
   content: '';
@@ -1174,7 +1307,7 @@
   transform-origin: -2%;
   background-color: #fff;
 }
-/* line 51, ../../sass/sass/app.scss */
+/* line 52, ../../sass/sass/app.scss */
 .about-me-section:after {
   background: inherit;
   content: '';
@@ -1471,7 +1604,7 @@
   color: #57595B;
 }
 
-/* line 98, ../../sass/sass/app.scss */
+/* line 100, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1479,12 +1612,12 @@ body {
   overflow-x: hidden;
 }
 
-/* line 105, ../../sass/sass/app.scss */
+/* line 107, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 109, ../../sass/sass/app.scss */
+/* line 111, ../../sass/sass/app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }

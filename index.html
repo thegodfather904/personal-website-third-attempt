@@ -12,7 +12,10 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <header id="pageHeader" class="page-header top">
+        <div class="my-name-container">
+            tony<span>writes</span>code
+        </div>
         <div class="menu-button" onclick="menuClick();">
             <span class="horizontal-line horizontal-top-line"></span>
             <span class="horizontal-line horizontal-middle-line"></span>
@@ -44,14 +47,36 @@
         </div>
     </nav>
     <main id="mainPageContent" class="main-page-content">
-        <section id="alternateDimension" class="alternate-diminsion-section large-block-section">
+
+        <section class="title-section">
+            <div id="titleOverlay" class="title-overlay"></div>
+            <div class="stars-container">
+                <canvas id="alternateDiminsionStar" class="star-canvas"></canvas>
+            </div>
+            <div class="title-type-container">
+                <div id="typewriteTitle" class="typewrite"></div>
+                <div id="buildTitle" class="typewrite"></div>
+                <div id="diminsionTitle" class="typewrite"></div>
+            </div>
+            <div class="pulse-arrow-container">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!--<section id="alternateDimension" class="alternate-diminsion-section large-block-section">
             <canvas id="alternateDiminsionStar" class="star-canvas"></canvas>
             <div class="typewriter-container">
                 <div id="typewriteTitle" class="typewrite"></div>
                 <div id="buildTitle" class="typewrite"></div>
                 <div id="diminsionTitle" class="typewrite"></div>
             </div>
-        </section>
+        </section>-->
         <section id="aboutMeSection" class="about-me-section">
             <div class="about-me-description">
                 <div class="title-upper">hello and welcome </div>

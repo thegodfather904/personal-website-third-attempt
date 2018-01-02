@@ -1,11 +1,8 @@
-(function(){
-    diminsionTypeTextStart();
-})();
-
 function diminsionTypeTextStart() {
     var element = $('#typewriteTitle');
-    var toRotate = ["hello.", "my name is tony.", "i like to be creative.", "to build things.", "innovate.", "let's build something, together."];
-    var period = 1000;
+    var toRotate = ["hello.", "my name is tony.", "i like to be creative.", "to build things."];
+    //var toRotate=["test"]; 
+    var period = 2500;
     var isDeleting = false;
     var loopNum = 0;
     var txt = '';
@@ -34,7 +31,17 @@ function diminsionTypeTextEnd() {
     var isDeleting = false;
     var loopNum = 0;
     var txt = '';
-    typeTextNoDeleting(element, toRotate, period, loopNum, txt, null);  
+    typeTextNoDeleting(element, toRotate, period, loopNum, txt, diminsionTypeTextComplete);  
+}
+
+function diminsionTypeTextComplete(){
+    var splitString = $('#diminsionTitle span').html().split(' ');
+     splitString[splitString.length - 1] = '<span class="type-last-word">' + splitString[splitString.length - 1] + '</span>';
+    var finalInner = ''; 
+    splitString.forEach(function(el){
+       finalInner += el + ' '; 
+    });
+    $('#diminsionTitle span').html(finalInner);
 }
 
 function typeText(el, toRotate, period, isDeleting, loopNum, txt, callBack) {
