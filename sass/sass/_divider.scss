@@ -1,9 +1,7 @@
 .divider-section{
-    background-color: $purple;
+    background-color: $red;
     height: 300px;
     width: 100%;
-    // @include angle-after(-4deg, 106px, $purple);
-    // @include angle-before(4deg, 106px, $purple);
 }
 
 .divider-section:before{
