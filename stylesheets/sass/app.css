@@ -926,17 +926,17 @@
 /* line 40, ../../sass/sass/_skills.scss */
 .skills-square {
   position: relative;
-  width: 240px;
-  height: 240px;
+  width: 180px;
+  height: 180px;
 }
 
 /* line 46, ../../sass/sass/_skills.scss */
 .skill-square-outer {
   width: 100%;
   height: 100%;
-  border: 3px solid #2ecc71;
+  border: 3px solid #e21838;
   position: absolute;
-  background-color: rgba(44, 27, 61, 0.4);
+  background-color: rgba(226, 24, 56, 0.4);
   -webkit-transform: rotate(-45deg) translateZ(0);
   -moz-transform: rotate(-45deg) translateZ(0);
   -o-transform: rotate(-45deg) translateZ(0);
@@ -947,10 +947,10 @@
 /* line 55, ../../sass/sass/_skills.scss */
 .skills-square-inner {
   position: absolute;
-  border: 3px solid #28af60;
+  border: 3px solid #e21838;
   width: 100%;
   height: 100%;
-  background-color: rgba(44, 27, 61, 0.4);
+  background-color: rgba(226, 24, 56, 0.4);
   -webkit-transform: rotate(-45deg) translateZ(0);
   -moz-transform: rotate(-45deg) translateZ(0);
   -o-transform: rotate(-45deg) translateZ(0);
@@ -962,7 +962,7 @@
 /* line 65, ../../sass/sass/_skills.scss */
 .skill-square-outer,
 .skills-square-inner {
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 /* line 70, ../../sass/sass/_skills.scss */
@@ -973,13 +973,13 @@
 
 /* line 75, ../../sass/sass/_skills.scss */
 .skills-icons {
-  margin: 86px 0 0 86px;
+  margin: 56px 0 0 56px;
 }
 
 /* line 79, ../../sass/sass/_skills.scss */
 .skills-column {
   float: left;
-  padding: 0 22px;
+  padding: 0 42px;
 }
 
 /* line 84, ../../sass/sass/_skills.scss */
@@ -1005,7 +1005,7 @@
   -o-animation: menu-box-rotation-clockwise 1200ms forwards;
   -ms-animation: menu-box-rotation-clockwise 1200ms forwards;
   animation: menu-box-rotation-clockwise 1200ms forwards;
-  background-color: #2ecc71;
+  background-color: #e21838;
 }
 
 /* line 102, ../../sass/sass/_skills.scss */
@@ -1016,7 +1016,7 @@
   -o-animation: menu-box-rotation-counter 1200ms forwards;
   -ms-animation: menu-box-rotation-counter 1200ms forwards;
   animation: menu-box-rotation-counter 1200ms forwards;
-  background-color: #2C1B3D;
+  background-color: #e21838;
 }
 
 /* line 108, ../../sass/sass/_skills.scss */
@@ -1033,14 +1033,14 @@
 
 /* line 118, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skill-square-outer {
-  width: 240px;
-  height: 240px;
+  width: 180px;
+  height: 180px;
 }
 
 /* line 123, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skills-square {
-  width: 240px;
-  height: 240px;
+  width: 180px;
+  height: 180px;
   overflow: visible !important;
 }
 
@@ -1048,10 +1048,9 @@
 .skills-square-inner-hidden {
   display: none;
   height: 100%;
-  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 135, ../../sass/sass/_skills.scss */
+/* line 134, ../../sass/sass/_skills.scss */
 .planet-container {
   width: 50%;
   height: 100%;
@@ -1060,7 +1059,7 @@
   float: left;
 }
 
-/* line 143, ../../sass/sass/_skills.scss */
+/* line 142, ../../sass/sass/_skills.scss */
 .planet {
   width: 570px;
   height: 570px;
@@ -1074,13 +1073,13 @@
   left: -204px;
 }
 
-/* line 152, ../../sass/sass/_skills.scss */
+/* line 151, ../../sass/sass/_skills.scss */
 .planet-image {
   width: 100%;
   height: 100%;
 }
 
-/* line 157, ../../sass/sass/_skills.scss */
+/* line 156, ../../sass/sass/_skills.scss */
 .planet-overlay {
   position: absolute;
   top: 0;
@@ -1090,7 +1089,7 @@
   height: 301px;
 }
 
-/* line 166, ../../sass/sass/_skills.scss */
+/* line 165, ../../sass/sass/_skills.scss */
 .planet-container-inner {
   width: 300px;
   height: 300px;
@@ -1106,40 +1105,40 @@
   margin-left: 15%;
 }
 
-/* line 177, ../../sass/sass/_skills.scss */
+/* line 176, ../../sass/sass/_skills.scss */
 .skills-close-container {
   position: absolute;
   right: 0;
   padding: 20px;
 }
 
-/* line 183, ../../sass/sass/_skills.scss */
+/* line 182, ../../sass/sass/_skills.scss */
 .skills-close-container i {
   color: #fff;
   font-size: 30px;
 }
 
-/* line 188, ../../sass/sass/_skills.scss */
+/* line 187, ../../sass/sass/_skills.scss */
 .skills-close-container:hover i {
   color: #2ecc71;
   cursor: pointer;
 }
 
-/* line 193, ../../sass/sass/_skills.scss */
+/* line 192, ../../sass/sass/_skills.scss */
 .skills-square-inner-hidden canvas {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-/* line 199, ../../sass/sass/_skills.scss */
+/* line 198, ../../sass/sass/_skills.scss */
 .planet-bio-container {
   float: left;
   width: 50%;
   height: 100%;
 }
 
-/* line 205, ../../sass/sass/_skills.scss */
+/* line 204, ../../sass/sass/_skills.scss */
 .alien-animate {
   width: 190px;
   height: 240px;
@@ -1152,68 +1151,68 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 213, ../../sass/sass/_skills.scss */
+  /* line 212, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 950px;
   }
 
-  /* line 216, ../../sass/sass/_skills.scss */
+  /* line 215, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 190px;
     height: 190px;
   }
 
-  /* line 220, ../../sass/sass/_skills.scss */
+  /* line 219, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 62px 0 0 60px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 226, ../../sass/sass/_skills.scss */
+  /* line 225, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3) {
     clear: left;
   }
 
-  /* line 229, ../../sass/sass/_skills.scss */
+  /* line 228, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3),
   .skills-section-inner .skills-column:nth-of-type(4) {
     margin-top: 78px;
   }
 
-  /* line 233, ../../sass/sass/_skills.scss */
+  /* line 232, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 240px;
     height: 240px;
   }
 
-  /* line 237, ../../sass/sass/_skills.scss */
+  /* line 236, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 86px 0 0 86px;
   }
 
-  /* line 240, ../../sass/sass/_skills.scss */
+  /* line 239, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 578px;
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 246, ../../sass/sass/_skills.scss */
+  /* line 245, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 160px;
     height: 160px;
   }
 
-  /* line 250, ../../sass/sass/_skills.scss */
+  /* line 249, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 48px 0 0 46px;
   }
 
-  /* line 253, ../../sass/sass/_skills.scss */
+  /* line 252, ../../sass/sass/_skills.scss */
   .skills-column .skills-square:nth-of-type(2) {
     margin-top: 42px;
   }
 
-  /* line 256, ../../sass/sass/_skills.scss */
+  /* line 255, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 420px;
   }

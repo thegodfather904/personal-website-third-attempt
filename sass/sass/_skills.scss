@@ -39,32 +39,32 @@
 
 .skills-square {
     position: relative;
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
 }
 
 .skill-square-outer {
     width: 100%;
     height: 100%;
-    border: 3px solid $lite-green;
+    border: 3px solid $red;
     position: absolute;
-    background-color: rgba(44, 27, 61, 0.4);
+    background-color: rgba(226,24,56, 0.4);
     @include transform(rotate(-45deg) translateZ(0));
 }
 
 .skills-square-inner {
     position: absolute;
-    border: 3px solid #28af60;
+    border: 3px solid $red;
     width: 100%;
     height: 100%;
-    background-color: rgba(44, 27, 61, 0.4);
+    background-color: rgba(226,24,56, 0.4);
     @include transform(rotate(-45deg) translateZ(0));
     overflow: hidden;
 }
 
 .skill-square-outer,
 .skills-square-inner {
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .skills-square-content {
@@ -73,12 +73,12 @@
 }
 
 .skills-icons {
-    margin: 86px 0 0 86px;
+    margin: 56px 0 0 56px;
 }
 
 .skills-column {
     float: left;
-    padding: 0 22px;
+    padding: 0 42px;
 }
 
 .skills-column .skills-square:nth-of-type(2) {
@@ -96,13 +96,13 @@
 .skills-square:hover .skill-square-outer,
 .skills-square.active-skill .skill-square-outer {
     @include animation(menu-box-rotation-clockwise 1200ms forwards);
-    background-color: $lite-green;
+    background-color: $red;
 }
 
 .skills-square:hover .skills-square-inner,
 .skills-square.active-skill .skills-square-inner {
     @include animation(menu-box-rotation-counter 1200ms forwards);
-    background-color: $purple;
+    background-color: $red;
 }
 
 .skills-section-inner.skill-is-active {
@@ -116,20 +116,19 @@
 }
 
 .skills-section-inner.skill-is-active .skill-square-outer {
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
 }
 
 .skills-section-inner.skill-is-active .skills-square {
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
     overflow: visible !important;
 }
 
 .skills-square-inner-hidden {
     display: none;
     height: 100%;
-    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .planet-container {
