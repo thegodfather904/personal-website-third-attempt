@@ -32,8 +32,10 @@ function headerFadeIn() {
 
 var lastScrollTop = 0;
 $(window).scroll(function(){
+  var currentScrollTop = $(document).scrollTop();
   slideUpDownHeader();
   dividerSlideIn();
+  skillsSlideIn(currentScrollTop);
 });
 
 function slideUpDownHeader() {
@@ -59,11 +61,26 @@ function slideUpDownHeader() {
 function dividerSlideIn() {
   var currentScrollTop = $(document).scrollTop();
   var pageBottom = currentScrollTop + $(window).height();
-  var dividerPosition = $('#dividerOverlay').position().top;
+  var dividerPosition = $('#dividerOverlay').offset().top;
   if(dividerPosition < pageBottom) {
     $('#dividerOverlay').animate({
       width: '0%'
     }, 1750);
+  }
+}
+
+function skillsSlideIn(currentScrollTop) {
+  var pageBottom = currentScrollTop + $(window).height();
+  var skillPosition = $('#skillsSectionInner').offset().top;
+  if(skillPosition < pageBottom) {
+    var width = $('.skills-row').width();
+    $('.skills-row').each(function(){
+      $(this).find('.skills-square').each(function(index){
+        $(this).animate({
+          left: (width/4) * index + 50 + 'px'
+        }, 1000);
+      });
+    });
   }
 }
 
@@ -95,31 +112,29 @@ function menuItemClick(scrollTo, el) {
   }, 1000);
 }
 
-function skillsSquareClick(element, skillsColumnIndex) {
+function skillsSquareClick(element) {
   $(element).addClass('active-skill');
 
-  $('.skills-section-inner .skills-column').children().each(function (index) {
+  $('.skills-square').each(function (index) {
     if (!$(this).hasClass('active-skill')) {
       $(this).delay(100 * index).animate({
         opacity: 0
+      });
+    }else {
+      $(this).delay(100 * index).animate({
+        left: '0',
+        top: '0'
       });
     }
   });
 
   setTimeout(function () {
-    $('.skills-section-inner .skills-column').each(function (index) {
-      if (index !== skillsColumnIndex) {
-        $(this).fadeOut();
-      }
-    });
-  }, 400);
-
-  setTimeout(function () {
     $('.skills-section-inner').addClass('skill-is-active');
+    
     $(element).animate({
       width: '100%',
-      height: '100%'
-    }, function () {
+      height: '500px'
+    }, 1000, function () {
       currentInterval = generateParticelForId($(element).find('canvas').attr('id'));
     });
     $(element).find('.skills-square-content').fadeOut();

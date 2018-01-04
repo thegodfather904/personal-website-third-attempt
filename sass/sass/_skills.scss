@@ -34,13 +34,26 @@
 
 .skills-section-inner {
     width: 1146px;
+    height: 100%;
     margin: 0 auto;
 }
 
 .skills-square {
-    position: relative;
+    position: absolute;
     width: 180px;
     height: 180px;
+    float: left;
+    //margin: 0 70px;
+    top: 0;
+    left: 0;
+}
+
+.skills-row .skills-square:first-child {
+    margin-left: 0;
+}
+
+.skills-row .skills-square:last-child {
+    margin-right: 0;
 }
 
 .skill-square-outer {
@@ -50,6 +63,7 @@
     position: absolute;
     background-color: rgba(226,24,56, 0.4);
     @include transform(rotate(-45deg) translateZ(0));
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0, 0.3);
 }
 
 .skills-square-inner {
@@ -129,6 +143,13 @@
 .skills-square-inner-hidden {
     display: none;
     height: 100%;
+}
+
+.skills-row {
+    width: 100%;
+    height: 50%;
+    clear: both;
+    position: relative;
 }
 
 .planet-container {
