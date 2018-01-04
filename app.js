@@ -62,17 +62,18 @@ function dividerSlideIn() {
   var currentScrollTop = $(document).scrollTop();
   var pageBottom = currentScrollTop + $(window).height();
   var dividerPosition = $('#dividerOverlay').offset().top;
-  if(dividerPosition < pageBottom) {
+  if(dividerPosition < pageBottom && !$('#dividerOverlay').hasClass('showing')) {
     $('#dividerOverlay').animate({
       width: '0%'
     }, 1750);
+    $('#dividerOverlay').addClass('showing');
   }
 }
 
 function skillsSlideIn(currentScrollTop) {
   var pageBottom = currentScrollTop + $(window).height();
   var skillPosition = $('#skillsSectionInner').offset().top;
-  if(skillPosition < pageBottom) {
+  if(skillPosition < pageBottom && !$('#skillsSectionInner').hasClass('showing')) {
     var width = $('.skills-row').width();
     $('.skills-row').each(function(){
       $(this).find('.skills-square').each(function(index){
@@ -81,6 +82,7 @@ function skillsSlideIn(currentScrollTop) {
         }, 1000);
       });
     });
+    $('#skillsSectionInner').addClass('showing');
   }
 }
 
@@ -121,10 +123,10 @@ function skillsSquareClick(element) {
         opacity: 0
       });
     }else {
-      $(this).delay(100 * index).animate({
-        left: '0',
-        top: '0'
-      });
+      $(this).animate({
+        top: '0',
+        left: '50px'
+      }, 1000);
     }
   });
 
@@ -151,17 +153,32 @@ $(".skills-close-container").click(function (event) {
   var skillsSquare = $(this).closest('.skills-square');
   skillsSquare.find('.skills-square-inner-hidden').fadeOut();
 
+  
+
   skillsSquare.animate({
-    width: '240px',
-    height: '240px',
+    width: '180px',
+    height: '180px',
   }, 300);
   skillsSquare.css({
     overflow: 'initial'
   });
 
   setTimeout(function () {
-    $('.skills-section-inner .skills-column').each(function (index) {
-      $(this).fadeIn();
+
+    $('.skills-row').each(function(){
+      $(this).find('.skills-square').each(function(index){
+        if(!$(this).hasClass('active-skill')){
+          $(this).delay(100 * index).animate({
+            opacity: 1
+          }); 
+        }
+        else {
+          var width = $('.skills-row').width();
+          $(this).animate({
+            left: (width/4) * index + 50 + 'px' 
+          });
+        } 
+      });
     });
   }, 400);
 
