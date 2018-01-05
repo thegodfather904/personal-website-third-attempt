@@ -78,7 +78,7 @@ function skillsSlideIn(currentScrollTop) {
     $('.skills-row').each(function(){
       $(this).find('.skills-square').each(function(index){
         $(this).animate({
-          left: (width/4) * index + 50 + 'px'
+          left: (width/4) * index + 80 + 'px'
         }, 1000);
       });
     });
@@ -125,7 +125,7 @@ function skillsSquareClick(element) {
     }else {
       $(this).animate({
         top: '0',
-        left: '50px'
+        left: '80px'
       }, 1000);
     }
   });
@@ -135,7 +135,7 @@ function skillsSquareClick(element) {
     
     $(element).animate({
       width: '100%',
-      height: '500px'
+      height: '400px'
     }, 1000, function () {
       currentInterval = generateParticelForId($(element).find('canvas').attr('id'));
     });
@@ -153,11 +153,9 @@ $(".skills-close-container").click(function (event) {
   var skillsSquare = $(this).closest('.skills-square');
   skillsSquare.find('.skills-square-inner-hidden').fadeOut();
 
-  
-
   skillsSquare.animate({
-    width: '180px',
-    height: '180px',
+    width: '130px',
+    height: '130px',
   }, 300);
   skillsSquare.css({
     overflow: 'initial'
@@ -175,7 +173,7 @@ $(".skills-close-container").click(function (event) {
         else {
           var width = $('.skills-row').width();
           $(this).animate({
-            left: (width/4) * index + 50 + 'px' 
+            left: (width/4) * index + 80 + 'px' 
           });
         } 
       });

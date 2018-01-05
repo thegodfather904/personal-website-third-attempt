@@ -24,7 +24,7 @@
 
 .skills-section {
     height: 800px;
-    padding-top: 150px;
+    padding-top: 20px;
     @include angle-before(-4deg, 20%, -2%, $white);
 }
 
@@ -40,8 +40,8 @@
 
 .skills-square {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
     float: left;
     top: 0;
     left: 0;
@@ -89,7 +89,7 @@
 }
 
 .skills-icons {
-    margin: 56px 0 0 56px;
+    margin: 31px 0 0 31px;
 }
 
 .skills-column {
@@ -132,13 +132,13 @@
 }
 
 .skills-section-inner.skill-is-active .skill-square-outer {
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
 }
 
 .skills-section-inner.skill-is-active .skills-square {
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
     overflow: visible !important;
 }
 
@@ -149,7 +149,7 @@
 
 .skills-row {
     width: 100%;
-    height: 50%;
+    height: 250px;
     clear: both;
     position: relative;
 }
@@ -237,6 +237,12 @@
     transform-origin: 100%;
     box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.3);
     background-color: $red;
+}
+
+.skills-section-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 @media only screen and(max-width: 1200px) {

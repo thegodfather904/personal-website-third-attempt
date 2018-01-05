@@ -1,0 +1,43 @@
+.personal-skills-section {
+    height: 500px;
+}
+
+.personal-skill-cntr {
+    overflow: hidden;
+    height: 150px;
+}
+
+.personal-skill-cntr .img-cntr {
+    position: relative;
+    float: left;
+    width: 146px;
+    height: 100%;
+}
+
+.blinking-dots {
+    position: absolute;
+    width: 146px;
+}
+
+.skills-face {
+    width: 100px;
+    position: absolute;
+    top: 14px;
+    left: 22px;
+}
+
+.personal-skill-info {
+    float: left;
+    margin: 24px 0 0 28px;
+}
+
+.personal-skill-info .title {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.personal-skill-info .info {
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 300;
+}

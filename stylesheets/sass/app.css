@@ -891,7 +891,7 @@
 /* line 25, ../../sass/sass/_skills.scss */
 .skills-section {
   height: 800px;
-  padding-top: 150px;
+  padding-top: 20px;
   position: relative;
   z-index: 1;
 }
@@ -927,8 +927,8 @@
 /* line 41, ../../sass/sass/_skills.scss */
 .skills-square {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   float: left;
   top: 0;
   left: 0;
@@ -992,7 +992,7 @@
 
 /* line 91, ../../sass/sass/_skills.scss */
 .skills-icons {
-  margin: 56px 0 0 56px;
+  margin: 31px 0 0 31px;
 }
 
 /* line 95, ../../sass/sass/_skills.scss */
@@ -1052,14 +1052,14 @@
 
 /* line 134, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skill-square-outer {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
 }
 
 /* line 139, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skills-square {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   overflow: visible !important;
 }
 
@@ -1072,7 +1072,7 @@
 /* line 150, ../../sass/sass/_skills.scss */
 .skills-row {
   width: 100%;
-  height: 50%;
+  height: 250px;
   clear: both;
   position: relative;
 }
@@ -1188,69 +1188,76 @@
   background-color: #e21838;
 }
 
+/* line 242, ../../sass/sass/_skills.scss */
+.skills-section-title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 1200px) {
-  /* line 243, ../../sass/sass/_skills.scss */
+  /* line 249, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 950px;
   }
 
-  /* line 246, ../../sass/sass/_skills.scss */
+  /* line 252, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 190px;
     height: 190px;
   }
 
-  /* line 250, ../../sass/sass/_skills.scss */
+  /* line 256, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 62px 0 0 60px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 256, ../../sass/sass/_skills.scss */
+  /* line 262, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3) {
     clear: left;
   }
 
-  /* line 259, ../../sass/sass/_skills.scss */
+  /* line 265, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3),
   .skills-section-inner .skills-column:nth-of-type(4) {
     margin-top: 78px;
   }
 
-  /* line 263, ../../sass/sass/_skills.scss */
+  /* line 269, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 240px;
     height: 240px;
   }
 
-  /* line 267, ../../sass/sass/_skills.scss */
+  /* line 273, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 86px 0 0 86px;
   }
 
-  /* line 270, ../../sass/sass/_skills.scss */
+  /* line 276, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 578px;
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 276, ../../sass/sass/_skills.scss */
+  /* line 282, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 160px;
     height: 160px;
   }
 
-  /* line 280, ../../sass/sass/_skills.scss */
+  /* line 286, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 48px 0 0 46px;
   }
 
-  /* line 283, ../../sass/sass/_skills.scss */
+  /* line 289, ../../sass/sass/_skills.scss */
   .skills-column .skills-square:nth-of-type(2) {
     margin-top: 42px;
   }
 
-  /* line 286, ../../sass/sass/_skills.scss */
+  /* line 292, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 420px;
   }
@@ -1669,20 +1676,72 @@
   color: #57595B;
 }
 
-/* line 100, ../../sass/sass/app.scss */
+/* line 1, ../../sass/sass/_personalskills.scss */
+.personal-skills-section {
+  height: 500px;
+}
+
+/* line 5, ../../sass/sass/_personalskills.scss */
+.personal-skill-cntr {
+  overflow: hidden;
+  height: 150px;
+}
+
+/* line 10, ../../sass/sass/_personalskills.scss */
+.personal-skill-cntr .img-cntr {
+  position: relative;
+  float: left;
+  width: 146px;
+  height: 100%;
+}
+
+/* line 17, ../../sass/sass/_personalskills.scss */
+.blinking-dots {
+  position: absolute;
+  width: 146px;
+}
+
+/* line 22, ../../sass/sass/_personalskills.scss */
+.skills-face {
+  width: 100px;
+  position: absolute;
+  top: 14px;
+  left: 22px;
+}
+
+/* line 29, ../../sass/sass/_personalskills.scss */
+.personal-skill-info {
+  float: left;
+  margin: 24px 0 0 28px;
+}
+
+/* line 34, ../../sass/sass/_personalskills.scss */
+.personal-skill-info .title {
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+
+/* line 39, ../../sass/sass/_personalskills.scss */
+.personal-skill-info .info {
+  text-transform: lowercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* line 101, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
 }
 
-/* line 107, ../../sass/sass/app.scss */
+/* line 108, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 111, ../../sass/sass/app.scss */
+/* line 112, ../../sass/sass/app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
