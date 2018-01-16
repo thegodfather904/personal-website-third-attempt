@@ -1,11 +1,14 @@
-var triangle = document.getElementById("rectangleStart");
-var length = triangle.getTotalLength();
+//ps1
+var ps1 = document.getElementById("personalSkill1");
+var ps1Length = ps1.getTotalLength();
+ps1.style.strokeDasharray = ps1Length;
+ps1.style.strokeDashoffset = ps1Length;
 
-// The start position of the drawing
-triangle.style.strokeDasharray = length;
-
-// Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
-triangle.style.strokeDashoffset = length;
+//ps2
+var ps2 = document.getElementById("personalSkill2");
+var ps2Length = ps1.getTotalLength();
+ps2.style.strokeDasharray = ps2Length;
+ps2.style.strokeDashoffset = ps2Length;
 
 // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
 window.addEventListener("scroll", myFunction);
@@ -21,10 +24,10 @@ function myFunction() {
         var amountScrolled = pageBottom - personalPosition;
         var percentScrolled = amountScrolled / $('#personalSkillsSection').height();
 
-        var draw = length * percentScrolled;
+        var draw = ps1Length * percentScrolled;
 
         // Reverse the drawing (when scrolling upwards)
-        triangle.style.strokeDashoffset = length - draw;
+        ps1.style.strokeDashoffset = ps1Length - draw;
     }else if (personalPosition < pageBottom && pageBottom >= personalPositionBottom) {
         $('#personalSkillCreative').fadeIn();
         $('#personalSkillsSvg').fadeOut();
