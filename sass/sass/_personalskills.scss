@@ -5,6 +5,7 @@
 .personal-skill-cntr {
     overflow: hidden;
     height: 150px;
+    display: none;
 }
 
 .personal-skill-cntr .img-cntr {
@@ -41,3 +42,20 @@
     font-size: 16px;
     font-weight: 300;
 }
+
+.personal-skills-canvas {
+    width: 100%;
+}
+
+.personal-skills-section svg {
+    width: 646px;
+    height: 156px;
+    position: absolute;
+}
+
+.personal-skills-wrapper {
+    margin-left: 90px;
+}
+
+
+
