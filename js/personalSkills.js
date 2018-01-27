@@ -4,12 +4,6 @@ var ps1Length = ps1.getTotalLength();
 ps1.style.strokeDasharray = ps1Length;
 ps1.style.strokeDashoffset = ps1Length;
 
-//ps2
-var ps2 = document.getElementById("personalSkill2");
-var ps2Length = ps1.getTotalLength();
-ps2.style.strokeDasharray = ps2Length;
-ps2.style.strokeDashoffset = ps2Length;
-
 // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
 window.addEventListener("scroll", myFunction);
 

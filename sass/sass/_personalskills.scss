@@ -1,11 +1,11 @@
 .personal-skills-section {
-    height: 500px;
+    //height: 500px;
 }
 
 .personal-skill-cntr {
     overflow: hidden;
     height: 150px;
-    display: none;
+    //display: none;
 }
 
 .personal-skill-cntr .img-cntr {
@@ -30,6 +30,10 @@
 .personal-skill-info {
     float: left;
     margin: 24px 0 0 28px;
+}
+
+.personal-skill-info.left {
+    margin: 24px 28px 0 0;
 }
 
 .personal-skill-info .title {

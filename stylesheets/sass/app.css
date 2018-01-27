@@ -1676,16 +1676,10 @@
   color: #57595B;
 }
 
-/* line 1, ../../sass/sass/_personalskills.scss */
-.personal-skills-section {
-  height: 500px;
-}
-
 /* line 5, ../../sass/sass/_personalskills.scss */
 .personal-skill-cntr {
   overflow: hidden;
   height: 150px;
-  display: none;
 }
 
 /* line 11, ../../sass/sass/_personalskills.scss */
@@ -1717,31 +1711,36 @@
 }
 
 /* line 35, ../../sass/sass/_personalskills.scss */
+.personal-skill-info.left {
+  margin: 24px 28px 0 0;
+}
+
+/* line 39, ../../sass/sass/_personalskills.scss */
 .personal-skill-info .title {
   font-size: 30px;
   margin-bottom: 4px;
 }
 
-/* line 40, ../../sass/sass/_personalskills.scss */
+/* line 44, ../../sass/sass/_personalskills.scss */
 .personal-skill-info .info {
   text-transform: lowercase;
   font-size: 16px;
   font-weight: 300;
 }
 
-/* line 46, ../../sass/sass/_personalskills.scss */
+/* line 50, ../../sass/sass/_personalskills.scss */
 .personal-skills-canvas {
   width: 100%;
 }
 
-/* line 50, ../../sass/sass/_personalskills.scss */
+/* line 54, ../../sass/sass/_personalskills.scss */
 .personal-skills-section svg {
   width: 646px;
   height: 156px;
   position: absolute;
 }
 
-/* line 56, ../../sass/sass/_personalskills.scss */
+/* line 60, ../../sass/sass/_personalskills.scss */
 .personal-skills-wrapper {
   margin-left: 90px;
   height: 146px;
