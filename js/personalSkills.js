@@ -1,3 +1,20 @@
+var t = '';
+var random;
+var dotBlink = '';
+for(x = 3.5; x < 1400; x+= 40.6){
+    for(y = 3.5; y < 360; y+= 40.6){
+        random = Math.random();
+        if(random > 0.8){
+            random = ' dot' + (Math.floor(Math.random() * 10) + 1);
+        }else{
+            random = '';
+        }
+        t += '<circle class="st0' + random + '" cx="' + x.toFixed(1)  + '" cy="' + y.toFixed(1) + '" r="2"/> \n';
+    }
+}
+
+console.log(t);
+
 //ps1
 var ps1 = document.getElementById("personalSkill1");
 var ps1Length = ps1.getTotalLength();
@@ -8,6 +25,9 @@ ps1.style.strokeDashoffset = ps1Length;
 window.addEventListener("scroll", myFunction);
 
 function myFunction() {
+
+
+
 
     var currentScrollTop = $(document).scrollTop();
     var pageBottom = currentScrollTop + $(window).height();

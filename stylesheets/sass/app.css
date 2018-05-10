@@ -1,6 +1,5 @@
 /*Site colors*/
 /*Mixins*/
-/*imports*/
 @-webkit-keyframes horizontal-move-down {
   0% {
     -webkit-transform: translateY(-8px);
@@ -1351,7 +1350,7 @@
   transform-origin: -2%;
   background-color: #fff;
 }
-/* line 52, ../../sass/sass/app.scss */
+/* line 53, ../../sass/sass/app.scss */
 .about-me-section:after {
   background: inherit;
   content: '';
@@ -1682,71 +1681,89 @@
   height: 150px;
 }
 
-/* line 11, ../../sass/sass/_personalskills.scss */
+/* line 10, ../../sass/sass/_personalskills.scss */
 .personal-skill-cntr .img-cntr {
-  position: relative;
-  float: left;
-  width: 146px;
-  height: 100%;
+  position: absolute;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
-/* line 18, ../../sass/sass/_personalskills.scss */
+/* line 15, ../../sass/sass/_personalskills.scss */
 .blinking-dots {
   position: absolute;
-  width: 146px;
 }
 
-/* line 23, ../../sass/sass/_personalskills.scss */
+/* line 19, ../../sass/sass/_personalskills.scss */
 .skills-face {
-  width: 100px;
-  position: absolute;
-  top: 14px;
-  left: 22px;
-}
-
-/* line 30, ../../sass/sass/_personalskills.scss */
-.personal-skill-info {
   float: left;
-  margin: 24px 0 0 28px;
+  width: 124px;
+  height: 146px;
 }
 
-/* line 35, ../../sass/sass/_personalskills.scss */
+/* line 25, ../../sass/sass/_personalskills.scss */
+.personal-skill-info {
+  position: absolute;
+  left: 150px;
+  top: 8px;
+}
+
+/* line 31, ../../sass/sass/_personalskills.scss */
 .personal-skill-info.left {
   margin: 24px 28px 0 0;
 }
 
+/* line 35, ../../sass/sass/_personalskills.scss */
+.personal-skills-section .personal-skills-wrapper:nth-of-type(2n) .personal-skill-info.left {
+  margin-left: 20%;
+}
+
 /* line 39, ../../sass/sass/_personalskills.scss */
 .personal-skill-info .title {
-  font-size: 30px;
+  font-size: 92px;
   margin-bottom: 4px;
 }
 
 /* line 44, ../../sass/sass/_personalskills.scss */
 .personal-skill-info .info {
   text-transform: lowercase;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
 }
 
-/* line 50, ../../sass/sass/_personalskills.scss */
+/* line 51, ../../sass/sass/_personalskills.scss */
 .personal-skills-canvas {
   width: 100%;
 }
 
-/* line 54, ../../sass/sass/_personalskills.scss */
+/* line 55, ../../sass/sass/_personalskills.scss */
 .personal-skills-section svg {
+  display: none;
   width: 646px;
   height: 156px;
   position: absolute;
 }
 
-/* line 60, ../../sass/sass/_personalskills.scss */
+/* line 62, ../../sass/sass/_personalskills.scss */
 .personal-skills-wrapper {
-  margin-left: 90px;
-  height: 146px;
+  width: 700px;
+  height: 170px;
+  border-radius: 8px;
+  background-color: #e21838;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  margin: 35px 0 35px 90px;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
-/* line 101, ../../sass/sass/app.scss */
+/* line 100, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1754,12 +1771,22 @@ body {
   overflow-x: hidden;
 }
 
-/* line 108, ../../sass/sass/app.scss */
+/* line 107, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 112, ../../sass/sass/app.scss */
-*, *:before, *:after {
+/* line 111, ../../sass/sass/app.scss */
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+/* line 117, ../../sass/sass/app.scss */
+.section-title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
 }

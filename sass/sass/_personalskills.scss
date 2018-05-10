@@ -4,47 +4,48 @@
 
 .personal-skill-cntr {
     overflow: hidden;
-    height: 150px;
-    //display: none;
+    height: 150px; //display: none;
 }
 
 .personal-skill-cntr .img-cntr {
-    position: relative;
-    float: left;
-    width: 146px;
-    height: 100%;
+    position: absolute;
+    @include transform(rotate(-15deg));
 }
 
 .blinking-dots {
     position: absolute;
-    width: 146px;
 }
 
 .skills-face {
-    width: 100px;
-    position: absolute;
-    top: 14px;
-    left: 22px;
+    float: left;
+    width: 124px;
+    height: 146px;
 }
 
 .personal-skill-info {
-    float: left;
-    margin: 24px 0 0 28px;
+    position: absolute;
+    left: 150px;
+    top: 8px;
 }
 
 .personal-skill-info.left {
     margin: 24px 28px 0 0;
 }
 
+.personal-skills-section .personal-skills-wrapper:nth-of-type(2n) .personal-skill-info.left {
+    margin-left: 20%;
+}
+
 .personal-skill-info .title {
-    font-size: 30px;
+    font-size: 92px;
     margin-bottom: 4px;
 }
 
 .personal-skill-info .info {
     text-transform: lowercase;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
 }
 
 .personal-skills-canvas {
@@ -52,15 +53,19 @@
 }
 
 .personal-skills-section svg {
+    display: none;
     width: 646px;
     height: 156px;
     position: absolute;
 }
 
 .personal-skills-wrapper {
-    margin-left: 90px;
-    height: 146px;
+    width: 700px;
+    height: 170px;
+    border-radius: 8px;
+    background-color: $red;
+    @include transform(rotate(-5deg));
+    margin: 35px 0 35px 90px;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
-
-
-

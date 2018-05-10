@@ -1,4 +1,5 @@
 /*Site colors*/
+
 $lite-green: #2ecc71;
 $purple: #2C1B3D;
 $white: #fff;
@@ -6,6 +7,7 @@ $lite-grey: #57595B;
 $red: #e21838;
 
 /*Mixins*/
+
 @mixin keyframes($animationName) {
     @-webkit-keyframes #{$animationName} {
         @content;
@@ -21,7 +23,7 @@ $red: #e21838;
     }
 }
 
-@mixin animation($animation){
+@mixin animation($animation) {
     -webkit-animation: $animation;
     -moz-animation: $animation;
     -o-animation: $animation;
@@ -29,7 +31,7 @@ $red: #e21838;
     animation: $animation;
 }
 
-@mixin transform($transform){
+@mixin transform($transform) {
     -webkit-transform: $transform;
     -moz-transform: $transform;
     -o-transform: $transform;
@@ -37,7 +39,7 @@ $red: #e21838;
     transform: $transform;
 }
 
-@mixin transition($transition){
+@mixin transition($transition) {
     -webkit-transition: $transition;
     -moz-transition: $transition;
     -o-transition: $transition;
@@ -47,47 +49,45 @@ $red: #e21838;
 
 @mixin angle-after($skew, $height, $transformOrigin, $background-color) {
     position: relative;
-    z-index: 1; 
-
+    z-index: 1;
     &:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: $height;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; // for Chrome Windows
-	  bottom: 0;
-	  transform: skewY($skew);
-	  transform-origin: $transformOrigin;
-      background-color: $background-color;
+        background: inherit;
+        content: '';
+        display: block;
+        height: $height;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        -webkit-backface-visibility: hidden; // for Chrome Windows
+        bottom: 0;
+        transform: skewY($skew);
+        transform-origin: $transformOrigin;
+        background-color: $background-color;
     }
 }
 
 @mixin angle-before($skew, $height, $transformOrigin, $background-color) {
     position: relative;
     z-index: 1;
-
     &:before {
-      background: inherit;
-      content: '';
-      display: block;
-      height: $height;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; // for Chrome Windows
-	  top: 0;
-	  transform: skewY($skew);
-	  transform-origin: $transformOrigin;
-      background-color: $background-color;
+        background: inherit;
+        content: '';
+        display: block;
+        height: $height;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        -webkit-backface-visibility: hidden; // for Chrome Windows
+        top: 0;
+        transform: skewY($skew);
+        transform-origin: $transformOrigin;
+        background-color: $background-color;
     }
 }
 
-/*imports*/
+
 @import 'header';
 @import 'diminsion';
 @import 'menu';
@@ -97,18 +97,26 @@ $red: #e21838;
 @import 'contact';
 @import 'personalskills';
 
-
-body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
-html{
-  box-sizing: border-box;
+html {
+    box-sizing: border-box;
 }
 
-*, *:before, *:after{
-	box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.section-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
 }
