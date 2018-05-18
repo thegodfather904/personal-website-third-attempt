@@ -1763,6 +1763,53 @@
   overflow: hidden;
 }
 
+/* line 73, ../../sass/sass/_personalskills.scss */
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #e21838;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+/* line 83, ../../sass/sass/_personalskills.scss */
+.overlay .container {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+/* line 86, ../../sass/sass/_personalskills.scss */
+.overlay .title {
+  font-size: 200px;
+}
+/* line 89, ../../sass/sass/_personalskills.scss */
+.overlay .text {
+  font-size: 24px;
+  text-align: right;
+}
+
+/* line 95, ../../sass/sass/_personalskills.scss */
+.img {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+/* line 100, ../../sass/sass/_personalskills.scss */
+.img img {
+  width: 100%;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
 /* line 100, ../../sass/sass/app.scss */
 body {
   margin: 0;
