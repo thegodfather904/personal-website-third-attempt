@@ -1702,16 +1702,15 @@
 .personal-skill-info {
   position: absolute;
   left: 154px;
-  top: 16px;
+  top: 22px;
 }
 
 /* line 30, ../../sass/sass/_personalskills.scss */
 .personal-skill-info .title {
   font-size: 100px;
-  margin-bottom: 4px;
 }
 
-/* line 35, ../../sass/sass/_personalskills.scss */
+/* line 34, ../../sass/sass/_personalskills.scss */
 .personal-skill-info .info {
   text-transform: lowercase;
   font-size: 20px;
@@ -1719,12 +1718,12 @@
   text-align: right;
 }
 
-/* line 42, ../../sass/sass/_personalskills.scss */
+/* line 41, ../../sass/sass/_personalskills.scss */
 .personal-skills-canvas {
   width: 100%;
 }
 
-/* line 46, ../../sass/sass/_personalskills.scss */
+/* line 45, ../../sass/sass/_personalskills.scss */
 .personal-skills-section svg {
   display: none;
   width: 646px;
@@ -1732,12 +1731,17 @@
   position: absolute;
 }
 
-/* line 53, ../../sass/sass/_personalskills.scss */
+/* line 52, ../../sass/sass/_personalskills.scss */
 .personal-skills-wrapper {
   width: 700px;
   height: 170px;
   border-radius: 8px;
   background-color: #e21838;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
   box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
   clear: both;
 }
@@ -1748,6 +1752,12 @@
 }
 
 /* line 66, ../../sass/sass/_personalskills.scss */
+.personal-skills-wrapper-container {
+  overflow: hidden;
+  padding: 40px;
+}
+
+/* line 71, ../../sass/sass/_personalskills.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -1759,7 +1769,7 @@
   justify-content: center;
   align-items: center;
 }
-/* line 76, ../../sass/sass/_personalskills.scss */
+/* line 81, ../../sass/sass/_personalskills.scss */
 .overlay .container {
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
@@ -1767,24 +1777,24 @@
   -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
 }
-/* line 79, ../../sass/sass/_personalskills.scss */
+/* line 84, ../../sass/sass/_personalskills.scss */
 .overlay .title {
   font-size: 200px;
 }
-/* line 82, ../../sass/sass/_personalskills.scss */
+/* line 87, ../../sass/sass/_personalskills.scss */
 .overlay .text {
   font-size: 24px;
   text-align: right;
 }
 
-/* line 88, ../../sass/sass/_personalskills.scss */
+/* line 93, ../../sass/sass/_personalskills.scss */
 .img {
   display: none;
   position: absolute;
   width: 100px;
   height: 100px;
 }
-/* line 93, ../../sass/sass/_personalskills.scss */
+/* line 98, ../../sass/sass/_personalskills.scss */
 .img img {
   width: 100%;
   -webkit-transform: rotate(-5deg);
