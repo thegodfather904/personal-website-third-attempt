@@ -3,13 +3,12 @@
 }
 
 .personal-skill-cntr {
-    overflow: hidden;
-    height: 150px; //display: none;
+    position: relative;
 }
 
 .personal-skill-cntr .img-cntr {
     position: absolute;
-    @include transform(rotate(-15deg));
+    margin: 10px 0 0 22px;
 }
 
 .blinking-dots {
@@ -24,20 +23,12 @@
 
 .personal-skill-info {
     position: absolute;
-    left: 150px;
-    top: 8px;
-}
-
-.personal-skill-info.left {
-    margin: 24px 28px 0 0;
-}
-
-.personal-skills-section .personal-skills-wrapper:nth-of-type(2n) .personal-skill-info.left {
-    margin-left: 20%;
+    left: 154px;
+    top: 16px;
 }
 
 .personal-skill-info .title {
-    font-size: 92px;
+    font-size: 100px;
     margin-bottom: 4px;
 }
 
@@ -63,11 +54,13 @@
     width: 700px;
     height: 170px;
     border-radius: 8px;
-    background-color: $red;
-    @include transform(rotate(-5deg));
-    margin: 35px 0 35px 90px;
+    background-color: $red; // @include transform(rotate(-5deg)); //vmargin: 35px 0 35px 90px;
     box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
+    clear: both;
+}
+
+.personal-skills-wrapper:nth-child(2n) {
+    float: right;
 }
 
 .overlay {
@@ -100,5 +93,6 @@
     img {
         width: 100%;
         @include transform(rotate(-5deg));
+        opacity: .3;
     }
 }
