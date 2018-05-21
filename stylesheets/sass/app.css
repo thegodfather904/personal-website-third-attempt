@@ -1710,9 +1710,10 @@
   border: 1px solid #e21838;
   background-color: #e21838;
   position: absolute;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 33, ../../sass/sass/_personalskills.scss */
+/* line 34, ../../sass/sass/_personalskills.scss */
 .personal-skills-inner {
   border: 1px solid grey;
   position: absolute;
@@ -1720,7 +1721,7 @@
   left: -20px;
   background-color: #fff;
 }
-/* line 40, ../../sass/sass/_personalskills.scss */
+/* line 41, ../../sass/sass/_personalskills.scss */
 .personal-skills-inner .title {
   -webkit-transform: rotate(-34deg);
   -moz-transform: rotate(-34deg);
@@ -1732,7 +1733,7 @@
   margin-top: 100px;
   font-weight: 100;
 }
-/* line 48, ../../sass/sass/_personalskills.scss */
+/* line 49, ../../sass/sass/_personalskills.scss */
 .personal-skills-inner img {
   position: absolute;
   width: 100%;
@@ -1741,7 +1742,7 @@
   padding: 74px;
 }
 
-/* line 57, ../../sass/sass/_personalskills.scss */
+/* line 58, ../../sass/sass/_personalskills.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -1753,7 +1754,7 @@
   justify-content: center;
   align-items: center;
 }
-/* line 67, ../../sass/sass/_personalskills.scss */
+/* line 68, ../../sass/sass/_personalskills.scss */
 .overlay .container {
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
@@ -1761,24 +1762,24 @@
   -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
 }
-/* line 70, ../../sass/sass/_personalskills.scss */
+/* line 71, ../../sass/sass/_personalskills.scss */
 .overlay .title {
   font-size: 200px;
 }
-/* line 73, ../../sass/sass/_personalskills.scss */
+/* line 74, ../../sass/sass/_personalskills.scss */
 .overlay .text {
   font-size: 24px;
   text-align: right;
 }
 
-/* line 79, ../../sass/sass/_personalskills.scss */
+/* line 80, ../../sass/sass/_personalskills.scss */
 .img {
   display: none;
   position: absolute;
   width: 100px;
   height: 100px;
 }
-/* line 84, ../../sass/sass/_personalskills.scss */
+/* line 85, ../../sass/sass/_personalskills.scss */
 .img img {
   width: 100%;
   -webkit-transform: rotate(-5deg);
