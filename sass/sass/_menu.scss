@@ -1,58 +1,68 @@
 /*Mixins*/
 
 /*Keyframes*/
-@include keyframes(menu-box-rotation-clockwise){
-  0%{@include transform(rotate(45deg) translateZ(0))}
-  100%{@include transform(rotate(135deg) translateZ(0))}
+
+@include keyframes(menu-box-rotation-clockwise) {
+  0% {
+    @include transform(rotate(45deg) translateZ(0))
+  }
+  100% {
+    @include transform(rotate(135deg) translateZ(0))
+  }
 }
 
-@include keyframes(menu-box-rotation-counter){
-  0%{@include transform(rotate(-45deg) translateZ(0))}
-  100%{@include transform(rotate(-135deg) translateZ(0))}
+@include keyframes(menu-box-rotation-counter) {
+  0% {
+    @include transform(rotate(-45deg) translateZ(0))
+  }
+  100% {
+    @include transform(rotate(-135deg) translateZ(0))
+  }
 }
 
-.menu{
+.menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   display: none;
-  background-color: rgba(44,27,61,.98);
-  z-index: 2;
+  background-color: rgba(255, 255, 255, .98);
+  z-index: 6;
 }
 
-.menu-inner{
+.menu-inner {
   width: 400px;
   height: 400px;
   margin: 0 auto;
   margin-top: 200px;
 }
 
-.box-outline{
-  border: 4px solid $lite-green;
-  background-color: $lite-green;
+.box-outline {
+  border: 4px solid $red;
+  background-color: $red;
   width: 400px;
   height: 400px;
   position: absolute;
-  @include animation(menu-box-rotation-clockwise 1200ms forwards); 
+  @include animation(menu-box-rotation-clockwise 1200ms forwards);
 }
 
-.box-outline-shadow{
-  border: 4px solid $lite-green;
+.box-outline-shadow {
+  border: 4px solid $red;
   width: 400px;
   height: 400px;
   position: absolute;
-  background-color: #2C1B3D;
+  background-color: #fff;
   @include animation(menu-box-rotation-counter 1200ms forwards);
   z-index: 2;
 }
 
-.box-outline, .box-outline-shadow {
+.box-outline,
+.box-outline-shadow {
   border-radius: 12px;
 }
 
-.menu-items{
+.menu-items {
   text-align: center;
   position: absolute;
   width: 246px;
@@ -60,27 +70,27 @@
   z-index: 3;
 }
 
-.menu-item{
+.menu-item {
   font-size: 40px;
-  color: #fff;
+  color: $lite-grey;
   display: block;
-  padding: 22px 0;
+  padding: 14px 0;
   text-transform: lowercase;
 }
 
-.menu-item a{
+.menu-item a {
   padding-left: 15px;
 }
 
-.menu-item:hover{
-  color: $lite-green;
+.menu-item:hover {
+  color: $red;
   cursor: pointer;
 }
 
-.menu-item:hover a{
-  box-shadow: -4px 0 $lite-green;
+.menu-item:hover a {
+  box-shadow: -4px 0 $red;
 }
 
-.current-section{
-  box-shadow: -4px 0 $lite-green;
+.current-section {
+  box-shadow: -4px 0 $red;
 }
