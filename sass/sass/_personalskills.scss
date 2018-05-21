@@ -1,103 +1,89 @@
-.personal-skills-section {
-    //height: 500px;
-}
-
-.personal-skill-cntr {
-    position: relative;
-}
-
-.personal-skill-cntr .img-cntr {
-    position: absolute;
-    margin: 10px 0 0 22px;
-}
-
-.blinking-dots {
-    position: absolute;
-}
-
-.skills-face {
-    float: left;
-    width: 124px;
-    height: 146px;
-}
-
-.personal-skill-info {
-    position: absolute;
-    left: 154px;
-    top: 22px;
-}
-
-.personal-skill-info .title {
-    font-size: 100px;
-}
-
-.personal-skill-info .info {
-    text-transform: lowercase;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-}
-
-.personal-skills-canvas {
-    width: 100%;
-}
-
-.personal-skills-section svg {
-    display: none;
-    width: 646px;
-    height: 156px;
-    position: absolute;
-}
-
-.personal-skills-wrapper {
-    width: 700px;
-    height: 170px;
-    border-radius: 8px;
-    background-color: $red;
-    @include transform(rotate(-5deg));
-    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
-    clear: both;
-}
-
-.personal-skills-wrapper:nth-child(2n) {
-    float: right;
-}
-
 .personal-skills-wrapper-container {
-    overflow: hidden;
-    padding: 40px;
+  padding: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.personal-skill {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 0 40px;
+  flex-grow: 1;
+}
+
+.personal-skill:nth-child(2n) {
+  margin-top: 100px;
+}
+
+.personal-skills-outer,
+.personal-skills-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.personal-skills-outer {
+  border: 1px solid $red;
+  background-color: $red;
+  position: absolute;
+}
+
+.personal-skills-inner {
+  border: 1px solid grey;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #fff;
+
+  .title {
+    @include transform(rotate(-34deg));
+    font-size: 60px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 100;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    padding: 74px;
+  }
 }
 
 .overlay {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: $red;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    .container {
-        @include transform(rotate(-5deg));
-    }
-    .title {
-        font-size: 200px;
-    }
-    .text {
-        font-size: 24px;
-        text-align: right;
-    }
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: $red;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  .container {
+    @include transform(rotate(-5deg));
+  }
+  .title {
+    font-size: 200px;
+  }
+  .text {
+    font-size: 24px;
+    text-align: right;
+  }
 }
 
 .img {
-    display: none;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    img {
-        width: 100%;
-        @include transform(rotate(-5deg));
-        opacity: .3;
-    }
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  img {
+    width: 100%;
+    @include transform(rotate(-5deg));
+    opacity: 0.3;
+  }
 }
