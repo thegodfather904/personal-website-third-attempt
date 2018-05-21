@@ -190,7 +190,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 7;
   padding: 20px 50px;
   display: none;
 }
@@ -223,7 +223,7 @@
 
 /* line 57, ../../sass/sass/_header.scss */
 .menu-button-open .horizontal-line {
-  background-color: #fff;
+  background-color: #e21838;
 }
 
 /* line 61, ../../sass/sass/_header.scss */
@@ -301,6 +301,11 @@
 }
 
 /* line 106, ../../sass/sass/_header.scss */
+.menu-button-open:hover .horizontal-line {
+  background-color: #e21838;
+}
+
+/* line 110, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -309,7 +314,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 110, ../../sass/sass/_header.scss */
+/* line 114, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;
@@ -669,7 +674,6 @@
 /* line 41, ../../sass/sass/_menu.scss */
 .box-outline {
   border: 4px solid #e21838;
-  background-color: #e21838;
   width: 400px;
   height: 400px;
   position: absolute;
@@ -678,6 +682,7 @@
   -o-animation: menu-box-rotation-clockwise 1200ms forwards;
   -ms-animation: menu-box-rotation-clockwise 1200ms forwards;
   animation: menu-box-rotation-clockwise 1200ms forwards;
+  box-shadow: -3px -3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* line 50, ../../sass/sass/_menu.scss */
@@ -693,12 +698,7 @@
   -ms-animation: menu-box-rotation-counter 1200ms forwards;
   animation: menu-box-rotation-counter 1200ms forwards;
   z-index: 2;
-}
-
-/* line 60, ../../sass/sass/_menu.scss */
-.box-outline,
-.box-outline-shadow {
-  border-radius: 12px;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* line 65, ../../sass/sass/_menu.scss */
@@ -712,10 +712,10 @@
 
 /* line 73, ../../sass/sass/_menu.scss */
 .menu-item {
-  font-size: 40px;
+  font-size: 28px;
   color: #57595B;
   display: block;
-  padding: 14px 0;
+  padding: 20px 0;
   text-transform: lowercase;
 }
 

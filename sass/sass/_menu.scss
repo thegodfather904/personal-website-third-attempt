@@ -40,11 +40,11 @@
 
 .box-outline {
   border: 4px solid $red;
-  background-color: $red;
   width: 400px;
   height: 400px;
   position: absolute;
   @include animation(menu-box-rotation-clockwise 1200ms forwards);
+  box-shadow: -3px -3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .box-outline-shadow {
@@ -55,13 +55,13 @@
   background-color: #fff;
   @include animation(menu-box-rotation-counter 1200ms forwards);
   z-index: 2;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-.box-outline,
-.box-outline-shadow {
-  border-radius: 12px;
-}
-
+// .box-outline,
+// .box-outline-shadow {
+//   border-radius: 12px;
+// }
 .menu-items {
   text-align: center;
   position: absolute;
@@ -71,10 +71,10 @@
 }
 
 .menu-item {
-  font-size: 40px;
+  font-size: 28px;
   color: $lite-grey;
   display: block;
-  padding: 14px 0;
+  padding: 20px 0;
   text-transform: lowercase;
 }
 
