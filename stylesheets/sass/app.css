@@ -1036,40 +1036,42 @@
   -ms-animation: menu-box-rotation-counter 1200ms forwards;
   animation: menu-box-rotation-counter 1200ms forwards;
   background-color: #fff;
+  border: 1px solid #e21838;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 124, ../../sass/sass/_skills.scss */
+/* line 126, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active {
   height: 500px;
 }
 
-/* line 128, ../../sass/sass/_skills.scss */
+/* line 130, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skills-column {
   float: none;
   width: 100%;
   height: 100%;
 }
 
-/* line 134, ../../sass/sass/_skills.scss */
+/* line 136, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skill-square-outer {
   width: 130px;
   height: 130px;
 }
 
-/* line 139, ../../sass/sass/_skills.scss */
+/* line 141, ../../sass/sass/_skills.scss */
 .skills-section-inner.skill-is-active .skills-square {
   width: 130px;
   height: 130px;
   overflow: visible !important;
 }
 
-/* line 145, ../../sass/sass/_skills.scss */
+/* line 147, ../../sass/sass/_skills.scss */
 .skills-square-inner-hidden {
   display: none;
   height: 100%;
 }
 
-/* line 150, ../../sass/sass/_skills.scss */
+/* line 152, ../../sass/sass/_skills.scss */
 .skills-row {
   width: 100%;
   height: 250px;
@@ -1077,45 +1079,47 @@
   position: relative;
 }
 
-/* line 157, ../../sass/sass/_skills.scss */
+/* line 159, ../../sass/sass/_skills.scss */
 .skills-close-container {
   position: absolute;
   right: 0;
   padding: 20px;
 }
 
-/* line 163, ../../sass/sass/_skills.scss */
+/* line 165, ../../sass/sass/_skills.scss */
 .skills-close-container i {
   color: #fff;
   font-size: 30px;
 }
 
-/* line 168, ../../sass/sass/_skills.scss */
+/* line 170, ../../sass/sass/_skills.scss */
 .skills-close-container:hover i {
   cursor: pointer;
 }
 
-/* line 172, ../../sass/sass/_skills.scss */
+/* line 174, ../../sass/sass/_skills.scss */
 .skills-square-inner-hidden canvas {
   width: 100%;
   height: 100%;
   position: absolute;
+  background-color: #000;
 }
 
-/* line 178, ../../sass/sass/_skills.scss */
-.slide-in-left, .slide-in-right {
+/* line 181, ../../sass/sass/_skills.scss */
+.slide-in-left,
+.slide-in-right {
   background-color: #fff;
   width: 0%;
   height: 100%;
   position: absolute;
 }
 
-/* line 185, ../../sass/sass/_skills.scss */
+/* line 189, ../../sass/sass/_skills.scss */
 .slide-in-right {
   right: 0;
 }
 
-/* line 189, ../../sass/sass/_skills.scss */
+/* line 193, ../../sass/sass/_skills.scss */
 .slide-in-left:after {
   content: '';
   position: absolute;
@@ -1133,7 +1137,7 @@
   background-color: #e21838;
 }
 
-/* line 202, ../../sass/sass/_skills.scss */
+/* line 206, ../../sass/sass/_skills.scss */
 .slide-in-left:before {
   content: '';
   position: absolute;
@@ -1151,7 +1155,7 @@
   background-color: #e21838;
 }
 
-/* line 215, ../../sass/sass/_skills.scss */
+/* line 219, ../../sass/sass/_skills.scss */
 .slide-in-right:before {
   content: '';
   position: absolute;
@@ -1170,7 +1174,7 @@
   z-index: 1;
 }
 
-/* line 229, ../../sass/sass/_skills.scss */
+/* line 233, ../../sass/sass/_skills.scss */
 .slide-in-right:after {
   content: '';
   position: absolute;
@@ -1188,76 +1192,86 @@
   background-color: #e21838;
 }
 
-/* line 242, ../../sass/sass/_skills.scss */
+/* line 246, ../../sass/sass/_skills.scss */
 .skills-section-title {
   font-size: 50px;
   text-align: center;
   margin-bottom: 100px;
 }
 
+/* line 252, ../../sass/sass/_skills.scss */
+.skill-label {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  font-size: 40px;
+  bottom: 14px;
+}
+
 @media only screen and (max-width: 1200px) {
-  /* line 249, ../../sass/sass/_skills.scss */
+  /* line 262, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 950px;
   }
 
-  /* line 252, ../../sass/sass/_skills.scss */
+  /* line 265, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 190px;
     height: 190px;
   }
 
-  /* line 256, ../../sass/sass/_skills.scss */
+  /* line 269, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 62px 0 0 60px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 262, ../../sass/sass/_skills.scss */
+  /* line 275, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3) {
     clear: left;
   }
 
-  /* line 265, ../../sass/sass/_skills.scss */
+  /* line 278, ../../sass/sass/_skills.scss */
   .skills-section-inner .skills-column:nth-of-type(3),
   .skills-section-inner .skills-column:nth-of-type(4) {
     margin-top: 78px;
   }
 
-  /* line 269, ../../sass/sass/_skills.scss */
+  /* line 282, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 240px;
     height: 240px;
   }
 
-  /* line 273, ../../sass/sass/_skills.scss */
+  /* line 286, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 86px 0 0 86px;
   }
 
-  /* line 276, ../../sass/sass/_skills.scss */
+  /* line 289, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 578px;
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 282, ../../sass/sass/_skills.scss */
+  /* line 295, ../../sass/sass/_skills.scss */
   .skills-square {
     width: 160px;
     height: 160px;
   }
 
-  /* line 286, ../../sass/sass/_skills.scss */
+  /* line 299, ../../sass/sass/_skills.scss */
   .skills-icons {
     margin: 48px 0 0 46px;
   }
 
-  /* line 289, ../../sass/sass/_skills.scss */
+  /* line 302, ../../sass/sass/_skills.scss */
   .skills-column .skills-square:nth-of-type(2) {
     margin-top: 42px;
   }
 
-  /* line 292, ../../sass/sass/_skills.scss */
+  /* line 305, ../../sass/sass/_skills.scss */
   .skills-section-inner {
     width: 420px;
   }
@@ -1570,17 +1584,23 @@
     transform: scale(1, 1);
   }
 }
-/* line 7, ../../sass/sass/_contact.scss */
-.cool-project-text, .email-container {
+/* line 13, ../../sass/sass/_contact.scss */
+.contact-section {
+  margin-top: 90px;
+}
+
+/* line 17, ../../sass/sass/_contact.scss */
+.cool-project-text,
+.email-container {
   text-align: center;
 }
 
-/* line 11, ../../sass/sass/_contact.scss */
+/* line 22, ../../sass/sass/_contact.scss */
 .email-container {
   margin: 60px 0;
 }
 
-/* line 15, ../../sass/sass/_contact.scss */
+/* line 26, ../../sass/sass/_contact.scss */
 .email-icon {
   margin: 8px 0;
   -webkit-animation: email-bounce 4s linear infinite;
@@ -1590,33 +1610,33 @@
   animation: email-bounce 4s linear infinite;
 }
 
-/* line 20, ../../sass/sass/_contact.scss */
+/* line 31, ../../sass/sass/_contact.scss */
 .email-container {
   opacity: .9;
 }
 
-/* line 24, ../../sass/sass/_contact.scss */
+/* line 35, ../../sass/sass/_contact.scss */
 .email-container a {
   color: #2C1B3D;
 }
 
-/* line 28, ../../sass/sass/_contact.scss */
+/* line 39, ../../sass/sass/_contact.scss */
 .email {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
 
-/* line 33, ../../sass/sass/_contact.scss */
+/* line 44, ../../sass/sass/_contact.scss */
 .email-container:hover {
   opacity: 1;
 }
 
-/* line 37, ../../sass/sass/_contact.scss */
+/* line 48, ../../sass/sass/_contact.scss */
 .email-container:hover a {
   cursor: pointer;
 }
 
-/* line 41, ../../sass/sass/_contact.scss */
+/* line 52, ../../sass/sass/_contact.scss */
 .share-me {
   width: 312px;
   margin: 0 auto;
@@ -1624,7 +1644,7 @@
   margin-bottom: 40px;
 }
 
-/* line 48, ../../sass/sass/_contact.scss */
+/* line 59, ../../sass/sass/_contact.scss */
 .share-me-title {
   letter-spacing: 2px;
   font-size: 16px;
@@ -1633,7 +1653,7 @@
   text-align: center;
 }
 
-/* line 56, ../../sass/sass/_contact.scss */
+/* line 67, ../../sass/sass/_contact.scss */
 .share-me span {
   display: block;
   float: left;
@@ -1642,33 +1662,33 @@
   border-radius: 5px;
 }
 
-/* line 64, ../../sass/sass/_contact.scss */
+/* line 75, ../../sass/sass/_contact.scss */
 .share-me span:hover {
   cursor: pointer;
   color: #fff;
 }
 
-/* line 69, ../../sass/sass/_contact.scss */
+/* line 80, ../../sass/sass/_contact.scss */
 .share-me-link {
   color: #000;
 }
 
-/* line 73, ../../sass/sass/_contact.scss */
+/* line 84, ../../sass/sass/_contact.scss */
 #shareMeTwitter:hover {
   background-color: #00aced;
 }
 
-/* line 77, ../../sass/sass/_contact.scss */
+/* line 88, ../../sass/sass/_contact.scss */
 #shareMeFacebook:hover {
   background-color: #3b5998;
 }
 
-/* line 80, ../../sass/sass/_contact.scss */
+/* line 92, ../../sass/sass/_contact.scss */
 #shareMeGit:hover {
   background-color: #66B849;
 }
 
-/* line 84, ../../sass/sass/_contact.scss */
+/* line 96, ../../sass/sass/_contact.scss */
 .copyright {
   padding-bottom: 5px;
   font-weight: 100;

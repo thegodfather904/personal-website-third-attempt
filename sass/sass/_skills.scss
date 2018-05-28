@@ -60,16 +60,16 @@
     height: 100%;
     border: 3px solid $red;
     position: absolute;
-    background-color: rgba(226,24,56, 0.4);
+    background-color: rgba(226, 24, 56, 0.4);
     @include transform(rotate(-45deg) translateZ(0));
-    box-shadow: 3px 3px 4px 0px rgba(0,0,0, 0.3);
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .skills-square-inner {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(226,24,56, 1);
+    background-color: rgba(226, 24, 56, 1);
     @include transform(rotate(-45deg) translateZ(0));
     overflow: hidden;
 }
@@ -119,6 +119,8 @@
 .skills-square.active-skill .skills-square-inner {
     @include animation(menu-box-rotation-counter 1200ms forwards);
     background-color: #fff;
+    border: 1px solid $red;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .skills-section-inner.skill-is-active {
@@ -173,9 +175,11 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    background-color: #000;
 }
 
-.slide-in-left, .slide-in-right {
+.slide-in-left,
+.slide-in-right {
     background-color: #fff;
     width: 0%;
     height: 100%;
@@ -243,6 +247,15 @@
     font-size: 50px;
     text-align: center;
     margin-bottom: 100px;
+}
+
+.skill-label {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    bottom: 14px;
 }
 
 @media only screen and(max-width: 1200px) {
