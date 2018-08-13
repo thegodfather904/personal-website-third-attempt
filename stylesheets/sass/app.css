@@ -888,394 +888,6 @@
     background-position: -1900px;
   }
 }
-/* line 25, ../../sass/sass/_skills.scss */
-.skills-section {
-  height: 800px;
-  padding-top: 20px;
-  position: relative;
-  z-index: 1;
-}
-/* line 73, ../../sass/sass/app.scss */
-.skills-section:before {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 20%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  -webkit-backface-visibility: hidden;
-  top: 0;
-  transform: skewY(-4deg);
-  transform-origin: -2%;
-  background-color: #fff;
-}
-
-/* line 31, ../../sass/sass/_skills.scss */
-.skills-section:before {
-  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* line 35, ../../sass/sass/_skills.scss */
-.skills-section-inner {
-  width: 1146px;
-  height: 100%;
-  margin: 0 auto;
-}
-
-/* line 41, ../../sass/sass/_skills.scss */
-.skills-square {
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  float: left;
-  top: 0;
-  left: 0;
-}
-
-/* line 50, ../../sass/sass/_skills.scss */
-.skills-row .skills-square:first-child {
-  margin-left: 0;
-}
-
-/* line 54, ../../sass/sass/_skills.scss */
-.skills-row .skills-square:last-child {
-  margin-right: 0;
-}
-
-/* line 58, ../../sass/sass/_skills.scss */
-.skill-square-outer {
-  width: 100%;
-  height: 100%;
-  border: 3px solid #e21838;
-  position: absolute;
-  background-color: rgba(226, 24, 56, 0.4);
-  -webkit-transform: rotate(-45deg) translateZ(0);
-  -moz-transform: rotate(-45deg) translateZ(0);
-  -o-transform: rotate(-45deg) translateZ(0);
-  -ms-transform: rotate(-45deg) translateZ(0);
-  transform: rotate(-45deg) translateZ(0);
-  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* line 68, ../../sass/sass/_skills.scss */
-.skills-square-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #e21838;
-  -webkit-transform: rotate(-45deg) translateZ(0);
-  -moz-transform: rotate(-45deg) translateZ(0);
-  -o-transform: rotate(-45deg) translateZ(0);
-  -ms-transform: rotate(-45deg) translateZ(0);
-  transform: rotate(-45deg) translateZ(0);
-  overflow: hidden;
-}
-
-/* line 77, ../../sass/sass/_skills.scss */
-.active-skill .skills-square-inner {
-  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* line 81, ../../sass/sass/_skills.scss */
-.skill-square-outer,
-.skills-square-inner {
-  border-radius: 8px;
-}
-
-/* line 86, ../../sass/sass/_skills.scss */
-.skills-square-content {
-  position: absolute;
-  top: 0;
-}
-
-/* line 91, ../../sass/sass/_skills.scss */
-.skills-icons {
-  margin: 31px 0 0 31px;
-}
-
-/* line 95, ../../sass/sass/_skills.scss */
-.skills-column {
-  float: left;
-  padding: 0 42px;
-}
-
-/* line 100, ../../sass/sass/_skills.scss */
-.skills-column .skills-square:nth-of-type(2) {
-  margin-top: 84px;
-}
-
-/* line 104, ../../sass/sass/_skills.scss */
-.skills-square:hover {
-  cursor: pointer;
-}
-
-/* line 108, ../../sass/sass/_skills.scss */
-.skills-square.active-skill:hover {
-  cursor: default;
-}
-
-/* line 112, ../../sass/sass/_skills.scss */
-.skills-square:hover .skill-square-outer,
-.skills-square.active-skill .skill-square-outer {
-  -webkit-animation: menu-box-rotation-clockwise 1200ms forwards;
-  -moz-animation: menu-box-rotation-clockwise 1200ms forwards;
-  -o-animation: menu-box-rotation-clockwise 1200ms forwards;
-  -ms-animation: menu-box-rotation-clockwise 1200ms forwards;
-  animation: menu-box-rotation-clockwise 1200ms forwards;
-  background-color: #e21838;
-}
-
-/* line 118, ../../sass/sass/_skills.scss */
-.skills-square:hover .skills-square-inner,
-.skills-square.active-skill .skills-square-inner {
-  -webkit-animation: menu-box-rotation-counter 1200ms forwards;
-  -moz-animation: menu-box-rotation-counter 1200ms forwards;
-  -o-animation: menu-box-rotation-counter 1200ms forwards;
-  -ms-animation: menu-box-rotation-counter 1200ms forwards;
-  animation: menu-box-rotation-counter 1200ms forwards;
-  background-color: #fff;
-  border: 1px solid #e21838;
-  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* line 126, ../../sass/sass/_skills.scss */
-.skills-section-inner.skill-is-active {
-  height: 500px;
-}
-
-/* line 130, ../../sass/sass/_skills.scss */
-.skills-section-inner.skill-is-active .skills-column {
-  float: none;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 136, ../../sass/sass/_skills.scss */
-.skills-section-inner.skill-is-active .skill-square-outer {
-  width: 130px;
-  height: 130px;
-}
-
-/* line 141, ../../sass/sass/_skills.scss */
-.skills-section-inner.skill-is-active .skills-square {
-  width: 130px;
-  height: 130px;
-  overflow: visible !important;
-}
-
-/* line 147, ../../sass/sass/_skills.scss */
-.skills-square-inner-hidden {
-  display: none;
-  height: 100%;
-}
-
-/* line 152, ../../sass/sass/_skills.scss */
-.skills-row {
-  width: 100%;
-  height: 250px;
-  clear: both;
-  position: relative;
-}
-
-/* line 159, ../../sass/sass/_skills.scss */
-.skills-close-container {
-  position: absolute;
-  right: 0;
-  padding: 20px;
-}
-
-/* line 165, ../../sass/sass/_skills.scss */
-.skills-close-container i {
-  color: #fff;
-  font-size: 30px;
-}
-
-/* line 170, ../../sass/sass/_skills.scss */
-.skills-close-container:hover i {
-  cursor: pointer;
-}
-
-/* line 174, ../../sass/sass/_skills.scss */
-.skills-square-inner-hidden canvas {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #000;
-}
-
-/* line 181, ../../sass/sass/_skills.scss */
-.slide-in-left,
-.slide-in-right {
-  background-color: #fff;
-  width: 0%;
-  height: 100%;
-  position: absolute;
-}
-
-/* line 189, ../../sass/sass/_skills.scss */
-.slide-in-right {
-  right: 0;
-}
-
-/* line 193, ../../sass/sass/_skills.scss */
-.slide-in-left:after {
-  content: '';
-  position: absolute;
-  background-color: #fff;
-  left: -180px;
-  -webkit-transform: skewX(-36deg);
-  -moz-transform: skewX(-36deg);
-  -o-transform: skewX(-36deg);
-  -ms-transform: skewX(-36deg);
-  transform: skewX(-36deg);
-  height: 100%;
-  width: 320px;
-  transform-origin: 100%;
-  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
-  background-color: #e21838;
-}
-
-/* line 206, ../../sass/sass/_skills.scss */
-.slide-in-left:before {
-  content: '';
-  position: absolute;
-  background-color: #fff;
-  left: -208px;
-  -webkit-transform: skewX(36deg);
-  -moz-transform: skewX(36deg);
-  -o-transform: skewX(36deg);
-  -ms-transform: skewX(36deg);
-  transform: skewX(36deg);
-  height: 100%;
-  width: 320px;
-  transform-origin: 100%;
-  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
-  background-color: #e21838;
-}
-
-/* line 219, ../../sass/sass/_skills.scss */
-.slide-in-right:before {
-  content: '';
-  position: absolute;
-  background-color: #fff;
-  right: -180px;
-  -webkit-transform: skewX(-36deg);
-  -moz-transform: skewX(-36deg);
-  -o-transform: skewX(-36deg);
-  -ms-transform: skewX(-36deg);
-  transform: skewX(-36deg);
-  height: 100%;
-  width: 320px;
-  transform-origin: 100%;
-  box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.3);
-  background-color: #e21838;
-  z-index: 1;
-}
-
-/* line 233, ../../sass/sass/_skills.scss */
-.slide-in-right:after {
-  content: '';
-  position: absolute;
-  background-color: #fff;
-  right: -270px;
-  -webkit-transform: skewX(46deg);
-  -moz-transform: skewX(46deg);
-  -o-transform: skewX(46deg);
-  -ms-transform: skewX(46deg);
-  transform: skewX(46deg);
-  height: 100%;
-  width: 320px;
-  transform-origin: 100%;
-  box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.3);
-  background-color: #e21838;
-}
-
-/* line 246, ../../sass/sass/_skills.scss */
-.skills-section-title {
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-/* line 252, ../../sass/sass/_skills.scss */
-.skill-label {
-  color: #fff;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  font-size: 40px;
-  bottom: 14px;
-}
-
-@media only screen and (max-width: 1200px) {
-  /* line 262, ../../sass/sass/_skills.scss */
-  .skills-section-inner {
-    width: 950px;
-  }
-
-  /* line 265, ../../sass/sass/_skills.scss */
-  .skills-square {
-    width: 190px;
-    height: 190px;
-  }
-
-  /* line 269, ../../sass/sass/_skills.scss */
-  .skills-icons {
-    margin: 62px 0 0 60px;
-  }
-}
-@media only screen and (max-width: 980px) {
-  /* line 275, ../../sass/sass/_skills.scss */
-  .skills-section-inner .skills-column:nth-of-type(3) {
-    clear: left;
-  }
-
-  /* line 278, ../../sass/sass/_skills.scss */
-  .skills-section-inner .skills-column:nth-of-type(3),
-  .skills-section-inner .skills-column:nth-of-type(4) {
-    margin-top: 78px;
-  }
-
-  /* line 282, ../../sass/sass/_skills.scss */
-  .skills-square {
-    width: 240px;
-    height: 240px;
-  }
-
-  /* line 286, ../../sass/sass/_skills.scss */
-  .skills-icons {
-    margin: 86px 0 0 86px;
-  }
-
-  /* line 289, ../../sass/sass/_skills.scss */
-  .skills-section-inner {
-    width: 578px;
-  }
-}
-@media only screen and (max-width: 650px) {
-  /* line 295, ../../sass/sass/_skills.scss */
-  .skills-square {
-    width: 160px;
-    height: 160px;
-  }
-
-  /* line 299, ../../sass/sass/_skills.scss */
-  .skills-icons {
-    margin: 48px 0 0 46px;
-  }
-
-  /* line 302, ../../sass/sass/_skills.scss */
-  .skills-column .skills-square:nth-of-type(2) {
-    margin-top: 42px;
-  }
-
-  /* line 305, ../../sass/sass/_skills.scss */
-  .skills-section-inner {
-    width: 420px;
-  }
-}
 @-webkit-keyframes planet-rotation {
   0% {
     -webkit-transform: rotate(0deg) translateZ(0);
@@ -1340,7 +952,421 @@
     transform: rotate(-360deg) translateZ(0);
   }
 }
-/* line 6, ../../sass/sass/_aboutme.scss */
+/* line 34, ../../sass/sass/_skills.scss */
+.skills-section {
+  height: 800px;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+/* line 73, ../../sass/sass/app.scss */
+.skills-section:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 20%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  top: 0;
+  transform: skewY(-4deg);
+  transform-origin: -2%;
+  background-color: #fff;
+}
+
+/* line 40, ../../sass/sass/_skills.scss */
+.skills-section:before {
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 44, ../../sass/sass/_skills.scss */
+.skills-section-inner {
+  width: 1146px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 50, ../../sass/sass/_skills.scss */
+.skills-square {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  float: left;
+  top: 0;
+  left: 0;
+}
+
+/* line 59, ../../sass/sass/_skills.scss */
+.skills-row .skills-square:first-child {
+  margin-left: 0;
+}
+
+/* line 63, ../../sass/sass/_skills.scss */
+.skills-row .skills-square:last-child {
+  margin-right: 0;
+}
+
+/* line 67, ../../sass/sass/_skills.scss */
+.skill-square-outer {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #e21838;
+  position: absolute;
+  background-color: rgba(226, 24, 56, 0.4);
+  -webkit-transform: rotate(-45deg) translateZ(0);
+  -moz-transform: rotate(-45deg) translateZ(0);
+  -o-transform: rotate(-45deg) translateZ(0);
+  -ms-transform: rotate(-45deg) translateZ(0);
+  transform: rotate(-45deg) translateZ(0);
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 77, ../../sass/sass/_skills.scss */
+.skills-square-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e21838;
+  -webkit-transform: rotate(-45deg) translateZ(0);
+  -moz-transform: rotate(-45deg) translateZ(0);
+  -o-transform: rotate(-45deg) translateZ(0);
+  -ms-transform: rotate(-45deg) translateZ(0);
+  transform: rotate(-45deg) translateZ(0);
+  overflow: hidden;
+}
+
+/* line 86, ../../sass/sass/_skills.scss */
+.active-skill .skills-square-inner {
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 90, ../../sass/sass/_skills.scss */
+.skill-square-outer,
+.skills-square-inner {
+  border-radius: 8px;
+}
+
+/* line 95, ../../sass/sass/_skills.scss */
+.skills-square-content {
+  position: absolute;
+  top: 0;
+}
+
+/* line 100, ../../sass/sass/_skills.scss */
+.skills-icons {
+  margin: 31px 0 0 31px;
+}
+
+/* line 104, ../../sass/sass/_skills.scss */
+.skills-column {
+  float: left;
+  padding: 0 42px;
+}
+
+/* line 109, ../../sass/sass/_skills.scss */
+.skills-column .skills-square:nth-of-type(2) {
+  margin-top: 84px;
+}
+
+/* line 113, ../../sass/sass/_skills.scss */
+.skills-square:hover {
+  cursor: pointer;
+}
+
+/* line 117, ../../sass/sass/_skills.scss */
+.skills-square.active-skill:hover {
+  cursor: default;
+}
+
+/* line 121, ../../sass/sass/_skills.scss */
+.skills-square:hover .skill-square-outer,
+.skills-square.active-skill .skill-square-outer {
+  -webkit-animation: menu-box-rotation-clockwise 1200ms forwards;
+  -moz-animation: menu-box-rotation-clockwise 1200ms forwards;
+  -o-animation: menu-box-rotation-clockwise 1200ms forwards;
+  -ms-animation: menu-box-rotation-clockwise 1200ms forwards;
+  animation: menu-box-rotation-clockwise 1200ms forwards;
+  background-color: #e21838;
+}
+
+/* line 127, ../../sass/sass/_skills.scss */
+.skills-square:hover .skills-square-inner,
+.skills-square.active-skill .skills-square-inner {
+  -webkit-animation: menu-box-rotation-counter 1200ms forwards;
+  -moz-animation: menu-box-rotation-counter 1200ms forwards;
+  -o-animation: menu-box-rotation-counter 1200ms forwards;
+  -ms-animation: menu-box-rotation-counter 1200ms forwards;
+  animation: menu-box-rotation-counter 1200ms forwards;
+  background-color: #fff;
+  border: 1px solid #e21838;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 135, ../../sass/sass/_skills.scss */
+.skills-section-inner.skill-is-active {
+  height: 500px;
+}
+
+/* line 139, ../../sass/sass/_skills.scss */
+.skills-section-inner.skill-is-active .skills-column {
+  float: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 145, ../../sass/sass/_skills.scss */
+.skills-section-inner.skill-is-active .skill-square-outer {
+  width: 130px;
+  height: 130px;
+}
+
+/* line 150, ../../sass/sass/_skills.scss */
+.skills-section-inner.skill-is-active .skills-square {
+  width: 130px;
+  height: 130px;
+  overflow: visible !important;
+}
+
+/* line 156, ../../sass/sass/_skills.scss */
+.skills-square-inner-hidden {
+  display: none;
+  height: 100%;
+}
+
+/* line 161, ../../sass/sass/_skills.scss */
+.skills-row {
+  width: 100%;
+  height: 250px;
+  clear: both;
+  position: relative;
+}
+
+/* line 168, ../../sass/sass/_skills.scss */
+.skills-close-container {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+}
+
+/* line 174, ../../sass/sass/_skills.scss */
+.skills-close-container i {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* line 179, ../../sass/sass/_skills.scss */
+.skills-close-container:hover i {
+  cursor: pointer;
+}
+
+/* line 183, ../../sass/sass/_skills.scss */
+.skills-square-inner-hidden canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+}
+
+/* line 190, ../../sass/sass/_skills.scss */
+.slide-in-left,
+.slide-in-right {
+  background-color: #fff;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 198, ../../sass/sass/_skills.scss */
+.slide-in-right {
+  right: 0;
+}
+
+/* line 202, ../../sass/sass/_skills.scss */
+.slide-in-left:after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  left: -180px;
+  -webkit-transform: skewX(-36deg);
+  -moz-transform: skewX(-36deg);
+  -o-transform: skewX(-36deg);
+  -ms-transform: skewX(-36deg);
+  transform: skewX(-36deg);
+  height: 100%;
+  width: 320px;
+  transform-origin: 100%;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  background-color: #e21838;
+}
+
+/* line 215, ../../sass/sass/_skills.scss */
+.slide-in-left:before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  left: -208px;
+  -webkit-transform: skewX(36deg);
+  -moz-transform: skewX(36deg);
+  -o-transform: skewX(36deg);
+  -ms-transform: skewX(36deg);
+  transform: skewX(36deg);
+  height: 100%;
+  width: 320px;
+  transform-origin: 100%;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  background-color: #e21838;
+}
+
+/* line 228, ../../sass/sass/_skills.scss */
+.slide-in-right:before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  right: -180px;
+  -webkit-transform: skewX(-36deg);
+  -moz-transform: skewX(-36deg);
+  -o-transform: skewX(-36deg);
+  -ms-transform: skewX(-36deg);
+  transform: skewX(-36deg);
+  height: 100%;
+  width: 320px;
+  transform-origin: 100%;
+  box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  background-color: #e21838;
+  z-index: 1;
+}
+
+/* line 242, ../../sass/sass/_skills.scss */
+.slide-in-right:after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  right: -270px;
+  -webkit-transform: skewX(46deg);
+  -moz-transform: skewX(46deg);
+  -o-transform: skewX(46deg);
+  -ms-transform: skewX(46deg);
+  transform: skewX(46deg);
+  height: 100%;
+  width: 320px;
+  transform-origin: 100%;
+  box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  background-color: #e21838;
+}
+
+/* line 255, ../../sass/sass/_skills.scss */
+.skills-section-title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* line 261, ../../sass/sass/_skills.scss */
+.skill-label {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  font-size: 40px;
+  bottom: 14px;
+}
+
+/* line 270, ../../sass/sass/_skills.scss */
+.planet-container {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+/* line 275, ../../sass/sass/_skills.scss */
+.planet-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 280, ../../sass/sass/_skills.scss */
+.planet-container .planet {
+  -webkit-animation: planet-rotation 25s linear infinite;
+  -moz-animation: planet-rotation 25s linear infinite;
+  -o-animation: planet-rotation 25s linear infinite;
+  -ms-animation: planet-rotation 25s linear infinite;
+  animation: planet-rotation 25s linear infinite;
+  top: -325px;
+  width: 725px;
+  height: 725px;
+  left: -236px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 290, ../../sass/sass/_skills.scss */
+  .skills-section-inner {
+    width: 950px;
+  }
+
+  /* line 293, ../../sass/sass/_skills.scss */
+  .skills-square {
+    width: 190px;
+    height: 190px;
+  }
+
+  /* line 297, ../../sass/sass/_skills.scss */
+  .skills-icons {
+    margin: 62px 0 0 60px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  /* line 303, ../../sass/sass/_skills.scss */
+  .skills-section-inner .skills-column:nth-of-type(3) {
+    clear: left;
+  }
+
+  /* line 306, ../../sass/sass/_skills.scss */
+  .skills-section-inner .skills-column:nth-of-type(3),
+  .skills-section-inner .skills-column:nth-of-type(4) {
+    margin-top: 78px;
+  }
+
+  /* line 310, ../../sass/sass/_skills.scss */
+  .skills-square {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* line 314, ../../sass/sass/_skills.scss */
+  .skills-icons {
+    margin: 86px 0 0 86px;
+  }
+
+  /* line 317, ../../sass/sass/_skills.scss */
+  .skills-section-inner {
+    width: 578px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 323, ../../sass/sass/_skills.scss */
+  .skills-square {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* line 327, ../../sass/sass/_skills.scss */
+  .skills-icons {
+    margin: 48px 0 0 46px;
+  }
+
+  /* line 330, ../../sass/sass/_skills.scss */
+  .skills-column .skills-square:nth-of-type(2) {
+    margin-top: 42px;
+  }
+
+  /* line 333, ../../sass/sass/_skills.scss */
+  .skills-section-inner {
+    width: 420px;
+  }
+}
+/* line 1, ../../sass/sass/_aboutme.scss */
 .about-me-section {
   padding-top: 16px;
   height: 500px;
@@ -1382,43 +1408,44 @@
   background-color: #fff;
 }
 
-/* line 13, ../../sass/sass/_aboutme.scss */
+/* line 8, ../../sass/sass/_aboutme.scss */
 .about-me-section:before {
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 18, ../../sass/sass/_aboutme.scss */
+/* line 12, ../../sass/sass/_aboutme.scss */
 .about-me-section:after {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 22, ../../sass/sass/_aboutme.scss */
+/* line 16, ../../sass/sass/_aboutme.scss */
 .about-me-description {
   float: right;
   width: 50%;
   padding-right: 10%;
 }
 
-/* line 28, ../../sass/sass/_aboutme.scss */
-.title-upper, .title-lower {
+/* line 22, ../../sass/sass/_aboutme.scss */
+.title-upper,
+.title-lower {
   font-size: 44px;
   font-style: italic;
 }
 
-/* line 33, ../../sass/sass/_aboutme.scss */
+/* line 28, ../../sass/sass/_aboutme.scss */
 .title-lower {
   float: right;
   padding-top: 24px;
 }
 
-/* line 38, ../../sass/sass/_aboutme.scss */
+/* line 33, ../../sass/sass/_aboutme.scss */
 .description {
   clear: both;
   font-size: 20px;
   line-height: 40px;
 }
 
-/* line 44, ../../sass/sass/_aboutme.scss */
+/* line 39, ../../sass/sass/_aboutme.scss */
 .first-description {
   padding: 60px 0 32px 0;
 }

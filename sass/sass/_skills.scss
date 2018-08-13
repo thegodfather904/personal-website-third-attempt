@@ -22,6 +22,15 @@
     }
 }
 
+@include keyframes(planet-rotation) {
+    0% {
+        @include transform(rotate(0deg) translateZ(0));
+    }
+    100% {
+        @include transform(rotate(-360deg) translateZ(0));
+    }
+}
+
 .skills-section {
     height: 800px;
     padding-top: 20px;
@@ -256,6 +265,25 @@
     width: 100%;
     font-size: 40px;
     bottom: 14px;
+}
+
+.planet-container {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .planet {
+        @include animation(planet-rotation 25s linear infinite);
+        top: -325px;
+        width: 725px;
+        height: 725px;
+        left: -236px;
+    }
 }
 
 @media only screen and(max-width: 1200px) {

@@ -1,46 +1,41 @@
-@include keyframes(planet-rotation){
-  0%{@include transform(rotate(0deg) translateZ(0));}
-  100%{@include transform(rotate(-360deg) translateZ(0));}
-}
-
-.about-me-section{
+.about-me-section {
     padding-top: 16px;
     height: 500px;
     @include angle-before(-4deg, 35%, -2%, $white);
     @include angle-after(4deg, 35%, -2%, $white);
 }
 
-.about-me-section:before{
-  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+.about-me-section:before {
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-
-.about-me-section:after{
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+.about-me-section:after {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-.about-me-description{
+.about-me-description {
     float: right;
     width: 50%;
     padding-right: 10%;
 }
 
-.title-upper, .title-lower{
+.title-upper,
+.title-lower {
     font-size: 44px;
     font-style: italic;
 }
 
-.title-lower{
+.title-lower {
     float: right;
     padding-top: 24px;
 }
 
-.description{
+.description {
     clear: both;
     font-size: 20px;
     line-height: 40px;
 }
 
-.first-description{
+.first-description {
     padding: 60px 0 32px 0;
 }
