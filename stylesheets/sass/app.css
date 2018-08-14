@@ -1614,20 +1614,43 @@
 /* line 13, ../../sass/sass/_contact.scss */
 .contact-section {
   margin-top: 90px;
+  position: relative;
+  z-index: 1;
+}
+/* line 73, ../../sass/sass/app.scss */
+.contact-section:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 35%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  top: 0;
+  transform: skewY(-4deg);
+  transform-origin: -100%;
+  background-color: #fff;
 }
 
-/* line 17, ../../sass/sass/_contact.scss */
+/* line 18, ../../sass/sass/_contact.scss */
+.contact-section:before {
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 22, ../../sass/sass/_contact.scss */
 .cool-project-text,
 .email-container {
   text-align: center;
 }
 
-/* line 22, ../../sass/sass/_contact.scss */
+/* line 27, ../../sass/sass/_contact.scss */
 .email-container {
   margin: 60px 0;
 }
 
-/* line 26, ../../sass/sass/_contact.scss */
+/* line 31, ../../sass/sass/_contact.scss */
 .email-icon {
   margin: 8px 0;
   -webkit-animation: email-bounce 4s linear infinite;
@@ -1637,33 +1660,33 @@
   animation: email-bounce 4s linear infinite;
 }
 
-/* line 31, ../../sass/sass/_contact.scss */
+/* line 36, ../../sass/sass/_contact.scss */
 .email-container {
   opacity: .9;
 }
 
-/* line 35, ../../sass/sass/_contact.scss */
+/* line 40, ../../sass/sass/_contact.scss */
 .email-container a {
   color: #2C1B3D;
 }
 
-/* line 39, ../../sass/sass/_contact.scss */
+/* line 44, ../../sass/sass/_contact.scss */
 .email {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
 
-/* line 44, ../../sass/sass/_contact.scss */
+/* line 49, ../../sass/sass/_contact.scss */
 .email-container:hover {
   opacity: 1;
 }
 
-/* line 48, ../../sass/sass/_contact.scss */
+/* line 53, ../../sass/sass/_contact.scss */
 .email-container:hover a {
   cursor: pointer;
 }
 
-/* line 52, ../../sass/sass/_contact.scss */
+/* line 57, ../../sass/sass/_contact.scss */
 .share-me {
   width: 312px;
   margin: 0 auto;
@@ -1671,7 +1694,7 @@
   margin-bottom: 40px;
 }
 
-/* line 59, ../../sass/sass/_contact.scss */
+/* line 64, ../../sass/sass/_contact.scss */
 .share-me-title {
   letter-spacing: 2px;
   font-size: 16px;
@@ -1680,7 +1703,7 @@
   text-align: center;
 }
 
-/* line 67, ../../sass/sass/_contact.scss */
+/* line 72, ../../sass/sass/_contact.scss */
 .share-me span {
   display: block;
   float: left;
@@ -1689,33 +1712,33 @@
   border-radius: 5px;
 }
 
-/* line 75, ../../sass/sass/_contact.scss */
+/* line 80, ../../sass/sass/_contact.scss */
 .share-me span:hover {
   cursor: pointer;
   color: #fff;
 }
 
-/* line 80, ../../sass/sass/_contact.scss */
+/* line 85, ../../sass/sass/_contact.scss */
 .share-me-link {
   color: #000;
 }
 
-/* line 84, ../../sass/sass/_contact.scss */
+/* line 89, ../../sass/sass/_contact.scss */
 #shareMeTwitter:hover {
   background-color: #00aced;
 }
 
-/* line 88, ../../sass/sass/_contact.scss */
+/* line 93, ../../sass/sass/_contact.scss */
 #shareMeFacebook:hover {
   background-color: #3b5998;
 }
 
-/* line 92, ../../sass/sass/_contact.scss */
+/* line 97, ../../sass/sass/_contact.scss */
 #shareMeGit:hover {
   background-color: #66B849;
 }
 
-/* line 96, ../../sass/sass/_contact.scss */
+/* line 101, ../../sass/sass/_contact.scss */
 .copyright {
   padding-bottom: 5px;
   font-weight: 100;

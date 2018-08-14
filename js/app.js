@@ -38,7 +38,6 @@ $(window).scroll(function () {
   var currentScrollTop = $(document).scrollTop();
   slideUpDownHeader();
   dividerSlideIn();
-  skillsSlideIn(currentScrollTop);
 });
 
 function slideUpDownHeader() {
@@ -70,22 +69,6 @@ function dividerSlideIn() {
       width: '0%'
     }, 1750);
     $('#dividerOverlay').addClass('showing');
-  }
-}
-
-function skillsSlideIn(currentScrollTop) {
-  var pageBottom = currentScrollTop + $(window).height();
-  var skillPosition = $('#skillsSectionInner').offset().top;
-  if (skillPosition < pageBottom && !$('#skillsSectionInner').hasClass('showing')) {
-    var width = $('.skills-row').width();
-    $('.skills-row').each(function () {
-      $(this).find('.skills-square').each(function (index) {
-        $(this).animate({
-          left: (width / 4) * index + 80 + 'px'
-        }, 1000);
-      });
-    });
-    $('#skillsSectionInner').addClass('showing');
   }
 }
 
