@@ -39,3 +39,11 @@
 .first-description {
     padding: 60px 0 32px 0;
 }
+
+.about-me-pic {
+    border: 1px solid $red;
+    width: 400px;
+    height: 400px;
+    float: left;
+    transform: rotate(4deg);
+}
