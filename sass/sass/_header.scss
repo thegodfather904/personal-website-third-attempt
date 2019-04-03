@@ -27,14 +27,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 7;
     padding: 20px 50px;
     display: none;
 }
 
 .page-header.up-scroll {
     background-color: #fff;
-    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
     opacity: .9;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .menu-button-open .horizontal-line {
-    background-color: #fff;
+    background-color: $red;
 }
 
 .horizontal-line {
@@ -101,6 +101,10 @@
 
 .menu-button.menu-button-open .horizontal-middle-line {
     visibility: hidden;
+}
+
+.menu-button-open:hover .horizontal-line {
+    background-color: $red;
 }
 
 .menu-button.menu-button-open .horizontal-top-line {

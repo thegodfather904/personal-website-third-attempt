@@ -1,18 +1,18 @@
 var currentInterval;
 
-(function(){
+(function () {
   onPageLoad();
 }());
 
 function onPageLoad() {
-  setTimeout(function(){
+  setTimeout(function () {
     titleOverlaySlideDown();
   }, 500);
 
-  setTimeout(function(){
+  setTimeout(function () {
     diminsionTypeTextStart();
     headerFadeIn();
-  },1500);
+  }, 1500);
 }
 
 function titleOverlaySlideDown() {
@@ -20,7 +20,10 @@ function titleOverlaySlideDown() {
   var afterWidth = window.getComputedStyle(document.querySelector('#titleOverlay'), ':after').width.split('p')[0];
   var finalWidth = overlay.width() + parseInt(afterWidth);
   var width = '-' + finalWidth + 'px';
-  overlay.css({left: width, display: 'block'});
+  overlay.css({
+    left: width,
+    display: 'block'
+  });
   overlay.animate({
     left: '0'
   }, 750);
@@ -31,25 +34,43 @@ function headerFadeIn() {
 }
 
 var lastScrollTop = 0;
-$(window).scroll(function(){
-  var currentScrollTop = $(this).scrollTop();
+$(window).scroll(function () {
+  var currentScrollTop = $(document).scrollTop();
+  slideUpDownHeader();
+  dividerSlideIn();
+});
+
+function slideUpDownHeader() {
+  var currentScrollTop = $(document).scrollTop();
   var pageHeaderHeight = $('#pageHeader').outerHeight();
-  if(($('#pageHeader').hasClass('up-scroll')  || $('#pageHeader').hasClass('top')) && currentScrollTop > lastScrollTop){
+  if (($('#pageHeader').hasClass('up-scroll') || $('#pageHeader').hasClass('top')) && currentScrollTop > lastScrollTop) {
     $('#pageHeader').removeClass('up-scroll top').addClass('down-scroll');
     $('#pageHeader').animate({
       top: '-' + pageHeaderHeight + 'px'
-    }, 500);    
-  } else if($('#pageHeader').hasClass('down-scroll') && currentScrollTop < lastScrollTop){
+    }, 500);
+  } else if ($('#pageHeader').hasClass('down-scroll') && currentScrollTop < lastScrollTop) {
     $('#pageHeader').removeClass('down-scroll').addClass('up-scroll');
     $('#pageHeader').animate({
       top: '0'
-    }, 500);    
+    }, 500);
   }
   lastScrollTop = currentScrollTop;
-  if(lastScrollTop === 0){
+  if (lastScrollTop === 0) {
     $('#pageHeader').removeClass('up-scroll').addClass('top');
   }
-});
+}
+
+function dividerSlideIn() {
+  var currentScrollTop = $(document).scrollTop();
+  var pageBottom = currentScrollTop + $(window).height();
+  var dividerPosition = $('#dividerOverlay').offset().top;
+  if (dividerPosition < pageBottom && !$('#dividerOverlay').hasClass('showing')) {
+    $('#dividerOverlay').animate({
+      width: '0%'
+    }, 1750);
+    $('#dividerOverlay').addClass('showing');
+  }
+}
 
 function menuClick() {
 
@@ -79,31 +100,29 @@ function menuItemClick(scrollTo, el) {
   }, 1000);
 }
 
-function skillsSquareClick(element, skillsColumnIndex) {
+function skillsSquareClick(element) {
   $(element).addClass('active-skill');
 
-  $('.skills-section-inner .skills-column').children().each(function (index) {
+  $('.skills-square').each(function (index) {
     if (!$(this).hasClass('active-skill')) {
       $(this).delay(100 * index).animate({
         opacity: 0
       });
+    } else {
+      $(this).animate({
+        top: '0',
+        left: '80px'
+      }, 1000);
     }
   });
 
   setTimeout(function () {
-    $('.skills-section-inner .skills-column').each(function (index) {
-      if (index !== skillsColumnIndex) {
-        $(this).fadeOut();
-      }
-    });
-  }, 400);
-
-  setTimeout(function () {
     $('.skills-section-inner').addClass('skill-is-active');
+
     $(element).animate({
       width: '100%',
-      height: '100%'
-    }, function () {
+      height: '400px'
+    }, 1000, function () {
       currentInterval = generateParticelForId($(element).find('canvas').attr('id'));
     });
     $(element).find('.skills-square-content').fadeOut();
@@ -121,16 +140,28 @@ $(".skills-close-container").click(function (event) {
   skillsSquare.find('.skills-square-inner-hidden').fadeOut();
 
   skillsSquare.animate({
-    width: '240px',
-    height: '240px',
+    width: '130px',
+    height: '130px',
   }, 300);
   skillsSquare.css({
     overflow: 'initial'
   });
 
   setTimeout(function () {
-    $('.skills-section-inner .skills-column').each(function (index) {
-      $(this).fadeIn();
+
+    $('.skills-row').each(function () {
+      $(this).find('.skills-square').each(function (index) {
+        if (!$(this).hasClass('active-skill')) {
+          $(this).delay(100 * index).animate({
+            opacity: 1
+          });
+        } else {
+          var width = $('.skills-row').width();
+          $(this).animate({
+            left: (width / 4) * index + 80 + 'px'
+          });
+        }
+      });
     });
   }, 400);
 
@@ -151,11 +182,3 @@ $(".skills-close-container").click(function (event) {
     $('.skills-section-inner').removeClass('skill-is-active');
   }, 400);
 });
-
-/*$('.stars-container').hover(function(){
-  console.log('stars-in');
-  $('.stars-container').css('background-color', '#2C1B3D');
-},function(){
-  console.log('stars-out');
-  $('.stars-container').css('background-color', '#e21838');
-});*/

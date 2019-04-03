@@ -7,14 +7,15 @@
     <meta name="viewport" content="initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="stylesheets/sass/app.css" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 </head>
 
 <body>
     <header id="pageHeader" class="page-header top">
         <div class="my-name-container">
-            tony<span>writes</span>code
+            tony
+            <span>writes</span>code
         </div>
         <div class="menu-button" onclick="menuClick();">
             <span class="horizontal-line horizontal-top-line"></span>
@@ -33,13 +34,10 @@
                             <a class="current-section">Home</a>
                         </li>
                         <li class="menu-item" onclick="menuItemClick('aboutMeSection', this)">
-                            <a>About Me</a>
-                        </li>
-                        <li class="menu-item" onclick="menuItemClick('skillsSection', this)">
-                            <a>My Skillset</a>
+                            <a>me</a>
                         </li>
                         <li class="menu-item" onclick="menuItemClick('contactSection', this)">
-                            <a>Contact</a>
+                            <a>contact</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +45,6 @@
         </div>
     </nav>
     <main id="mainPageContent" class="main-page-content">
-
         <section class="title-section">
             <div id="titleOverlay" class="title-overlay"></div>
             <div class="stars-container">
@@ -62,22 +59,10 @@
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
             </div>
         </section>
-
-
-
-
-
-
-
-        <!--<section id="alternateDimension" class="alternate-diminsion-section large-block-section">
-            <canvas id="alternateDiminsionStar" class="star-canvas"></canvas>
-            <div class="typewriter-container">
-                <div id="typewriteTitle" class="typewrite"></div>
-                <div id="buildTitle" class="typewrite"></div>
-                <div id="diminsionTitle" class="typewrite"></div>
-            </div>
-        </section>-->
         <section id="aboutMeSection" class="about-me-section">
+            <div class="about-me-pic">
+                <img src="images/me.jpg" alt="it me">
+            </div>
             <div class="about-me-description">
                 <div class="title-upper">hello and welcome </div>
                 <div class="title-lower">to the other side</div>
@@ -89,201 +74,12 @@
                 </div>
             </div>
         </section>
-        <section class="divider-section">
-            <canvas id="dividerCanvas"></canvas>
-        </section>
-        <section id="skillsSection" class="skills-section">
-            <div class="skills-section-inner">
-                <div class="skills-column">
-                    <div class="skills-square" onclick="skillsSquareClick(this, 0)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="htmlCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="planet-bio-container">
-                                    <!--<div class="alien-animate">
-                                    </div>-->
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/html-5.png" alt="html">
-                        </div>
-                    </div>
-                    <div class="skills-square" onclick="skillsSquareClick(this, 0)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="gitCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/git.png" alt="git">
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-column">
-                    <div class="skills-square" onclick="skillsSquareClick(this, 1)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="cssCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/css-3.png" alt="css">
-                        </div>
-                    </div>
-                    <div class="skills-square" onclick="skillsSquareClick(this, 1)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="jsCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/js.png" alt="js">
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-column">
-                    <div class="skills-square" onclick="skillsSquareClick(this, 2)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="javaCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/java.png" alt="java">
-                        </div>
-                    </div>
-                    <div class="skills-square" onclick="skillsSquareClick(this, 2)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="primefacesCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/primefaces.png" alt="primefaces">
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-column">
-                    <div class="skills-square" onclick="skillsSquareClick(this, 3)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="linuxCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/linux.png" alt="linux">
-                        </div>
-                    </div>
-                    <div class="skills-square" onclick="skillsSquareClick(this, 3)">
-                        <div class="skill-square-outer"></div>
-                        <div class="skills-square-inner">
-                            <div class="skills-square-inner-hidden">
-                                <canvas id="sassCanvas"></canvas>
-                                <div class="planet-container">
-                                    <div class="planet-container-inner">
-                                        <img src="images/transparentCircle4.png" class="planet-overlay" />
-                                        <div class="planet">
-                                            <img src="images/vector2.png" class="planet-image" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-close-container">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-square-content">
-                            <img class="skills-icons" src="images/icons/sass.png" alt="sass">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="divider-section-wrapper">
+            <section class="divider-section">
+                <canvas id="dividerCanvas"></canvas>
+            </section>
+            <div id="dividerOverlay" class="divider-overlay"></div>
+        </div>
         <section id="contactSection" class="contact-section">
             <div class="cool-project-text">got a cool project for me to work on?</div>
             <div class="email-container">
@@ -318,11 +114,50 @@
                 &copy; tony scialo
             </div>
         </section>
+
+        <div id="personalSkillCreativeOverlay" class="overlay">
+            <div class=" container ">
+                <div class="title ">CREATIVE.</div>
+                <div class="text ">only boring people get bored</div>
+            </div>
+        </div>
+        <div id="personalSkillCreativeImg" class="img">
+            <img src="images/personal-skills/creative_transparent.png " alt="creative">
+        </div>
+        <div id="personalSkillInnovativeOverlay" class="overlay">
+            <div class=" container ">
+                <div class="title ">INNOVATIVE.</div>
+                <div class="text ">enjoy attempting the absurd</div>
+            </div>
+        </div>
+        <div id="personalSkillInnovativeImg" class="img">
+            <img src="images/personal-skills/innovative_transparent.png " alt="innovative">
+        </div>
+        <div id="personalSkillAnalytivalOverlay" class="overlay">
+            <div class=" container ">
+                <div class="title ">ANALYTICAL.</div>
+                <div class="text ">both predictable and irrational, or predicably irrational</div>
+            </div>
+        </div>
+        <div id="personalSkillAnalyticalImg" class="img">
+            <img src="images/personal-skills/analytical_transparent.png " alt="analytical">
+        </div>
+
+        <div id="personalSkillInquisitiveOverlay" class="overlay">
+            <div class=" container ">
+                <div class="title ">INQUISITIVE.</div>
+                <div class="text ">passionitly curious about the things you know, that i don't</div>
+            </div>
+        </div>
+        <div id="personalSkillInquisitiveImg" class="img">
+            <img src="images/personal-skills/inquisitive_transparent.png " alt="innovative">
+        </div>
     </main>
-    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
-    <script src="app.js"></script>
-    <script src="particle.js"></script>
-    <script src="type.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js "></script>
+    <script src="js/app.js "></script>
+    <script src="js/particle.js "></script>
+    <script src="js/type.js "></script>
+    <script src="js/personalSkills.js "></script>
 </body>
 
 </html>

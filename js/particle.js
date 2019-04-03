@@ -2,7 +2,7 @@ var radius = 2;
 
 $(function(){
     var diminsionInterval = generateParticelForId('alternateDiminsionStar');
-    //generateParticelForId('dividerCanvas');
+    generateParticelForId('dividerCanvas');
 });
 
 function generateParticelForId(id) {
