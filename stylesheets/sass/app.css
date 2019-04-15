@@ -960,7 +960,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 73, ../../sass/sass/app.scss */
+/* line 78, ../../sass/sass/app.scss */
 .skills-section:before {
   background: inherit;
   content: '';
@@ -1376,7 +1376,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 73, ../../sass/sass/app.scss */
+/* line 78, ../../sass/sass/app.scss */
 .about-me-section:before {
   background: inherit;
   content: '';
@@ -1392,7 +1392,7 @@
   transform-origin: -2%;
   background-color: #fff;
 }
-/* line 53, ../../sass/sass/app.scss */
+/* line 57, ../../sass/sass/app.scss */
 .about-me-section:after {
   background: inherit;
   content: '';
@@ -1627,7 +1627,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 73, ../../sass/sass/app.scss */
+/* line 78, ../../sass/sass/app.scss */
 .contact-section:before {
   background: inherit;
   content: '';
@@ -1871,7 +1871,37 @@
   opacity: 0.3;
 }
 
-/* line 100, ../../sass/sass/app.scss */
+/* line 1, ../../sass/sass/_quotes.scss */
+.quotes-section {
+  height: 500px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+/* line 7, ../../sass/sass/_quotes.scss */
+.quotes-section .quote {
+  width: 50%;
+}
+/* line 10, ../../sass/sass/_quotes.scss */
+.quotes-section .quote .header {
+  text-align: center;
+}
+/* line 13, ../../sass/sass/_quotes.scss */
+.quotes-section .quote .header .person {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+/* line 18, ../../sass/sass/_quotes.scss */
+.quotes-section .quote .header .company {
+  margin-bottom: 12px;
+}
+/* line 23, ../../sass/sass/_quotes.scss */
+.quotes-section .quote .actual-quote {
+  font-size: 22px;
+  text-align: center;
+}
+
+/* line 106, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1879,19 +1909,19 @@ body {
   overflow-x: hidden;
 }
 
-/* line 107, ../../sass/sass/app.scss */
+/* line 113, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 111, ../../sass/sass/app.scss */
+/* line 117, ../../sass/sass/app.scss */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-/* line 117, ../../sass/sass/app.scss */
+/* line 123, ../../sass/sass/app.scss */
 .section-title {
   font-size: 50px;
   text-align: center;
