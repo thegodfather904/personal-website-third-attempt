@@ -34,21 +34,25 @@
     <nav class="diminsion-navigation">
         <div class="menu">
             <div class="menu-inner">
-                <div class="box-outline-shadow"></div>
-                <div class="box-outline"></div>
-                <div class="menu-items">
-                    <ul id="menuList">
-                        <li class="menu-item" onclick="menuItemClick('alternateDimension', this)">
-                            <a class="current-section">Home</a>
-                        </li>
-                        <li class="menu-item" onclick="menuItemClick('aboutMeSection', this)">
-                            <a>me</a>
-                        </li>
-                        <li class="menu-item" onclick="menuItemClick('contactSection', this)">
-                            <a>contact</a>
-                        </li>
-                    </ul>
+                <div class="box-outline-shadow">
+                    <div class="menu-items">
+                        <ul id="menuList">
+                            <li class="menu-item" onclick="menuItemClick('alternateDimension', this)">
+                                <a class="current-section">home</a>
+                            </li>
+                            <li class="menu-item" onclick="menuItemClick('aboutMeSection', this)">
+                                <a>me</a>
+                            </li>
+                            <li class="menu-item" onclick="menuItemClick('quotesSection', this)">
+                                <a>quotes</a>
+                            </li>
+                            <li class="menu-item" onclick="menuItemClick('contactSection', this)">
+                                <a>contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="box-outline"></div>
             </div>
         </div>
     </nav>
@@ -87,8 +91,7 @@
             </section>
             <div id="dividerOverlay" class="divider-overlay"></div>
         </div>
-        <section class="quotes-section">
-
+        <section id="quotesSection" class="quotes-section">
             <div class="quote-slick">
                 <div class="quote">
                     <div class="header">
