@@ -1,8 +1,32 @@
 .quotes-section {
     height: 500px;
     padding-top: 80px;
-    display: flex;
-    justify-content: space-around;
+    width: 56%;
+    margin: 0 auto;
+
+    .slick-arrow:before {
+        font-weight: 900;
+        color: $red;
+        font-family: "Font Awesome 5 Free";
+        font-size: 42px;
+    }
+
+    .slick-prev:before {
+        content: "\f053";
+    }
+
+    .slick-next:before {
+        content: "\f054";
+    }
+
+    .slick-dots {
+        bottom: -80px;
+    }
+
+    .slick-list {
+        width: 90%;
+        margin: 0 auto;
+    }
 
     .quote {
         width: 50%;

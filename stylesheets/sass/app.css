@@ -1835,7 +1835,7 @@
   justify-content: center;
   align-items: center;
 }
-/* line 68, ../../sass/sass/_personalskills.scss */
+/* line 69, ../../sass/sass/_personalskills.scss */
 .overlay .container {
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
@@ -1843,24 +1843,24 @@
   -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
 }
-/* line 71, ../../sass/sass/_personalskills.scss */
+/* line 73, ../../sass/sass/_personalskills.scss */
 .overlay .title {
   font-size: 200px;
 }
-/* line 74, ../../sass/sass/_personalskills.scss */
+/* line 77, ../../sass/sass/_personalskills.scss */
 .overlay .text {
   font-size: 24px;
   text-align: right;
 }
 
-/* line 80, ../../sass/sass/_personalskills.scss */
+/* line 83, ../../sass/sass/_personalskills.scss */
 .img {
   display: none;
   position: absolute;
   width: 100px;
   height: 100px;
 }
-/* line 85, ../../sass/sass/_personalskills.scss */
+/* line 89, ../../sass/sass/_personalskills.scss */
 .img img {
   width: 100%;
   -webkit-transform: rotate(-5deg);
@@ -1875,27 +1875,51 @@
 .quotes-section {
   height: 500px;
   padding-top: 80px;
-  display: flex;
-  justify-content: space-around;
+  width: 56%;
+  margin: 0 auto;
 }
 /* line 7, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-arrow:before {
+  font-weight: 900;
+  color: #e21838;
+  font-family: "Font Awesome 5 Free";
+  font-size: 42px;
+}
+/* line 14, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-prev:before {
+  content: "\f053";
+}
+/* line 18, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-next:before {
+  content: "\f054";
+}
+/* line 22, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-dots {
+  bottom: -80px;
+}
+/* line 26, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-list {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 31, ../../sass/sass/_quotes.scss */
 .quotes-section .quote {
   width: 50%;
 }
-/* line 10, ../../sass/sass/_quotes.scss */
+/* line 34, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header {
   text-align: center;
 }
-/* line 13, ../../sass/sass/_quotes.scss */
+/* line 37, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .person {
   font-size: 40px;
   margin-bottom: 12px;
 }
-/* line 18, ../../sass/sass/_quotes.scss */
+/* line 42, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .company {
   margin-bottom: 12px;
 }
-/* line 23, ../../sass/sass/_quotes.scss */
+/* line 47, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .actual-quote {
   font-size: 22px;
   text-align: center;

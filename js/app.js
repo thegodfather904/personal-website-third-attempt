@@ -2,6 +2,7 @@ var currentInterval;
 
 (function () {
   onPageLoad();
+  setupSlick();
 }());
 
 function onPageLoad() {
@@ -182,3 +183,13 @@ $(".skills-close-container").click(function (event) {
     $('.skills-section-inner').removeClass('skill-is-active');
   }, 400);
 });
+
+function setupSlick() {
+  $('.quote-slick').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 800
+  });
+}
