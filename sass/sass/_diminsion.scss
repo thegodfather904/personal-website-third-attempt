@@ -1,25 +1,28 @@
-@include keyframes(blinking-cursor){
+@include keyframes(blinking-cursor) {
   0% {
-	  box-shadow: 1px 0 #000;
+    box-shadow: 1px 0 #000;
   }
+
   100% {
-	  box-shadow: 0 0 #000;
+    box-shadow: 0 0 #000;
   }
 }
 
-@include keyframes(pulse-arrow){
+@include keyframes(pulse-arrow) {
   0% {
-	  bottom: 40px;	
+    bottom: 40px;
   }
+
   50% {
-	  bottom: 60px;
+    bottom: 60px;
   }
+
   to {
-	  bottom: 40px;
+    bottom: 40px;
   }
 }
 
-.star-canvas{
+.star-canvas {
   position: absolute;
   width: 100%;
   height: 800px;
@@ -118,6 +121,3 @@
 .type-last-word {
   color: $red;
 }
-
-
-

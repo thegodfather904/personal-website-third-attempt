@@ -399,14 +399,14 @@
     bottom: 40px;
   }
 }
-/* line 22, ../../sass/sass/_diminsion.scss */
+/* line 25, ../../sass/sass/_diminsion.scss */
 .star-canvas {
   position: absolute;
   width: 100%;
   height: 800px;
 }
 
-/* line 28, ../../sass/sass/_diminsion.scss */
+/* line 31, ../../sass/sass/_diminsion.scss */
 .typewrite {
   color: #000;
   font-size: 60px;
@@ -416,13 +416,13 @@
   text-align: left;
 }
 
-/* line 37, ../../sass/sass/_diminsion.scss */
+/* line 40, ../../sass/sass/_diminsion.scss */
 .typewriter-container {
   text-align: center;
   overflow: hidden;
 }
 
-/* line 42, ../../sass/sass/_diminsion.scss */
+/* line 45, ../../sass/sass/_diminsion.scss */
 .wrap {
   -webkit-animation: blinking-cursor 1200ms infinite;
   -moz-animation: blinking-cursor 1200ms infinite;
@@ -432,14 +432,14 @@
   padding-right: 2px;
 }
 
-/* line 53, ../../sass/sass/_diminsion.scss */
+/* line 56, ../../sass/sass/_diminsion.scss */
 .title-section {
   width: 100%;
   height: 100vh;
   border-bottom: 1px solid red;
 }
 
-/* line 59, ../../sass/sass/_diminsion.scss */
+/* line 62, ../../sass/sass/_diminsion.scss */
 .title-overlay {
   width: 60%;
   float: left;
@@ -452,7 +452,7 @@
   display: none;
 }
 
-/* line 71, ../../sass/sass/_diminsion.scss */
+/* line 74, ../../sass/sass/_diminsion.scss */
 .title-overlay:after {
   content: '';
   position: absolute;
@@ -469,7 +469,7 @@
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 83, ../../sass/sass/_diminsion.scss */
+/* line 86, ../../sass/sass/_diminsion.scss */
 .stars-container {
   width: 100%;
   height: 100%;
@@ -477,7 +477,7 @@
   position: absolute;
 }
 
-/* line 90, ../../sass/sass/_diminsion.scss */
+/* line 93, ../../sass/sass/_diminsion.scss */
 .title-type-container {
   position: absolute;
   width: 60%;
@@ -493,7 +493,7 @@
   margin-top: -50px;
 }
 
-/* line 101, ../../sass/sass/_diminsion.scss */
+/* line 104, ../../sass/sass/_diminsion.scss */
 .pulse-arrow-container {
   position: absolute;
   z-index: 2;
@@ -510,13 +510,13 @@
   color: #e21838;
 }
 
-/* line 113, ../../sass/sass/_diminsion.scss */
+/* line 116, ../../sass/sass/_diminsion.scss */
 .pulse-arrow-container:hover {
   color: #000;
   cursor: pointer;
 }
 
-/* line 118, ../../sass/sass/_diminsion.scss */
+/* line 121, ../../sass/sass/_diminsion.scss */
 .type-last-word {
   color: #e21838;
 }
@@ -1951,4 +1951,9 @@ html {
   text-align: center;
   margin-bottom: 100px;
   position: relative;
+}
+
+/* line 130, ../../sass/sass/app.scss */
+.main-page-content {
+  overflow: hidden;
 }
