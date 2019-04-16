@@ -83,7 +83,10 @@ function menuClick() {
     menu.fadeOut();
   } else {
     menuButton.addClass('menu-button-open');
-    menu.fadeIn();
+    // menu.fadeIn();
+    menu.css("display", "flex")
+      .hide()
+      .fadeIn();
   }
 }
 
