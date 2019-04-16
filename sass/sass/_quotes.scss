@@ -1,14 +1,28 @@
 .quotes-section {
     height: 500px;
-    padding-top: 80px;
+    // padding-top: 80px;
     width: 56%;
     margin: 0 auto;
+    @include angle-before(-4deg, 35%, -100%, $white);
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+
+    &:before {
+        box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+    }
 
     .slick-arrow:before {
         font-weight: 900;
         color: $red;
         font-family: "Font Awesome 5 Free";
         font-size: 42px;
+    }
+
+    .slick-prev {
+        left: -50px;
+    }
+
+    .slick-next {
+        right: -50px;
     }
 
     .slick-prev:before {
@@ -47,6 +61,22 @@
         .actual-quote {
             font-size: 22px;
             text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .quotes-section {
+        width: 70%;
+
+        .quote {
+            .person {
+                font-size: 34px;
+            }
+
+            .actual-quote {
+                font-size: 18px;
+            }
         }
     }
 }

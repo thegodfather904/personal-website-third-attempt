@@ -1524,43 +1524,44 @@
   background-color: #e21838;
   height: 100%;
   width: 100%;
+  box-shadow: inset 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 13, ../../sass/sass/_divider.scss */
+/* line 14, ../../sass/sass/_divider.scss */
 .divider-section:before {
   box-shadow: inset 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 17, ../../sass/sass/_divider.scss */
+/* line 18, ../../sass/sass/_divider.scss */
 .divider-section:after {
   box-shadow: inset 0px -6px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 21, ../../sass/sass/_divider.scss */
+/* line 22, ../../sass/sass/_divider.scss */
 .divider-section canvas {
   width: 100%;
   height: 300px;
   position: absolute;
 }
 
-/* line 27, ../../sass/sass/_divider.scss */
+/* line 28, ../../sass/sass/_divider.scss */
 .divider-ufo {
   position: relative;
   width: 100px;
   height: 100px;
 }
 
-/* line 33, ../../sass/sass/_divider.scss */
+/* line 34, ../../sass/sass/_divider.scss */
 .divider-ufo path {
   fill: #fff;
 }
 
-/* line 37, ../../sass/sass/_divider.scss */
+/* line 38, ../../sass/sass/_divider.scss */
 .divider-ufo text {
   display: none;
 }
 
-/* line 41, ../../sass/sass/_divider.scss */
+/* line 42, ../../sass/sass/_divider.scss */
 .divider-overlay {
   width: 100%;
   height: 100%;
@@ -1571,7 +1572,7 @@
   z-index: 2;
 }
 
-/* line 51, ../../sass/sass/_divider.scss */
+/* line 52, ../../sass/sass/_divider.scss */
 .arrow-right {
   width: 0;
   height: 0;
@@ -1926,57 +1927,101 @@
 /* line 1, ../../sass/sass/_quotes.scss */
 .quotes-section {
   height: 500px;
-  padding-top: 80px;
   width: 56%;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 7, ../../sass/sass/_quotes.scss */
+/* line 78, ../../sass/sass/app.scss */
+.quotes-section:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 35%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  top: 0;
+  transform: skewY(-4deg);
+  transform-origin: -100%;
+  background-color: #fff;
+}
+/* line 9, ../../sass/sass/_quotes.scss */
+.quotes-section:before {
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+/* line 13, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-arrow:before {
   font-weight: 900;
   color: #e21838;
   font-family: "Font Awesome 5 Free";
   font-size: 42px;
 }
-/* line 14, ../../sass/sass/_quotes.scss */
+/* line 20, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-prev {
+  left: -50px;
+}
+/* line 24, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-next {
+  right: -50px;
+}
+/* line 28, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-prev:before {
   content: "\f053";
 }
-/* line 18, ../../sass/sass/_quotes.scss */
+/* line 32, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-next:before {
   content: "\f054";
 }
-/* line 22, ../../sass/sass/_quotes.scss */
+/* line 36, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-dots {
   bottom: -80px;
 }
-/* line 26, ../../sass/sass/_quotes.scss */
+/* line 40, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-list {
   width: 90%;
   margin: 0 auto;
 }
-/* line 31, ../../sass/sass/_quotes.scss */
+/* line 45, ../../sass/sass/_quotes.scss */
 .quotes-section .quote {
   width: 50%;
 }
-/* line 34, ../../sass/sass/_quotes.scss */
+/* line 48, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header {
   text-align: center;
 }
-/* line 37, ../../sass/sass/_quotes.scss */
+/* line 51, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .person {
   font-size: 40px;
   margin-bottom: 12px;
 }
-/* line 42, ../../sass/sass/_quotes.scss */
+/* line 56, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .company {
   margin-bottom: 12px;
 }
-/* line 47, ../../sass/sass/_quotes.scss */
+/* line 61, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .actual-quote {
   font-size: 22px;
   text-align: center;
 }
 
+@media only screen and (max-width: 850px) {
+  /* line 69, ../../sass/sass/_quotes.scss */
+  .quotes-section {
+    width: 70%;
+  }
+  /* line 73, ../../sass/sass/_quotes.scss */
+  .quotes-section .quote .person {
+    font-size: 34px;
+  }
+  /* line 77, ../../sass/sass/_quotes.scss */
+  .quotes-section .quote .actual-quote {
+    font-size: 18px;
+  }
+}
 /* line 106, ../../sass/sass/app.scss */
 body {
   margin: 0;
