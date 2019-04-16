@@ -37,16 +37,16 @@
                 <div class="box-outline-shadow">
                     <div class="menu-items">
                         <ul id="menuList">
-                            <li class="menu-item" onclick="menuItemClick('alternateDimension', this)">
+                            <li class="menu-item" onclick="menuItemClick('alternateDimension', this, false)">
                                 <a class="current-section">home</a>
                             </li>
-                            <li class="menu-item" onclick="menuItemClick('aboutMeSection', this)">
+                            <li class="menu-item" onclick="menuItemClick('aboutMeSection', this, false)">
                                 <a>me</a>
                             </li>
-                            <li class="menu-item" onclick="menuItemClick('quotesSection', this)">
+                            <li class="menu-item" onclick="menuItemClick('quotesSection', this, false)">
                                 <a>quotes</a>
                             </li>
-                            <li class="menu-item" onclick="menuItemClick('contactSection', this)">
+                            <li class="menu-item" onclick="menuItemClick('contactSection', this, false)">
                                 <a>contact</a>
                             </li>
                         </ul>
@@ -57,7 +57,7 @@
         </div>
     </nav>
     <main id="mainPageContent" class="main-page-content">
-        <section class="title-section">
+        <section id="alternateDimension" class="title-section">
             <div id="titleOverlay" class="title-overlay"></div>
             <div class="stars-container">
                 <canvas id="alternateDiminsionStar" class="star-canvas"></canvas>
@@ -67,7 +67,7 @@
                 <div id="buildTitle" class="typewrite"></div>
                 <div id="diminsionTitle" class="typewrite"></div>
             </div>
-            <div class="pulse-arrow-container">
+            <div id="pulseArrowScroller" class="pulse-arrow-container">
                 <i class="fas fa-angle-down" aria-hidden="true"></i>
             </div>
         </section>

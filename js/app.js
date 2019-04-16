@@ -3,6 +3,7 @@ var currentInterval;
 (function () {
   onPageLoad();
   setupSlick();
+  setupPulseArrowScroller();
 }());
 
 function onPageLoad() {
@@ -14,6 +15,13 @@ function onPageLoad() {
     diminsionTypeTextStart();
     headerFadeIn();
   }, 1500);
+}
+
+function setupPulseArrowScroller() {
+  $('#pulseArrowScroller').click(function () {
+    var el = $('#menuList').children().get(0);
+    menuItemClick('aboutMeSection', el, true);
+  })
 }
 
 function titleOverlaySlideDown() {
@@ -89,12 +97,15 @@ function menuClick() {
   }
 }
 
-function menuItemClick(scrollTo, el) {
+function menuItemClick(scrollTo, el, skipMenuClose) {
 
   $('#menuList').find('.current-section').removeClass('current-section');
   $(el).find('a').addClass('current-section');
 
-  menuClick();
+  if (!skipMenuClose) {
+    menuClick();
+  }
+
 
   var scrollEl = $('#' + scrollTo);
 
