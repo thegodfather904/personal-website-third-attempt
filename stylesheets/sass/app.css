@@ -507,7 +507,6 @@
   position: absolute;
   z-index: 2;
   left: 0;
-  bottom: 60px;
   width: 60%;
   text-align: center;
   font-size: 70px;
@@ -530,6 +529,30 @@
   color: #e21838;
 }
 
+@media only screen and (max-width: 850px) {
+  /* line 120, ../../sass/sass/_diminsion.scss */
+  .typewrite {
+    font-size: 44px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 126, ../../sass/sass/_diminsion.scss */
+  .typewrite {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* line 132, ../../sass/sass/_diminsion.scss */
+  .title-overlay:after {
+    right: -80px;
+    width: 150px;
+    -webkit-transform: skewX(-6deg);
+    -moz-transform: skewX(-6deg);
+    -o-transform: skewX(-6deg);
+    -ms-transform: skewX(-6deg);
+    transform: skewX(-6deg);
+  }
+}
 /*Mixins*/
 /*Keyframes*/
 @-webkit-keyframes menu-box-rotation-clockwise {

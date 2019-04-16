@@ -99,7 +99,7 @@
   position: absolute;
   z-index: 2;
   left: 0;
-  bottom: 60px;
+  // bottom: 60px;
   width: 60%;
   text-align: center;
   font-size: 70px;
@@ -114,4 +114,24 @@
 
 .type-last-word {
   color: $red;
+}
+
+@media only screen and (max-width: 850px) {
+  .typewrite {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .typewrite {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .title-overlay:after {
+    right: -80px;
+    width: 150px;
+    @include transform (skewX(-6deg));
+  }
 }
