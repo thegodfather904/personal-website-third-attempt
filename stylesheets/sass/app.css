@@ -184,7 +184,7 @@
     transform: rotate(45deg);
   }
 }
-/* line 25, ../../sass/sass/_header.scss */
+/* line 29, ../../sass/sass/_header.scss */
 .page-header {
   position: fixed;
   top: 0;
@@ -195,24 +195,24 @@
   display: none;
 }
 
-/* line 35, ../../sass/sass/_header.scss */
+/* line 39, ../../sass/sass/_header.scss */
 .page-header.up-scroll {
   background-color: #fff;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
   opacity: .9;
 }
 
-/* line 41, ../../sass/sass/_header.scss */
+/* line 45, ../../sass/sass/_header.scss */
 .page-header.up-scroll .horizontal-line {
   background-color: #000;
 }
 
-/* line 45, ../../sass/sass/_header.scss */
+/* line 49, ../../sass/sass/_header.scss */
 .my-name-container span {
   color: #e21838;
 }
 
-/* line 49, ../../sass/sass/_header.scss */
+/* line 53, ../../sass/sass/_header.scss */
 .menu-button {
   position: absolute;
   top: 20px;
@@ -221,12 +221,12 @@
   height: 48px;
 }
 
-/* line 57, ../../sass/sass/_header.scss */
+/* line 61, ../../sass/sass/_header.scss */
 .menu-button-open .horizontal-line {
   background-color: #e21838;
 }
 
-/* line 61, ../../sass/sass/_header.scss */
+/* line 65, ../../sass/sass/_header.scss */
 .horizontal-line {
   background-color: #fff;
   width: 48%;
@@ -236,7 +236,7 @@
   margin-left: 19px;
 }
 
-/* line 70, ../../sass/sass/_header.scss */
+/* line 74, ../../sass/sass/_header.scss */
 .horizontal-top-line {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
@@ -245,7 +245,7 @@
   transform: translateY(-8px);
 }
 
-/* line 74, ../../sass/sass/_header.scss */
+/* line 78, ../../sass/sass/_header.scss */
 .horizontal-bottom-line {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
@@ -254,7 +254,7 @@
   transform: translateY(8px);
 }
 
-/* line 78, ../../sass/sass/_header.scss */
+/* line 82, ../../sass/sass/_header.scss */
 .horizontal-top-line,
 .horizontal-middle-line,
 .horizontal-bottom-line {
@@ -265,12 +265,12 @@
   transition: all 277ms ease-in-out;
 }
 
-/* line 84, ../../sass/sass/_header.scss */
+/* line 88, ../../sass/sass/_header.scss */
 .menu-button:hover {
   cursor: pointer;
 }
 
-/* line 88, ../../sass/sass/_header.scss */
+/* line 92, ../../sass/sass/_header.scss */
 .menu-button:hover .horizontal-top-line {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -280,12 +280,12 @@
   background-color: #fff;
 }
 
-/* line 93, ../../sass/sass/_header.scss */
+/* line 97, ../../sass/sass/_header.scss */
 .menu-button:hover .horizontal-middle-line {
   background-color: #fff;
 }
 
-/* line 97, ../../sass/sass/_header.scss */
+/* line 101, ../../sass/sass/_header.scss */
 .menu-button:hover .horizontal-bottom-line {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -295,17 +295,17 @@
   background-color: #fff;
 }
 
-/* line 102, ../../sass/sass/_header.scss */
+/* line 106, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-middle-line {
   visibility: hidden;
 }
 
-/* line 106, ../../sass/sass/_header.scss */
+/* line 110, ../../sass/sass/_header.scss */
 .menu-button-open:hover .horizontal-line {
   background-color: #e21838;
 }
 
-/* line 110, ../../sass/sass/_header.scss */
+/* line 114, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-top-line {
   -webkit-animation: horizontal-move-down 500ms forwards;
   -moz-animation: horizontal-move-down 500ms forwards;
@@ -314,7 +314,7 @@
   animation: horizontal-move-down 500ms forwards;
 }
 
-/* line 114, ../../sass/sass/_header.scss */
+/* line 118, ../../sass/sass/_header.scss */
 .menu-button.menu-button-open .horizontal-bottom-line {
   -webkit-animation: horizontal-move-up 500ms forwards;
   -moz-animation: horizontal-move-up 500ms forwards;
@@ -323,6 +323,15 @@
   animation: horizontal-move-up 500ms forwards;
 }
 
+@media only screen and (max-width: 650px) {
+  /* line 124, ../../sass/sass/_header.scss */
+  .horizontal-line,
+  .menu-button:hover .horizontal-top-line,
+  .menu-button:hover .horizontal-middle-line,
+  .menu-button:hover .horizontal-bottom-line {
+    background-color: #000;
+  }
+}
 @-webkit-keyframes blinking-cursor {
   0% {
     box-shadow: 1px 0 #000;
@@ -432,14 +441,14 @@
   padding-right: 2px;
 }
 
-/* line 56, ../../sass/sass/_diminsion.scss */
+/* line 50, ../../sass/sass/_diminsion.scss */
 .title-section {
   width: 100%;
   height: 100vh;
   border-bottom: 1px solid red;
 }
 
-/* line 62, ../../sass/sass/_diminsion.scss */
+/* line 56, ../../sass/sass/_diminsion.scss */
 .title-overlay {
   width: 60%;
   float: left;
@@ -452,7 +461,7 @@
   display: none;
 }
 
-/* line 74, ../../sass/sass/_diminsion.scss */
+/* line 68, ../../sass/sass/_diminsion.scss */
 .title-overlay:after {
   content: '';
   position: absolute;
@@ -469,7 +478,7 @@
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 86, ../../sass/sass/_diminsion.scss */
+/* line 80, ../../sass/sass/_diminsion.scss */
 .stars-container {
   width: 100%;
   height: 100%;
@@ -477,7 +486,7 @@
   position: absolute;
 }
 
-/* line 93, ../../sass/sass/_diminsion.scss */
+/* line 87, ../../sass/sass/_diminsion.scss */
 .title-type-container {
   position: absolute;
   width: 60%;
@@ -493,7 +502,7 @@
   margin-top: -50px;
 }
 
-/* line 104, ../../sass/sass/_diminsion.scss */
+/* line 98, ../../sass/sass/_diminsion.scss */
 .pulse-arrow-container {
   position: absolute;
   z-index: 2;
@@ -510,13 +519,13 @@
   color: #e21838;
 }
 
-/* line 116, ../../sass/sass/_diminsion.scss */
+/* line 110, ../../sass/sass/_diminsion.scss */
 .pulse-arrow-container:hover {
   color: #000;
   cursor: pointer;
 }
 
-/* line 121, ../../sass/sass/_diminsion.scss */
+/* line 115, ../../sass/sass/_diminsion.scss */
 .type-last-word {
   color: #e21838;
 }
