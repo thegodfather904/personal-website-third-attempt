@@ -1473,45 +1473,77 @@
 
 /* line 16, ../../sass/sass/_aboutme.scss */
 .about-me-description {
-  float: right;
-  width: 50%;
-  padding-right: 10%;
+  width: 70%;
+  margin: 0 auto;
 }
 
-/* line 22, ../../sass/sass/_aboutme.scss */
-.title-upper,
-.title-lower {
-  font-size: 44px;
-  font-style: italic;
+/* line 21, ../../sass/sass/_aboutme.scss */
+.adele {
+  font-size: 76px;
+  text-align: center;
 }
 
-/* line 28, ../../sass/sass/_aboutme.scss */
-.title-lower {
-  float: right;
-  padding-top: 24px;
-}
-
-/* line 33, ../../sass/sass/_aboutme.scss */
+/* line 26, ../../sass/sass/_aboutme.scss */
 .description {
-  clear: both;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 56px;
+  letter-spacing: 2px;
 }
 
-/* line 39, ../../sass/sass/_aboutme.scss */
+/* line 32, ../../sass/sass/_aboutme.scss */
 .first-description {
-  padding: 60px 0 32px 0;
+  padding: 60px 0;
 }
 
-/* line 43, ../../sass/sass/_aboutme.scss */
-.about-me-pic {
-  border: 1px solid #e21838;
-  width: 400px;
-  height: 400px;
-  float: left;
-  transform: rotate(4deg);
-}
+@media only screen and (max-width: 850px) {
+  /* line 37, ../../sass/sass/_aboutme.scss */
+  .adele {
+    font-size: 50px;
+  }
 
+  /* line 41, ../../sass/sass/_aboutme.scss */
+  .description {
+    font-size: 18px;
+  }
+
+  /* line 45, ../../sass/sass/_aboutme.scss */
+  .first-description {
+    padding: 40px 0;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 52, ../../sass/sass/_aboutme.scss */
+  .about-me-description {
+    width: 80%;
+  }
+
+  /* line 56, ../../sass/sass/_aboutme.scss */
+  .adele {
+    font-size: 50px;
+  }
+
+  /* line 60, ../../sass/sass/_aboutme.scss */
+  .description {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 67, ../../sass/sass/_aboutme.scss */
+  .about-me-description {
+    width: 90%;
+  }
+
+  /* line 71, ../../sass/sass/_aboutme.scss */
+  .adele {
+    font-size: 40px;
+  }
+
+  /* line 75, ../../sass/sass/_aboutme.scss */
+  .description {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
 /* line 1, ../../sass/sass/_divider.scss */
 .divider-section-wrapper {
   width: 100%;
