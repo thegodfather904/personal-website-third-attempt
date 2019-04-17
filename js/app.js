@@ -4,6 +4,7 @@ var currentInterval;
   onPageLoad();
   setupSlick();
   setupPulseArrowScroller();
+  setupContactClick();
 }());
 
 function onPageLoad() {
@@ -121,5 +122,12 @@ function setupSlick() {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 800
+  });
+}
+
+function setupContactClick() {
+  $('#contactMeContainer').click(function () {
+    var el = $('#menuList').children().get(3);
+    menuItemClick('contactSection', el, true);
   });
 }

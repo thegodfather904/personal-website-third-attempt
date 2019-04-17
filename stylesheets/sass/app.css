@@ -1674,7 +1674,7 @@
     transform: scale(1, 1);
   }
 }
-/* line 13, ../../sass/sass/_contact.scss */
+/* line 15, ../../sass/sass/_contact.scss */
 .contact-section {
   margin-top: 90px;
   position: relative;
@@ -1685,7 +1685,7 @@
   background: inherit;
   content: '';
   display: block;
-  height: 35%;
+  height: 45%;
   left: 0;
   position: absolute;
   right: 0;
@@ -1697,23 +1697,12 @@
   background-color: #fff;
 }
 
-/* line 18, ../../sass/sass/_contact.scss */
+/* line 20, ../../sass/sass/_contact.scss */
 .contact-section:before {
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 22, ../../sass/sass/_contact.scss */
-.cool-project-text,
-.email-container {
-  text-align: center;
-}
-
-/* line 27, ../../sass/sass/_contact.scss */
-.email-container {
-  margin: 60px 0;
-}
-
-/* line 31, ../../sass/sass/_contact.scss */
+/* line 24, ../../sass/sass/_contact.scss */
 .email-icon {
   margin: 8px 0;
   -webkit-animation: email-bounce 4s linear infinite;
@@ -1723,33 +1712,7 @@
   animation: email-bounce 4s linear infinite;
 }
 
-/* line 36, ../../sass/sass/_contact.scss */
-.email-container {
-  opacity: .9;
-}
-
-/* line 40, ../../sass/sass/_contact.scss */
-.email-container a {
-  color: #2C1B3D;
-}
-
-/* line 44, ../../sass/sass/_contact.scss */
-.email {
-  text-transform: uppercase;
-  letter-spacing: 8px;
-}
-
-/* line 49, ../../sass/sass/_contact.scss */
-.email-container:hover {
-  opacity: 1;
-}
-
-/* line 53, ../../sass/sass/_contact.scss */
-.email-container:hover a {
-  cursor: pointer;
-}
-
-/* line 57, ../../sass/sass/_contact.scss */
+/* line 29, ../../sass/sass/_contact.scss */
 .share-me {
   width: 312px;
   margin: 0 auto;
@@ -1757,7 +1720,7 @@
   margin-bottom: 40px;
 }
 
-/* line 64, ../../sass/sass/_contact.scss */
+/* line 36, ../../sass/sass/_contact.scss */
 .share-me-title {
   letter-spacing: 2px;
   font-size: 16px;
@@ -1766,42 +1729,51 @@
   text-align: center;
 }
 
-/* line 72, ../../sass/sass/_contact.scss */
+/* line 44, ../../sass/sass/_contact.scss */
 .share-me span {
   display: block;
-  float: left;
   padding: 20px 20px;
-  margin: 0 25px;
   border-radius: 5px;
 }
 
-/* line 80, ../../sass/sass/_contact.scss */
+/* line 50, ../../sass/sass/_contact.scss */
 .share-me span:hover {
   cursor: pointer;
   color: #fff;
 }
 
-/* line 85, ../../sass/sass/_contact.scss */
+/* line 56, ../../sass/sass/_contact.scss */
+.share-me-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 61, ../../sass/sass/_contact.scss */
 .share-me-link {
   color: #000;
 }
 
-/* line 89, ../../sass/sass/_contact.scss */
-#shareMeTwitter:hover {
-  background-color: #00aced;
+/* line 65, ../../sass/sass/_contact.scss */
+#shareMeEmail:hover {
+  background-color: #d92f26;
 }
 
-/* line 93, ../../sass/sass/_contact.scss */
-#shareMeFacebook:hover {
-  background-color: #3b5998;
+/* line 69, ../../sass/sass/_contact.scss */
+#shareMeStackOverflow:hover {
+  background-color: #f48024;
 }
 
-/* line 97, ../../sass/sass/_contact.scss */
+/* line 73, ../../sass/sass/_contact.scss */
+#shareMeLinkedIn:hover {
+  background-color: #293d4a;
+}
+
+/* line 77, ../../sass/sass/_contact.scss */
 #shareMeGit:hover {
   background-color: #66B849;
 }
 
-/* line 101, ../../sass/sass/_contact.scss */
+/* line 81, ../../sass/sass/_contact.scss */
 .copyright {
   padding-bottom: 5px;
   font-weight: 100;
@@ -2135,12 +2107,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 32, ../../sass/sass/_viewmore.scss */
+/* line 33, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container:hover {
   cursor: pointer;
 }
-/* line 35, ../../sass/sass/_viewmore.scss */
+/* line 36, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container:hover .vm-inner {
   -webkit-animation: border-square-in 500ms forwards;
   -moz-animation: border-square-in 500ms forwards;
@@ -2148,7 +2121,7 @@
   -ms-animation: border-square-in 500ms forwards;
   animation: border-square-in 500ms forwards;
 }
-/* line 38, ../../sass/sass/_viewmore.scss */
+/* line 39, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container:hover .vm-inner.contact-me-inner {
   -webkit-animation: border-square-out 500ms forwards;
   -moz-animation: border-square-out 500ms forwards;
@@ -2156,7 +2129,7 @@
   -ms-animation: border-square-out 500ms forwards;
   animation: border-square-out 500ms forwards;
 }
-/* line 44, ../../sass/sass/_viewmore.scss */
+/* line 45, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner {
   width: 360px;
   height: 360px;
@@ -2172,17 +2145,17 @@
   -ms-animation: border-square-out 500ms forwards;
   animation: border-square-out 500ms forwards;
 }
-/* line 55, ../../sass/sass/_viewmore.scss */
+/* line 56, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner .small {
   font-size: 18px;
   margin-bottom: 8px;
   font-style: italic;
 }
-/* line 61, ../../sass/sass/_viewmore.scss */
+/* line 62, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner .big {
   font-size: 56px;
 }
-/* line 65, ../../sass/sass/_viewmore.scss */
+/* line 66, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner.contact-me-inner {
   border: 6px solid #fff;
   -webkit-animation: border-square-in 500ms forwards;
@@ -2191,12 +2164,12 @@
   -ms-animation: border-square-in 500ms forwards;
   animation: border-square-in 500ms forwards;
 }
-/* line 69, ../../sass/sass/_viewmore.scss */
+/* line 70, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner.contact-me-inner .small,
 .view-more-section .vm-container .vm-inner.contact-me-inner .big {
   color: #fff;
 }
-/* line 81, ../../sass/sass/_viewmore.scss */
+/* line 82, ../../sass/sass/_viewmore.scss */
 .view-more-section .contact-me {
   background-color: #e21838;
 }
