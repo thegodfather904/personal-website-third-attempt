@@ -1,3 +1,23 @@
+@include keyframes(border-square-in) {
+    0% {
+        border-radius: 100%;
+    }
+
+    100% {
+        border-radius: 0;
+    }
+}
+
+@include keyframes(border-square-out) {
+    0% {
+        border-radius: 0;
+    }
+
+    100% {
+        border-radius: 100%;
+    }
+}
+
 .view-more-section {
     height: 100vh;
     display: flex;
@@ -9,16 +29,28 @@
         justify-content: center;
         align-items: center;
 
+        &:hover {
+            cursor: pointer;
+
+            .vm-inner {
+                @include animation(border-square-in 500ms forwards);
+
+                &.contact-me-inner {
+                    @include animation(border-square-out 500ms forwards);
+                }
+            }
+        }
+
         .vm-inner {
             width: 360px;
             height: 360px;
             border: 6px solid $red;
-            border-radius: 100%;
             text-align: center;
             color: $red;
             display: flex;
             justify-content: center;
             align-items: center;
+            @include animation(border-square-out 500ms forwards);
 
             .small {
                 font-size: 18px;
@@ -32,13 +64,15 @@
 
             &.contact-me-inner {
                 border: 6px solid #fff;
-                border-radius: 0;
+                @include animation(border-square-in 500ms forwards);
 
                 .small,
                 .big {
                     color: #fff;
                 }
             }
+
+
 
 
         }
