@@ -12,12 +12,15 @@ $red: #e21838;
     @-webkit-keyframes #{$animationName} {
         @content;
     }
+
     @-moz-keyframes #{$animationName} {
         @content;
     }
+
     @-o-keyframes #{$animationName} {
         @content;
     }
+
     @keyframes #{$animationName} {
         @content;
     }
@@ -50,6 +53,7 @@ $red: #e21838;
 @mixin angle-after($skew, $height, $transformOrigin, $background-color) {
     position: relative;
     z-index: 1;
+
     &:after {
         background: inherit;
         content: '';
@@ -70,6 +74,7 @@ $red: #e21838;
 @mixin angle-before($skew, $height, $transformOrigin, $background-color) {
     position: relative;
     z-index: 1;
+
     &:before {
         background: inherit;
         content: '';
@@ -87,7 +92,6 @@ $red: #e21838;
     }
 }
 
-
 @import 'header';
 @import 'diminsion';
 @import 'menu';
@@ -96,6 +100,8 @@ $red: #e21838;
 @import 'divider';
 @import 'contact';
 @import 'personalskills';
+@import '_quotes.scss';
+@import '_viewmore.scss';
 
 body {
     margin: 0;
@@ -119,4 +125,8 @@ html {
     text-align: center;
     margin-bottom: 100px;
     position: relative;
+}
+
+.main-page-content {
+    overflow: hidden;
 }

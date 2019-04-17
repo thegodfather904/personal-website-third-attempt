@@ -65,12 +65,15 @@
   left: 0;
   justify-content: center;
   align-items: center;
+
   .container {
     @include transform(rotate(-5deg));
   }
+
   .title {
     font-size: 200px;
   }
+
   .text {
     font-size: 24px;
     text-align: right;
@@ -82,6 +85,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
+
   img {
     width: 100%;
     @include transform(rotate(-5deg));

@@ -2,57 +2,29 @@
 	0% {
 		@include transform(scale(1, 1))
 	}
+
 	50% {
 		@include transform(scale(1.4, 1.4))
 	}
+
 	100% {
 		@include transform(scale(1, 1))
 	}
 }
 
 .contact-section {
-	margin-top: 90px;
-	@include angle-before(-4deg, 35%, -100%, $white);
+	// margin-top: 90px;
+	@include angle-before(-4deg, 200px, -100%, $white);
 }
 
 .contact-section:before {
 	box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3)
 }
 
-.cool-project-text,
-.email-container {
-	text-align: center;
-}
-
-.email-container {
-	margin: 60px 0;
-}
-
-.email-icon {
-	margin: 8px 0;
-	@include animation(email-bounce 4s linear infinite);
-}
-
-.email-container {
-	opacity: .9;
-}
-
-.email-container a {
-	color: $purple;
-}
-
-.email {
-	text-transform: uppercase;
-	letter-spacing: 8px;
-}
-
-.email-container:hover {
-	opacity: 1;
-}
-
-.email-container:hover a {
-	cursor: pointer;
-}
+// .email-icon {
+// 	margin: 8px 0;
+// 	@include animation(email-bounce 4s linear infinite);
+// }
 
 .share-me {
 	width: 312px;
@@ -71,9 +43,7 @@
 
 .share-me span {
 	display: block;
-	float: left;
 	padding: 20px 20px;
-	margin: 0 25px;
 	border-radius: 5px;
 }
 
@@ -82,16 +52,26 @@
 	color: #fff;
 }
 
+
+.share-me-links {
+	display: flex;
+	justify-content: space-evenly;
+}
+
 .share-me-link {
 	color: #000;
 }
 
-#shareMeTwitter:hover {
-	background-color: #00aced;
+#shareMeEmail:hover {
+	background-color: #d92f26;
 }
 
-#shareMeFacebook:hover {
-	background-color: #3b5998;
+#shareMeStackOverflow:hover {
+	background-color: #f48024;
+}
+
+#shareMeLinkedIn:hover {
+	background-color: #293d4a;
 }
 
 #shareMeGit:hover {

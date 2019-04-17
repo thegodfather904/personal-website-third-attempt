@@ -14,36 +14,66 @@
 }
 
 .about-me-description {
-    float: right;
-    width: 50%;
-    padding-right: 10%;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.title-upper,
-.title-lower {
-    font-size: 44px;
-    font-style: italic;
-}
-
-.title-lower {
-    float: right;
-    padding-top: 24px;
+.adele {
+    font-size: 76px;
+    text-align: center;
 }
 
 .description {
-    clear: both;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 56px;
+    letter-spacing: 2px;
 }
 
 .first-description {
-    padding: 60px 0 32px 0;
+    padding: 60px 0;
 }
 
-.about-me-pic {
-    border: 1px solid $red;
-    width: 400px;
-    height: 400px;
-    float: left;
-    transform: rotate(4deg);
+@media only screen and (max-width: 850px) {
+    .adele {
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .first-description {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .about-me-description {
+        width: 80%;
+    }
+
+    .adele {
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .about-me-description {
+        width: 90%;
+    }
+
+    .adele {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 40px;
+    }
 }

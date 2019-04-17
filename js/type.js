@@ -2,7 +2,8 @@ function diminsionTypeTextStart() {
     var element = $('#typewriteTitle');
     var toRotate = ["hello.", "my name is tony.", "i like to be creative.", "to build things."];
     //var toRotate=["test"]; 
-    var period = 2500;
+    // var period = 2500;
+    var period = 500;
     var isDeleting = false;
     var loopNum = 0;
     var txt = '';
@@ -11,37 +12,41 @@ function diminsionTypeTextStart() {
 
 function diminsionTypeTextMiddle() {
     $('#typewriteTitle').hide();
-    setTimeout(function() {
+    setTimeout(function () {
         var element = $('#buildTitle');
         var toRotate = ["building the web"];
         var period = 1000;
         var isDeleting = false;
         var loopNum = 0;
         var txt = '';
-        typeTextNoDeleting(element, toRotate, period, loopNum, txt, diminsionTypeTextEnd); 
+        typeTextNoDeleting(element, toRotate, period, loopNum, txt, diminsionTypeTextEnd);
     }, 500);
 
 }
+
 function diminsionTypeTextEnd() {
     $('#buildTitle span').removeClass('wrap');
     $('#buildTitle').first('span').removeClass('wrap');
     var element = $('#diminsionTitle');
-    var toRotate = ["from an alternate diminsion"];
+    var toRotate = ["from an alternate dimension"];
     var period = 1000;
     var isDeleting = false;
     var loopNum = 0;
     var txt = '';
-    typeTextNoDeleting(element, toRotate, period, loopNum, txt, diminsionTypeTextComplete);  
+    typeTextNoDeleting(element, toRotate, period, loopNum, txt, diminsionTypeTextComplete);
 }
 
-function diminsionTypeTextComplete(){
+function diminsionTypeTextComplete() {
     var splitString = $('#diminsionTitle span').html().split(' ');
-     splitString[splitString.length - 1] = '<span class="type-last-word">' + splitString[splitString.length - 1] + '</span>';
-    var finalInner = ''; 
-    splitString.forEach(function(el){
-       finalInner += el + ' '; 
+    splitString[splitString.length - 1] = '<span class="type-last-word">' + splitString[splitString.length - 1] + '</span>';
+    var finalInner = '';
+    splitString.forEach(function (el) {
+        finalInner += el + ' ';
     });
-    $('#diminsionTitle span').html(finalInner);
+    $('#diminsionTitle span').html(finalInner)
+        .removeClass('wrap');
+
+    $('#diminsionTitle span span').addClass('wrap')
 }
 
 function typeText(el, toRotate, period, isDeleting, loopNum, txt, callBack) {
@@ -101,5 +106,5 @@ function typeTextNoDeleting(el, toRotate, period, loopNum, txt, callBack) {
         }, delta);
     } else if (callBack) {
         callBack();
-    } 
+    }
 }

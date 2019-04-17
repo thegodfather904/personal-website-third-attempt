@@ -2,6 +2,9 @@ var currentInterval;
 
 (function () {
   onPageLoad();
+  setupSlick();
+  setupPulseArrowScroller();
+  setupContactClick();
 }());
 
 function onPageLoad() {
@@ -13,6 +16,13 @@ function onPageLoad() {
     diminsionTypeTextStart();
     headerFadeIn();
   }, 1500);
+}
+
+function setupPulseArrowScroller() {
+  $('#pulseArrowScroller').click(function () {
+    var el = $('#menuList').children().get(0);
+    menuItemClick('aboutMeSection', el, true);
+  })
 }
 
 function titleOverlaySlideDown() {
@@ -82,16 +92,21 @@ function menuClick() {
     menu.fadeOut();
   } else {
     menuButton.addClass('menu-button-open');
-    menu.fadeIn();
+    menu.css("display", "flex")
+      .hide()
+      .fadeIn();
   }
 }
 
-function menuItemClick(scrollTo, el) {
+function menuItemClick(scrollTo, el, skipMenuClose) {
 
   $('#menuList').find('.current-section').removeClass('current-section');
   $(el).find('a').addClass('current-section');
 
-  menuClick();
+  if (!skipMenuClose) {
+    menuClick();
+  }
+
 
   var scrollEl = $('#' + scrollTo);
 
@@ -100,85 +115,19 @@ function menuItemClick(scrollTo, el) {
   }, 1000);
 }
 
-function skillsSquareClick(element) {
-  $(element).addClass('active-skill');
-
-  $('.skills-square').each(function (index) {
-    if (!$(this).hasClass('active-skill')) {
-      $(this).delay(100 * index).animate({
-        opacity: 0
-      });
-    } else {
-      $(this).animate({
-        top: '0',
-        left: '80px'
-      }, 1000);
-    }
+function setupSlick() {
+  $('.quote-slick').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 800
   });
-
-  setTimeout(function () {
-    $('.skills-section-inner').addClass('skill-is-active');
-
-    $(element).animate({
-      width: '100%',
-      height: '400px'
-    }, 1000, function () {
-      currentInterval = generateParticelForId($(element).find('canvas').attr('id'));
-    });
-    $(element).find('.skills-square-content').fadeOut();
-    $(element).find('.skills-square-inner-hidden').fadeIn();
-  }, 1000);
-
 }
 
-$(".skills-close-container").click(function (event) {
-  event.stopPropagation();
-
-  clearInterval(currentInterval);
-
-  var skillsSquare = $(this).closest('.skills-square');
-  skillsSquare.find('.skills-square-inner-hidden').fadeOut();
-
-  skillsSquare.animate({
-    width: '130px',
-    height: '130px',
-  }, 300);
-  skillsSquare.css({
-    overflow: 'initial'
+function setupContactClick() {
+  $('#contactMeContainer').click(function () {
+    var el = $('#menuList').children().get(3);
+    menuItemClick('contactSection', el, true);
   });
-
-  setTimeout(function () {
-
-    $('.skills-row').each(function () {
-      $(this).find('.skills-square').each(function (index) {
-        if (!$(this).hasClass('active-skill')) {
-          $(this).delay(100 * index).animate({
-            opacity: 1
-          });
-        } else {
-          var width = $('.skills-row').width();
-          $(this).animate({
-            left: (width / 4) * index + 80 + 'px'
-          });
-        }
-      });
-    });
-  }, 400);
-
-  setTimeout(function () {
-    skillsSquare.removeClass('active-skill');
-    skillsSquare.find('.skills-square-content').fadeIn();
-  }, 400);
-
-  setTimeout(function () {
-    $('.skills-section-inner .skills-column').children().each(function (index) {
-      if (!$(this).hasClass('active-skill')) {
-        $(this).delay(100 * index).animate({
-          opacity: 1.0
-        });
-      }
-    });
-
-    $('.skills-section-inner').removeClass('skill-is-active');
-  }, 400);
-});
+}

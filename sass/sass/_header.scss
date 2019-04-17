@@ -2,9 +2,11 @@
     0% {
         @include transform(translateY(-8px))
     }
+
     50% {
         @include transform(translateY(0px))
     }
+
     100% {
         @include transform(rotate(-45deg))
     }
@@ -14,9 +16,11 @@
     0% {
         @include transform(translateY(8px))
     }
+
     50% {
         @include transform(translateY(0px))
     }
+
     100% {
         @include transform(rotate(45deg))
     }
@@ -113,4 +117,14 @@
 
 .menu-button.menu-button-open .horizontal-bottom-line {
     @include animation(horizontal-move-up 500ms forwards);
+}
+
+@media only screen and (max-width: 650px) {
+
+    .horizontal-line,
+    .menu-button:hover .horizontal-top-line,
+    .menu-button:hover .horizontal-middle-line,
+    .menu-button:hover .horizontal-bottom-line {
+        background-color: #000;
+    }
 }

@@ -1,0 +1,101 @@
+.quotes-section {
+    height: 430px;
+    width: 56%;
+    margin: 0 auto;
+    @include angle-before(-3deg, 35%, -100%, $white);
+    @include angle-after(3deg, 35%, -100%, $white);
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+
+    &:before {
+        box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &:after {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .quote-slick {
+        padding-top: 88px;
+    }
+
+    .slick-arrow:before {
+        font-weight: 900;
+        color: $red;
+        font-family: "Font Awesome 5 Free";
+        font-size: 42px;
+    }
+
+    .slick-prev {
+        left: -50px;
+    }
+
+    .slick-next {
+        right: -50px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 60%;
+    }
+
+    .slick-prev:before {
+        content: "\f053";
+    }
+
+    .slick-next:before {
+        content: "\f054";
+    }
+
+    .slick-dots {
+        bottom: -80px;
+    }
+
+    .slick-list {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .quote {
+        width: 50%;
+
+        .header {
+            text-align: center;
+
+            .person {
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
+
+            .company {
+                margin-bottom: 12px;
+            }
+        }
+
+        .actual-quote {
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .quotes-section {
+        width: 70%;
+
+        .quote {
+            .header .person {
+                font-size: 30px;
+            }
+
+            .actual-quote {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .quotes-section .quote-slick {
+        padding-top: 46px;
+    }
+}

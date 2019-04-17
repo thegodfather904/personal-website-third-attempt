@@ -1,25 +1,28 @@
-@include keyframes(blinking-cursor){
+@include keyframes(blinking-cursor) {
   0% {
-	  box-shadow: 1px 0 #000;
+    box-shadow: 1px 0 #000;
   }
+
   100% {
-	  box-shadow: 0 0 #000;
+    box-shadow: 0 0 #000;
   }
 }
 
-@include keyframes(pulse-arrow){
+@include keyframes(pulse-arrow) {
   0% {
-	  bottom: 40px;	
+    bottom: 40px;
   }
+
   50% {
-	  bottom: 60px;
+    bottom: 60px;
   }
+
   to {
-	  bottom: 40px;
+    bottom: 40px;
   }
 }
 
-.star-canvas{
+.star-canvas {
   position: absolute;
   width: 100%;
   height: 800px;
@@ -43,12 +46,6 @@
   @include animation(blinking-cursor 1200ms infinite);
   padding-right: 2px;
 }
-
-
-
-
-
-
 
 .title-section {
   width: 100%;
@@ -102,7 +99,7 @@
   position: absolute;
   z-index: 2;
   left: 0;
-  bottom: 60px;
+  // bottom: 60px;
   width: 60%;
   text-align: center;
   font-size: 70px;
@@ -119,5 +116,22 @@
   color: $red;
 }
 
+@media only screen and (max-width: 850px) {
+  .typewrite {
+    font-size: 44px;
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .typewrite {
+    font-size: 38px;
+  }
+}
 
+@media only screen and (max-width: 450px) {
+  .title-overlay:after {
+    right: -80px;
+    width: 150px;
+    @include transform (skewX(-6deg));
+  }
+}
