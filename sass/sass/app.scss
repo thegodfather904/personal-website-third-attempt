@@ -92,7 +92,6 @@ $red: #e21838;
     }
 }
 
-
 @import 'header';
 @import 'diminsion';
 @import 'menu';
@@ -102,6 +101,7 @@ $red: #e21838;
 @import 'contact';
 @import 'personalskills';
 @import '_quotes.scss';
+@import '_viewmore.scss';
 
 body {
     margin: 0;

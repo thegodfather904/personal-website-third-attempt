@@ -2022,6 +2022,56 @@
     font-size: 18px;
   }
 }
+/* line 1, ../../sass/sass/_viewmore.scss */
+.view-more-section {
+  height: 100vh;
+  display: flex;
+}
+/* line 5, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container {
+  flex-grow: 1;
+  flex-basis: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 12, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-inner {
+  width: 360px;
+  height: 360px;
+  border: 6px solid #e21838;
+  border-radius: 100%;
+  text-align: center;
+  color: #e21838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 23, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-inner .small {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+/* line 29, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-inner .big {
+  font-size: 56px;
+}
+/* line 33, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-inner.contact-me-inner {
+  border: 6px solid #fff;
+  border-radius: 0;
+}
+/* line 37, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-inner.contact-me-inner .small,
+.view-more-section .vm-container .vm-inner.contact-me-inner .big {
+  color: #fff;
+}
+/* line 47, ../../sass/sass/_viewmore.scss */
+.view-more-section .contact-me {
+  background-color: #e21838;
+}
+
 /* line 106, ../../sass/sass/app.scss */
 body {
   margin: 0;

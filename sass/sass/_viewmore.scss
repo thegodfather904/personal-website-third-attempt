@@ -1,0 +1,50 @@
+.view-more-section {
+    height: 100vh;
+    display: flex;
+
+    .vm-container {
+        flex-grow: 1;
+        flex-basis: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .vm-inner {
+            width: 360px;
+            height: 360px;
+            border: 6px solid $red;
+            border-radius: 100%;
+            text-align: center;
+            color: $red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .small {
+                font-size: 18px;
+                margin-bottom: 8px;
+                font-style: italic;
+            }
+
+            .big {
+                font-size: 56px;
+            }
+
+            &.contact-me-inner {
+                border: 6px solid #fff;
+                border-radius: 0;
+
+                .small,
+                .big {
+                    color: #fff;
+                }
+            }
+
+
+        }
+    }
+
+    .contact-me {
+        background-color: $red;
+    }
+}
