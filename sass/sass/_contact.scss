@@ -13,18 +13,18 @@
 }
 
 .contact-section {
-	margin-top: 90px;
-	@include angle-before(-4deg, 45%, -100%, $white);
+	// margin-top: 90px;
+	@include angle-before(-4deg, 200px, -100%, $white);
 }
 
 .contact-section:before {
 	box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3)
 }
 
-.email-icon {
-	margin: 8px 0;
-	@include animation(email-bounce 4s linear infinite);
-}
+// .email-icon {
+// 	margin: 8px 0;
+// 	@include animation(email-bounce 4s linear infinite);
+// }
 
 .share-me {
 	width: 312px;
@@ -83,8 +83,4 @@
 	font-weight: 100;
 	text-align: center;
 	color: $lite-grey;
-}
-
-@media only screen and (max-width: 500px) {
-	.title-overlay:after {}
 }

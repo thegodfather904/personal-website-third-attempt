@@ -1676,7 +1676,6 @@
 }
 /* line 15, ../../sass/sass/_contact.scss */
 .contact-section {
-  margin-top: 90px;
   position: relative;
   z-index: 1;
 }
@@ -1685,7 +1684,7 @@
   background: inherit;
   content: '';
   display: block;
-  height: 45%;
+  height: 200px;
   left: 0;
   position: absolute;
   right: 0;
@@ -1700,16 +1699,6 @@
 /* line 20, ../../sass/sass/_contact.scss */
 .contact-section:before {
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* line 24, ../../sass/sass/_contact.scss */
-.email-icon {
-  margin: 8px 0;
-  -webkit-animation: email-bounce 4s linear infinite;
-  -moz-animation: email-bounce 4s linear infinite;
-  -o-animation: email-bounce 4s linear infinite;
-  -ms-animation: email-bounce 4s linear infinite;
-  animation: email-bounce 4s linear infinite;
 }
 
 /* line 29, ../../sass/sass/_contact.scss */
@@ -2169,11 +2158,32 @@
 .view-more-section .vm-container .vm-inner.contact-me-inner .big {
   color: #fff;
 }
-/* line 82, ../../sass/sass/_viewmore.scss */
+/* line 78, ../../sass/sass/_viewmore.scss */
 .view-more-section .contact-me {
   background-color: #e21838;
 }
 
+@media only screen and (max-width: 850px) {
+  /* line 85, ../../sass/sass/_viewmore.scss */
+  .view-more-section .vm-container .vm-inner {
+    width: 270px;
+    height: 270px;
+  }
+  /* line 89, ../../sass/sass/_viewmore.scss */
+  .view-more-section .vm-container .vm-inner .big {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 97, ../../sass/sass/_viewmore.scss */
+  .view-more-section {
+    flex-direction: column;
+  }
+  /* line 100, ../../sass/sass/_viewmore.scss */
+  .view-more-section .vm-container.contact-me {
+    box-shadow: none;
+  }
+}
 /* line 106, ../../sass/sass/app.scss */
 body {
   margin: 0;
