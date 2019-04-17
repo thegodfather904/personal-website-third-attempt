@@ -1926,9 +1926,11 @@
 
 /* line 1, ../../sass/sass/_quotes.scss */
 .quotes-section {
-  height: 500px;
+  height: 430px;
   width: 56%;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
   position: relative;
   z-index: 1;
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -1945,7 +1947,23 @@
   z-index: -1;
   -webkit-backface-visibility: hidden;
   top: 0;
-  transform: skewY(-4deg);
+  transform: skewY(-3deg);
+  transform-origin: -100%;
+  background-color: #fff;
+}
+/* line 57, ../../sass/sass/app.scss */
+.quotes-section:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 35%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  bottom: 0;
+  transform: skewY(3deg);
   transform-origin: -100%;
   background-color: #fff;
 }
@@ -1954,72 +1972,91 @@
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 /* line 13, ../../sass/sass/_quotes.scss */
+.quotes-section:after {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+/* line 17, ../../sass/sass/_quotes.scss */
+.quotes-section .quote-slick {
+  padding-top: 88px;
+}
+/* line 21, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-arrow:before {
   font-weight: 900;
   color: #e21838;
   font-family: "Font Awesome 5 Free";
   font-size: 42px;
 }
-/* line 20, ../../sass/sass/_quotes.scss */
+/* line 28, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-prev {
   left: -50px;
 }
-/* line 24, ../../sass/sass/_quotes.scss */
+/* line 32, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-next {
   right: -50px;
 }
-/* line 28, ../../sass/sass/_quotes.scss */
+/* line 36, ../../sass/sass/_quotes.scss */
+.quotes-section .slick-prev,
+.quotes-section .slick-next {
+  top: 60%;
+}
+/* line 41, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-prev:before {
   content: "\f053";
 }
-/* line 32, ../../sass/sass/_quotes.scss */
+/* line 45, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-next:before {
   content: "\f054";
 }
-/* line 36, ../../sass/sass/_quotes.scss */
+/* line 49, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-dots {
   bottom: -80px;
 }
-/* line 40, ../../sass/sass/_quotes.scss */
+/* line 53, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-list {
   width: 90%;
   margin: 0 auto;
 }
-/* line 45, ../../sass/sass/_quotes.scss */
+/* line 58, ../../sass/sass/_quotes.scss */
 .quotes-section .quote {
   width: 50%;
 }
-/* line 48, ../../sass/sass/_quotes.scss */
+/* line 61, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header {
   text-align: center;
 }
-/* line 51, ../../sass/sass/_quotes.scss */
+/* line 64, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .person {
   font-size: 40px;
   margin-bottom: 12px;
 }
-/* line 56, ../../sass/sass/_quotes.scss */
+/* line 69, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .company {
   margin-bottom: 12px;
 }
-/* line 61, ../../sass/sass/_quotes.scss */
+/* line 74, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .actual-quote {
   font-size: 22px;
   text-align: center;
 }
 
 @media only screen and (max-width: 850px) {
-  /* line 69, ../../sass/sass/_quotes.scss */
+  /* line 82, ../../sass/sass/_quotes.scss */
   .quotes-section {
     width: 70%;
   }
-  /* line 73, ../../sass/sass/_quotes.scss */
-  .quotes-section .quote .person {
-    font-size: 34px;
+  /* line 86, ../../sass/sass/_quotes.scss */
+  .quotes-section .quote .header .person {
+    font-size: 30px;
   }
-  /* line 77, ../../sass/sass/_quotes.scss */
+  /* line 90, ../../sass/sass/_quotes.scss */
   .quotes-section .quote .actual-quote {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 98, ../../sass/sass/_quotes.scss */
+  .quotes-section .quote-slick {
+    padding-top: 46px;
   }
 }
 @-webkit-keyframes border-square-in {

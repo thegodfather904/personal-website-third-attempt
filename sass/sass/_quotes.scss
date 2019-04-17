@@ -1,13 +1,21 @@
 .quotes-section {
-    height: 500px;
-    // padding-top: 80px;
+    height: 430px;
     width: 56%;
     margin: 0 auto;
-    @include angle-before(-4deg, 35%, -100%, $white);
+    @include angle-before(-3deg, 35%, -100%, $white);
+    @include angle-after(3deg, 35%, -100%, $white);
     box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 
     &:before {
         box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &:after {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .quote-slick {
+        padding-top: 88px;
     }
 
     .slick-arrow:before {
@@ -23,6 +31,11 @@
 
     .slick-next {
         right: -50px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 60%;
     }
 
     .slick-prev:before {
@@ -70,13 +83,19 @@
         width: 70%;
 
         .quote {
-            .person {
-                font-size: 34px;
+            .header .person {
+                font-size: 30px;
             }
 
             .actual-quote {
                 font-size: 18px;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .quotes-section .quote-slick {
+        padding-top: 46px;
     }
 }
