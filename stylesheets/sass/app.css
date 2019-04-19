@@ -557,11 +557,11 @@
 /*Keyframes*/
 @-webkit-keyframes menu-box-rotation-clockwise {
   0% {
-    -webkit-transform: rotate(45deg) translateZ(0);
-    -moz-transform: rotate(45deg) translateZ(0);
-    -o-transform: rotate(45deg) translateZ(0);
-    -ms-transform: rotate(45deg) translateZ(0);
-    transform: rotate(45deg) translateZ(0);
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    -moz-transform: rotate(-45deg) translateZ(0);
+    -o-transform: rotate(-45deg) translateZ(0);
+    -ms-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
   }
   100% {
     -webkit-transform: rotate(135deg) translateZ(0);
@@ -573,11 +573,11 @@
 }
 @-moz-keyframes menu-box-rotation-clockwise {
   0% {
-    -webkit-transform: rotate(45deg) translateZ(0);
-    -moz-transform: rotate(45deg) translateZ(0);
-    -o-transform: rotate(45deg) translateZ(0);
-    -ms-transform: rotate(45deg) translateZ(0);
-    transform: rotate(45deg) translateZ(0);
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    -moz-transform: rotate(-45deg) translateZ(0);
+    -o-transform: rotate(-45deg) translateZ(0);
+    -ms-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
   }
   100% {
     -webkit-transform: rotate(135deg) translateZ(0);
@@ -589,11 +589,11 @@
 }
 @-o-keyframes menu-box-rotation-clockwise {
   0% {
-    -webkit-transform: rotate(45deg) translateZ(0);
-    -moz-transform: rotate(45deg) translateZ(0);
-    -o-transform: rotate(45deg) translateZ(0);
-    -ms-transform: rotate(45deg) translateZ(0);
-    transform: rotate(45deg) translateZ(0);
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    -moz-transform: rotate(-45deg) translateZ(0);
+    -o-transform: rotate(-45deg) translateZ(0);
+    -ms-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
   }
   100% {
     -webkit-transform: rotate(135deg) translateZ(0);
@@ -605,11 +605,11 @@
 }
 @keyframes menu-box-rotation-clockwise {
   0% {
-    -webkit-transform: rotate(45deg) translateZ(0);
-    -moz-transform: rotate(45deg) translateZ(0);
-    -o-transform: rotate(45deg) translateZ(0);
-    -ms-transform: rotate(45deg) translateZ(0);
-    transform: rotate(45deg) translateZ(0);
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    -moz-transform: rotate(-45deg) translateZ(0);
+    -o-transform: rotate(-45deg) translateZ(0);
+    -ms-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
   }
   100% {
     -webkit-transform: rotate(135deg) translateZ(0);
@@ -628,11 +628,11 @@
     transform: rotate(-45deg) translateZ(0);
   }
   100% {
-    -webkit-transform: rotate(-135deg) translateZ(0);
-    -moz-transform: rotate(-135deg) translateZ(0);
-    -o-transform: rotate(-135deg) translateZ(0);
-    -ms-transform: rotate(-135deg) translateZ(0);
-    transform: rotate(-135deg) translateZ(0);
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -moz-transform: rotate(0deg) translateZ(0);
+    -o-transform: rotate(0deg) translateZ(0);
+    -ms-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
   }
 }
 @-moz-keyframes menu-box-rotation-counter {
@@ -644,11 +644,11 @@
     transform: rotate(-45deg) translateZ(0);
   }
   100% {
-    -webkit-transform: rotate(-135deg) translateZ(0);
-    -moz-transform: rotate(-135deg) translateZ(0);
-    -o-transform: rotate(-135deg) translateZ(0);
-    -ms-transform: rotate(-135deg) translateZ(0);
-    transform: rotate(-135deg) translateZ(0);
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -moz-transform: rotate(0deg) translateZ(0);
+    -o-transform: rotate(0deg) translateZ(0);
+    -ms-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
   }
 }
 @-o-keyframes menu-box-rotation-counter {
@@ -660,11 +660,11 @@
     transform: rotate(-45deg) translateZ(0);
   }
   100% {
-    -webkit-transform: rotate(-135deg) translateZ(0);
-    -moz-transform: rotate(-135deg) translateZ(0);
-    -o-transform: rotate(-135deg) translateZ(0);
-    -ms-transform: rotate(-135deg) translateZ(0);
-    transform: rotate(-135deg) translateZ(0);
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -moz-transform: rotate(0deg) translateZ(0);
+    -o-transform: rotate(0deg) translateZ(0);
+    -ms-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
   }
 }
 @keyframes menu-box-rotation-counter {
@@ -676,11 +676,11 @@
     transform: rotate(-45deg) translateZ(0);
   }
   100% {
-    -webkit-transform: rotate(-135deg) translateZ(0);
-    -moz-transform: rotate(-135deg) translateZ(0);
-    -o-transform: rotate(-135deg) translateZ(0);
-    -ms-transform: rotate(-135deg) translateZ(0);
-    transform: rotate(-135deg) translateZ(0);
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -moz-transform: rotate(0deg) translateZ(0);
+    -o-transform: rotate(0deg) translateZ(0);
+    -ms-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
   }
 }
 /* line 27, ../../sass/sass/_menu.scss */
