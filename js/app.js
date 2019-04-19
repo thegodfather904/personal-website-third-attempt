@@ -5,6 +5,7 @@ var currentInterval;
   setupSlick();
   setupPulseArrowScroller();
   setupContactClick();
+  setupSeeMoreClick();
 }());
 
 function onPageLoad() {
@@ -130,4 +131,26 @@ function setupContactClick() {
     var el = $('#menuList').children().get(3);
     menuItemClick('contactSection', el, true);
   });
+}
+
+function setupSeeMoreClick() {
+  var skillsContainer = $('#skillsContainer');
+  var skillsContainerHidden = $('#skillsContainerHidden');
+  setInterval(function () {
+    if (!skillsContainer.hasClass('hide')) {
+      skillsContainer.fadeOut(1500);
+      skillsContainerHidden
+        .css("display", "flex")
+        .hide()
+        .fadeIn(1500);
+      skillsContainer.addClass('hide');
+    } else {
+      skillsContainerHidden.fadeOut(1500);
+      skillsContainer
+        .css("display", "flex")
+        .hide()
+        .fadeIn(1500);
+      skillsContainer.removeClass('hide');
+    }
+  }, 7000);
 }

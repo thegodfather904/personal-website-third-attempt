@@ -796,7 +796,7 @@
 /* line 1, ../../sass/sass/_aboutme.scss */
 .about-me-section {
   padding-top: 16px;
-  height: 700px;
+  height: 600px;
   position: relative;
   z-index: 1;
   position: relative;
@@ -865,18 +865,20 @@
 }
 
 /* line 32, ../../sass/sass/_aboutme.scss */
-.first-description {
-  padding: 60px 0;
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-/* line 36, ../../sass/sass/_aboutme.scss */
+/* line 37, ../../sass/sass/_aboutme.scss */
 .skills-container {
   width: 70%;
-  margin: 0 auto;
+  margin: 70px auto;
   display: flex;
   justify-content: space-between;
+  position: absolute;
 }
-/* line 42, ../../sass/sass/_aboutme.scss */
+/* line 44, ../../sass/sass/_aboutme.scss */
 .skills-container .skills-block {
   border: 1px solid #57595B;
   border-radius: 4px;
@@ -885,14 +887,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 42px;
+  font-size: 36px;
   position: relative;
 }
-/* line 53, ../../sass/sass/_aboutme.scss */
+/* line 55, ../../sass/sass/_aboutme.scss */
 .skills-container .skills-block .skill {
   color: #e21838;
 }
-/* line 57, ../../sass/sass/_aboutme.scss */
+/* line 59, ../../sass/sass/_aboutme.scss */
 .skills-container .skills-block .skills-circle {
   border: 1px solid #e21838;
   border-radius: 100%;
@@ -908,51 +910,51 @@
   justify-content: center;
   align-items: center;
 }
+/* line 76, ../../sass/sass/_aboutme.scss */
+.skills-container.hidden {
+  display: none;
+  position: absolute;
+}
 
 @media only screen and (max-width: 850px) {
-  /* line 78, ../../sass/sass/_aboutme.scss */
+  /* line 83, ../../sass/sass/_aboutme.scss */
   .adele {
     font-size: 50px;
   }
 
-  /* line 82, ../../sass/sass/_aboutme.scss */
+  /* line 87, ../../sass/sass/_aboutme.scss */
   .description {
     font-size: 18px;
   }
-
-  /* line 86, ../../sass/sass/_aboutme.scss */
-  .first-description {
-    padding: 40px 0;
-  }
 }
 @media only screen and (max-width: 850px) {
-  /* line 93, ../../sass/sass/_aboutme.scss */
+  /* line 94, ../../sass/sass/_aboutme.scss */
   .about-me-description {
     width: 80%;
   }
 
-  /* line 97, ../../sass/sass/_aboutme.scss */
+  /* line 98, ../../sass/sass/_aboutme.scss */
   .adele {
     font-size: 50px;
   }
 
-  /* line 101, ../../sass/sass/_aboutme.scss */
+  /* line 102, ../../sass/sass/_aboutme.scss */
   .description {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 850px) {
-  /* line 108, ../../sass/sass/_aboutme.scss */
+  /* line 109, ../../sass/sass/_aboutme.scss */
   .about-me-description {
     width: 90%;
   }
 
-  /* line 112, ../../sass/sass/_aboutme.scss */
+  /* line 113, ../../sass/sass/_aboutme.scss */
   .adele {
     font-size: 40px;
   }
 
-  /* line 116, ../../sass/sass/_aboutme.scss */
+  /* line 117, ../../sass/sass/_aboutme.scss */
   .description {
     font-size: 16px;
     line-height: 40px;

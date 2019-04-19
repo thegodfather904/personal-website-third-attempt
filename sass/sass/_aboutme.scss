@@ -1,6 +1,6 @@
 .about-me-section {
     padding-top: 16px;
-    height: 700px;
+    height: 600px;
     @include angle-before(-4deg, 35%, -2%, $white);
     @include angle-after(4deg, 35%, -2%, $white);
 }
@@ -29,15 +29,17 @@
     letter-spacing: 2px;
 }
 
-.first-description {
-    padding: 60px 0;
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .skills-container {
     width: 70%;
-    margin: 0 auto;
+    margin: 70px auto;
     display: flex;
     justify-content: space-between;
+    position: absolute;
 
     .skills-block {
         border: 1px solid $lite-grey;
@@ -47,7 +49,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 42px;
+        font-size: 36px;
         position: relative;
 
         .skill {
@@ -70,9 +72,12 @@
             align-items: center;
         }
     }
+
+    &.hidden {
+        display: none;
+        position: absolute;
+    }
 }
-
-
 
 @media only screen and (max-width: 850px) {
     .adele {
@@ -81,10 +86,6 @@
 
     .description {
         font-size: 18px;
-    }
-
-    .first-description {
-        padding: 40px 0;
     }
 }
 
