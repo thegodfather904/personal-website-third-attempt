@@ -1142,7 +1142,99 @@
     transform: scale(1, 1);
   }
 }
-/* line 15, ../../sass/sass/_contact.scss */
+@-webkit-keyframes heart-beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes heart-beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes heart-beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes heart-beat {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* line 30, ../../sass/sass/_contact.scss */
 .contact-section {
   position: relative;
   z-index: 1;
@@ -1164,12 +1256,12 @@
   background-color: #fff;
 }
 
-/* line 20, ../../sass/sass/_contact.scss */
+/* line 34, ../../sass/sass/_contact.scss */
 .contact-section:before {
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 29, ../../sass/sass/_contact.scss */
+/* line 38, ../../sass/sass/_contact.scss */
 .share-me {
   width: 312px;
   margin: 0 auto;
@@ -1177,7 +1269,7 @@
   margin-bottom: 40px;
 }
 
-/* line 36, ../../sass/sass/_contact.scss */
+/* line 45, ../../sass/sass/_contact.scss */
 .share-me-title {
   letter-spacing: 2px;
   font-size: 16px;
@@ -1186,56 +1278,66 @@
   text-align: center;
 }
 
-/* line 44, ../../sass/sass/_contact.scss */
+/* line 53, ../../sass/sass/_contact.scss */
 .share-me span {
   display: block;
   padding: 20px 20px;
   border-radius: 5px;
 }
 
-/* line 50, ../../sass/sass/_contact.scss */
+/* line 59, ../../sass/sass/_contact.scss */
 .share-me span:hover {
   cursor: pointer;
   color: #fff;
 }
 
-/* line 56, ../../sass/sass/_contact.scss */
+/* line 64, ../../sass/sass/_contact.scss */
 .share-me-links {
   display: flex;
   justify-content: space-evenly;
 }
 
-/* line 61, ../../sass/sass/_contact.scss */
+/* line 69, ../../sass/sass/_contact.scss */
 .share-me-link {
   color: #000;
 }
 
-/* line 65, ../../sass/sass/_contact.scss */
+/* line 73, ../../sass/sass/_contact.scss */
 #shareMeEmail:hover {
   background-color: #d92f26;
 }
 
-/* line 69, ../../sass/sass/_contact.scss */
+/* line 77, ../../sass/sass/_contact.scss */
 #shareMeStackOverflow:hover {
   background-color: #f48024;
 }
 
-/* line 73, ../../sass/sass/_contact.scss */
+/* line 81, ../../sass/sass/_contact.scss */
 #shareMeLinkedIn:hover {
   background-color: #293d4a;
 }
 
-/* line 77, ../../sass/sass/_contact.scss */
+/* line 85, ../../sass/sass/_contact.scss */
 #shareMeGit:hover {
   background-color: #66B849;
 }
 
-/* line 81, ../../sass/sass/_contact.scss */
+/* line 89, ../../sass/sass/_contact.scss */
 .copyright {
   padding-bottom: 5px;
   font-weight: 100;
   text-align: center;
   color: #57595B;
+}
+/* line 95, ../../sass/sass/_contact.scss */
+.copyright i {
+  color: red;
+  margin: 0 2px;
+  -webkit-animation: heart-beat 2s linear infinite;
+  -moz-animation: heart-beat 2s linear infinite;
+  -o-animation: heart-beat 2s linear infinite;
+  -ms-animation: heart-beat 2s linear infinite;
+  animation: heart-beat 2s linear infinite;
 }
 
 /* line 1, ../../sass/sass/_quotes.scss */
