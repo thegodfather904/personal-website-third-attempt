@@ -161,10 +161,34 @@ function setupSlick() {
 
 function setupContactClick() {
   $('#contactMeContainer').click(function () {
-    var el = $('#menuList')
-      .children()
-      .get(3);
-    menuItemClick('contactSection', el, true);
+
+    var timeout = 1500;
+
+    if ($(document).width() > 600) {
+      $(this).animate({
+          width: '100%'
+        },
+        500
+      );
+      $('#continueExploringContainer').animate({
+          width: '0%'
+        },
+        500
+      );
+    } else {
+      timeout = 0;
+    }
+
+    setTimeout(function () {
+      $('#vmContactMeTextWrapper').fadeOut();
+      $('#vmEmailWrapper').fadeIn();
+
+      $('#vmContactMeInner').animate({
+        opacity: '.1',
+        width: '100px',
+        height: '100px'
+      })
+    }, timeout);
   });
 }
 
@@ -192,22 +216,28 @@ function setupSeeMoreClick() {
 
 function setupContinueExploringClick() {
   $('#continueExploringContainer').click(function () {
-    $(this).animate({
-        width: '100%'
-      },
-      500
-    );
-    $('#contactMeContainer').animate({
-        width: '0%'
-      },
-      500
-    );
+
+    var timeout = 1500;
+
+    if ($(document).width() > 600) {
+      $(this).animate({
+          width: '100%'
+        },
+        500
+      );
+      $('#contactMeContainer').animate({
+          width: '0%'
+        },
+        500
+      );
+    } else {
+      timeout = 0;
+    }
+
 
     setTimeout(function () {
       $('#vmTextWrapper').fadeOut();
       $('#funFactsWrapper').fadeIn();
-    }, 1500);
-
-
+    }, timeout);
   });
 }

@@ -75,14 +75,20 @@
                 @include animation(border-square-in 500ms forwards);
 
                 .small,
-                .big {
+                .big,
+                .vm-hidden-wrapper {
                     color: #fff;
                 }
             }
+        }
 
-            .fun-facts-wrapper {
-                display: none;
-                position: absolute;
+        .vm-hidden-wrapper {
+            display: none;
+            position: absolute;
+
+            &.vm-hidden-email {
+                font-size: 50px;
+                color: #fff;
             }
         }
     }
@@ -102,6 +108,8 @@
                 font-size: 40px;
             }
         }
+
+
     }
 }
 
@@ -109,8 +117,24 @@
     .view-more-section {
         flex-direction: column;
 
-        .vm-container.contact-me {
-            box-shadow: none;
+        .vm-container {
+            width: 100%;
+
+            &.continue-exploring:hover,
+            &.contact-me:hover {
+                width: 100%;
+            }
+
+            &.contact-me {
+                box-shadow: none;
+            }
+
+            .vm-hidden-wrapper.vm-hidden-email {
+                font-size: 20px;
+            }
         }
+
+
+
     }
 }

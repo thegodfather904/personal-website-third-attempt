@@ -1616,38 +1616,56 @@
 }
 /* line 77, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner.contact-me-inner .small,
-.view-more-section .vm-container .vm-inner.contact-me-inner .big {
+.view-more-section .vm-container .vm-inner.contact-me-inner .big,
+.view-more-section .vm-container .vm-inner.contact-me-inner .vm-hidden-wrapper {
   color: #fff;
 }
-/* line 83, ../../sass/sass/_viewmore.scss */
-.view-more-section .vm-container .vm-inner .fun-facts-wrapper {
+/* line 85, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-hidden-wrapper {
   display: none;
   position: absolute;
 }
-/* line 90, ../../sass/sass/_viewmore.scss */
+/* line 89, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-hidden-wrapper.vm-hidden-email {
+  font-size: 50px;
+  color: #fff;
+}
+/* line 96, ../../sass/sass/_viewmore.scss */
 .view-more-section .contact-me {
   background-color: #e21838;
 }
 
 @media only screen and (max-width: 850px) {
-  /* line 97, ../../sass/sass/_viewmore.scss */
+  /* line 103, ../../sass/sass/_viewmore.scss */
   .view-more-section .vm-container .vm-inner {
     width: 270px;
     height: 270px;
   }
-  /* line 101, ../../sass/sass/_viewmore.scss */
+  /* line 107, ../../sass/sass/_viewmore.scss */
   .view-more-section .vm-container .vm-inner .big {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 109, ../../sass/sass/_viewmore.scss */
+  /* line 117, ../../sass/sass/_viewmore.scss */
   .view-more-section {
     flex-direction: column;
   }
-  /* line 112, ../../sass/sass/_viewmore.scss */
+  /* line 120, ../../sass/sass/_viewmore.scss */
+  .view-more-section .vm-container {
+    width: 100%;
+  }
+  /* line 123, ../../sass/sass/_viewmore.scss */
+  .view-more-section .vm-container.continue-exploring:hover, .view-more-section .vm-container.contact-me:hover {
+    width: 100%;
+  }
+  /* line 128, ../../sass/sass/_viewmore.scss */
   .view-more-section .vm-container.contact-me {
     box-shadow: none;
+  }
+  /* line 132, ../../sass/sass/_viewmore.scss */
+  .view-more-section .vm-container .vm-hidden-wrapper.vm-hidden-email {
+    font-size: 20px;
   }
 }
 /* line 102, ../../sass/sass/app.scss */
