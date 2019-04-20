@@ -29,6 +29,8 @@
         justify-content: center;
         align-items: center;
         box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+        transition: 1s all;
+        width: 50%;
 
         &:hover {
             cursor: pointer;
@@ -40,6 +42,11 @@
                     @include animation(border-square-out 500ms forwards);
                 }
             }
+        }
+
+        &.continue-exploring:hover,
+        &.contact-me:hover {
+            width: 60%;
         }
 
         .vm-inner {
@@ -71,6 +78,11 @@
                 .big {
                     color: #fff;
                 }
+            }
+
+            .fun-facts-wrapper {
+                display: none;
+                position: absolute;
             }
         }
     }

@@ -1450,12 +1450,14 @@
   justify-content: center;
   align-items: center;
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  transition: 1s all;
+  width: 50%;
 }
-/* line 33, ../../sass/sass/_viewmore.scss */
+/* line 35, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container:hover {
   cursor: pointer;
 }
-/* line 36, ../../sass/sass/_viewmore.scss */
+/* line 38, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container:hover .vm-inner {
   -webkit-animation: border-square-in 500ms forwards;
   -moz-animation: border-square-in 500ms forwards;
@@ -1463,7 +1465,7 @@
   -ms-animation: border-square-in 500ms forwards;
   animation: border-square-in 500ms forwards;
 }
-/* line 39, ../../sass/sass/_viewmore.scss */
+/* line 41, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container:hover .vm-inner.contact-me-inner {
   -webkit-animation: border-square-out 500ms forwards;
   -moz-animation: border-square-out 500ms forwards;
@@ -1471,7 +1473,11 @@
   -ms-animation: border-square-out 500ms forwards;
   animation: border-square-out 500ms forwards;
 }
-/* line 45, ../../sass/sass/_viewmore.scss */
+/* line 47, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container.continue-exploring:hover, .view-more-section .vm-container.contact-me:hover {
+  width: 60%;
+}
+/* line 52, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner {
   width: 360px;
   height: 360px;
@@ -1487,17 +1493,17 @@
   -ms-animation: border-square-out 500ms forwards;
   animation: border-square-out 500ms forwards;
 }
-/* line 56, ../../sass/sass/_viewmore.scss */
+/* line 63, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner .small {
   font-size: 18px;
   margin-bottom: 8px;
   font-style: italic;
 }
-/* line 62, ../../sass/sass/_viewmore.scss */
+/* line 69, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner .big {
   font-size: 56px;
 }
-/* line 66, ../../sass/sass/_viewmore.scss */
+/* line 73, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner.contact-me-inner {
   border: 6px solid #fff;
   -webkit-animation: border-square-in 500ms forwards;
@@ -1506,33 +1512,38 @@
   -ms-animation: border-square-in 500ms forwards;
   animation: border-square-in 500ms forwards;
 }
-/* line 70, ../../sass/sass/_viewmore.scss */
+/* line 77, ../../sass/sass/_viewmore.scss */
 .view-more-section .vm-container .vm-inner.contact-me-inner .small,
 .view-more-section .vm-container .vm-inner.contact-me-inner .big {
   color: #fff;
 }
-/* line 78, ../../sass/sass/_viewmore.scss */
+/* line 83, ../../sass/sass/_viewmore.scss */
+.view-more-section .vm-container .vm-inner .fun-facts-wrapper {
+  display: none;
+  position: absolute;
+}
+/* line 90, ../../sass/sass/_viewmore.scss */
 .view-more-section .contact-me {
   background-color: #e21838;
 }
 
 @media only screen and (max-width: 850px) {
-  /* line 85, ../../sass/sass/_viewmore.scss */
+  /* line 97, ../../sass/sass/_viewmore.scss */
   .view-more-section .vm-container .vm-inner {
     width: 270px;
     height: 270px;
   }
-  /* line 89, ../../sass/sass/_viewmore.scss */
+  /* line 101, ../../sass/sass/_viewmore.scss */
   .view-more-section .vm-container .vm-inner .big {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 97, ../../sass/sass/_viewmore.scss */
+  /* line 109, ../../sass/sass/_viewmore.scss */
   .view-more-section {
     flex-direction: column;
   }
-  /* line 100, ../../sass/sass/_viewmore.scss */
+  /* line 112, ../../sass/sass/_viewmore.scss */
   .view-more-section .vm-container.contact-me {
     box-shadow: none;
   }
