@@ -1,5 +1,4 @@
 /*Site colors*/
-
 $lite-green: #2ecc71;
 $purple: #2C1B3D;
 $white: #fff;
@@ -7,7 +6,6 @@ $lite-grey: #57595B;
 $red: #e21838;
 
 /*Mixins*/
-
 @mixin keyframes($animationName) {
     @-webkit-keyframes #{$animationName} {
         @content;
@@ -95,11 +93,9 @@ $red: #e21838;
 @import 'header';
 @import 'diminsion';
 @import 'menu';
-// @import 'skills';
 @import 'aboutme';
 @import 'divider';
 @import 'contact';
-// @import 'personalskills';
 @import '_quotes.scss';
 @import '_viewmore.scss';
 

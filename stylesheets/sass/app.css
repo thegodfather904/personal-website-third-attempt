@@ -802,7 +802,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 78, ../../sass/sass/app.scss */
+/* line 76, ../../sass/sass/app.scss */
 .about-me-section:before {
   background: inherit;
   content: '';
@@ -818,7 +818,7 @@
   transform-origin: -2%;
   background-color: #fff;
 }
-/* line 57, ../../sass/sass/app.scss */
+/* line 55, ../../sass/sass/app.scss */
 .about-me-section:after {
   background: inherit;
   content: '';
@@ -1147,7 +1147,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 78, ../../sass/sass/app.scss */
+/* line 76, ../../sass/sass/app.scss */
 .contact-section:before {
   background: inherit;
   content: '';
@@ -1249,7 +1249,7 @@
   z-index: 1;
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 78, ../../sass/sass/app.scss */
+/* line 76, ../../sass/sass/app.scss */
 .quotes-section:before {
   background: inherit;
   content: '';
@@ -1265,7 +1265,7 @@
   transform-origin: -100%;
   background-color: #fff;
 }
-/* line 57, ../../sass/sass/app.scss */
+/* line 55, ../../sass/sass/app.scss */
 .quotes-section:after {
   background: inherit;
   content: '';
@@ -1548,7 +1548,7 @@
     box-shadow: none;
   }
 }
-/* line 106, ../../sass/sass/app.scss */
+/* line 102, ../../sass/sass/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1556,19 +1556,19 @@ body {
   overflow-x: hidden;
 }
 
-/* line 113, ../../sass/sass/app.scss */
+/* line 109, ../../sass/sass/app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 117, ../../sass/sass/app.scss */
+/* line 113, ../../sass/sass/app.scss */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-/* line 123, ../../sass/sass/app.scss */
+/* line 119, ../../sass/sass/app.scss */
 .section-title {
   font-size: 50px;
   text-align: center;
@@ -1576,7 +1576,7 @@ html {
   position: relative;
 }
 
-/* line 130, ../../sass/sass/app.scss */
+/* line 126, ../../sass/sass/app.scss */
 .main-page-content {
   overflow: hidden;
 }
