@@ -855,22 +855,23 @@
 .adele {
   font-size: 76px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
-/* line 26, ../../sass/sass/_aboutme.scss */
+/* line 27, ../../sass/sass/_aboutme.scss */
 .description {
   font-size: 20px;
   line-height: 56px;
   letter-spacing: 2px;
 }
 
-/* line 32, ../../sass/sass/_aboutme.scss */
+/* line 33, ../../sass/sass/_aboutme.scss */
 .skills-wrapper {
   display: flex;
   justify-content: center;
 }
 
-/* line 37, ../../sass/sass/_aboutme.scss */
+/* line 38, ../../sass/sass/_aboutme.scss */
 .skills-container {
   width: 70%;
   margin: 70px 0;
@@ -878,7 +879,7 @@
   justify-content: space-between;
   position: absolute;
 }
-/* line 44, ../../sass/sass/_aboutme.scss */
+/* line 45, ../../sass/sass/_aboutme.scss */
 .skills-container .skills-block {
   border: 1px solid #57595B;
   border-radius: 4px;
@@ -890,15 +891,15 @@
   font-size: 36px;
   position: relative;
 }
-/* line 55, ../../sass/sass/_aboutme.scss */
+/* line 56, ../../sass/sass/_aboutme.scss */
 .skills-container .skills-block.skills-block-small {
   font-size: 32px;
 }
-/* line 59, ../../sass/sass/_aboutme.scss */
+/* line 60, ../../sass/sass/_aboutme.scss */
 .skills-container .skills-block .skill {
   color: #e21838;
 }
-/* line 63, ../../sass/sass/_aboutme.scss */
+/* line 64, ../../sass/sass/_aboutme.scss */
 .skills-container .skills-block .skills-circle {
   border: 1px solid #e21838;
   border-radius: 100%;
@@ -914,67 +915,67 @@
   justify-content: center;
   align-items: center;
 }
-/* line 80, ../../sass/sass/_aboutme.scss */
+/* line 81, ../../sass/sass/_aboutme.scss */
 .skills-container.hidden {
   display: none;
   position: absolute;
 }
 
 @media only screen and (max-width: 1100px) {
-  /* line 87, ../../sass/sass/_aboutme.scss */
+  /* line 88, ../../sass/sass/_aboutme.scss */
   .about-me-section {
     height: 800px;
   }
 
-  /* line 91, ../../sass/sass/_aboutme.scss */
+  /* line 92, ../../sass/sass/_aboutme.scss */
   .skills-container {
     flex-wrap: wrap;
   }
-  /* line 94, ../../sass/sass/_aboutme.scss */
+  /* line 95, ../../sass/sass/_aboutme.scss */
   .skills-container .skills-block {
     width: 46%;
     margin: 26px 0;
   }
 }
 @media only screen and (max-width: 850px) {
-  /* line 103, ../../sass/sass/_aboutme.scss */
+  /* line 104, ../../sass/sass/_aboutme.scss */
   .about-me-section {
     height: 700px;
   }
 
-  /* line 107, ../../sass/sass/_aboutme.scss */
+  /* line 108, ../../sass/sass/_aboutme.scss */
   .about-me-description {
     width: 90%;
   }
 
-  /* line 111, ../../sass/sass/_aboutme.scss */
+  /* line 112, ../../sass/sass/_aboutme.scss */
   .adele {
     font-size: 40px;
   }
 
-  /* line 115, ../../sass/sass/_aboutme.scss */
+  /* line 116, ../../sass/sass/_aboutme.scss */
   .description {
     font-size: 16px;
     line-height: 40px;
     font-size: 18px;
   }
 
-  /* line 121, ../../sass/sass/_aboutme.scss */
+  /* line 122, ../../sass/sass/_aboutme.scss */
   .skills-container {
     width: 90%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 127, ../../sass/sass/_aboutme.scss */
+  /* line 128, ../../sass/sass/_aboutme.scss */
   .about-me-section {
     height: 1100px;
   }
 
-  /* line 131, ../../sass/sass/_aboutme.scss */
+  /* line 132, ../../sass/sass/_aboutme.scss */
   .skills-container {
     margin: 30px 0;
   }
-  /* line 134, ../../sass/sass/_aboutme.scss */
+  /* line 135, ../../sass/sass/_aboutme.scss */
   .skills-container .skills-block {
     width: 90%;
     margin: 26px 5%;
@@ -1393,7 +1394,7 @@
 }
 /* line 17, ../../sass/sass/_quotes.scss */
 .quotes-section .quote-slick {
-  padding-top: 88px;
+  padding-top: 64px;
 }
 /* line 21, ../../sass/sass/_quotes.scss */
 .quotes-section .slick-arrow:before {
@@ -1439,40 +1440,60 @@
 /* line 61, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header {
   text-align: center;
+  letter-spacing: 2px;
 }
-/* line 64, ../../sass/sass/_quotes.scss */
+/* line 65, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .person {
   font-size: 40px;
   margin-bottom: 12px;
 }
-/* line 69, ../../sass/sass/_quotes.scss */
+/* line 70, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .header .company {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+  font-style: italic;
 }
-/* line 74, ../../sass/sass/_quotes.scss */
+/* line 76, ../../sass/sass/_quotes.scss */
 .quotes-section .quote .actual-quote {
   font-size: 22px;
   text-align: center;
+  letter-spacing: 2px;
+  line-height: 36px;
 }
 
-@media only screen and (max-width: 850px) {
-  /* line 82, ../../sass/sass/_quotes.scss */
+@media only screen and (max-width: 1100px) {
+  /* line 86, ../../sass/sass/_quotes.scss */
+  .quotes-section .quote .actual-quote {
+    line-height: 30px;
+  }
+
+  /* line 90, ../../sass/sass/_quotes.scss */
+  .quotes-section .quote-slick {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 910px) {
+  /* line 96, ../../sass/sass/_quotes.scss */
   .quotes-section {
     width: 70%;
   }
-  /* line 86, ../../sass/sass/_quotes.scss */
+  /* line 100, ../../sass/sass/_quotes.scss */
   .quotes-section .quote .header .person {
     font-size: 30px;
   }
-  /* line 90, ../../sass/sass/_quotes.scss */
+  /* line 104, ../../sass/sass/_quotes.scss */
   .quotes-section .quote .actual-quote {
     font-size: 18px;
+    line-height: 28px;
   }
 }
-@media only screen and (max-width: 400px) {
-  /* line 98, ../../sass/sass/_quotes.scss */
-  .quotes-section .quote-slick {
-    padding-top: 46px;
+@media only screen and (max-width: 600px) {
+  /* line 113, ../../sass/sass/_quotes.scss */
+  .quotes-section {
+    height: 550px;
+  }
+  /* line 116, ../../sass/sass/_quotes.scss */
+  .quotes-section .quote .actual-quote {
+    line-height: 24px;
   }
 }
 @-webkit-keyframes border-square-in {
