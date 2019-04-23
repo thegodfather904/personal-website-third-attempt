@@ -1305,32 +1305,37 @@
 
 /* line 73, ../../sass/sass/_contact.scss */
 #shareMeEmail:hover {
-  background-color: #d92f26;
+  color: #d92f26;
 }
 
 /* line 77, ../../sass/sass/_contact.scss */
 #shareMeStackOverflow:hover {
-  background-color: #f48024;
+  color: #f48024;
 }
 
 /* line 81, ../../sass/sass/_contact.scss */
 #shareMeLinkedIn:hover {
-  background-color: #293d4a;
+  color: #3498db;
 }
 
 /* line 85, ../../sass/sass/_contact.scss */
 #shareMeGit:hover {
-  background-color: #66B849;
+  color: #66B849;
 }
 
 /* line 89, ../../sass/sass/_contact.scss */
+#shareMeOldSite:hover {
+  color: #e21838;
+}
+
+/* line 93, ../../sass/sass/_contact.scss */
 .copyright {
   padding-bottom: 5px;
   font-weight: 100;
   text-align: center;
   color: #57595B;
 }
-/* line 95, ../../sass/sass/_contact.scss */
+/* line 99, ../../sass/sass/_contact.scss */
 .copyright i {
   color: red;
   margin: 0 2px;

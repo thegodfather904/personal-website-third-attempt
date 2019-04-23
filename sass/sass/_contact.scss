@@ -71,19 +71,23 @@
 }
 
 #shareMeEmail:hover {
-	background-color: #d92f26;
+	color: #d92f26;
 }
 
 #shareMeStackOverflow:hover {
-	background-color: #f48024;
+	color: #f48024;
 }
 
 #shareMeLinkedIn:hover {
-	background-color: #293d4a;
+	color: #3498db;
 }
 
 #shareMeGit:hover {
-	background-color: #66B849;
+	color: #66B849;
+}
+
+#shareMeOldSite:hover {
+	color: $red;
 }
 
 .copyright {
