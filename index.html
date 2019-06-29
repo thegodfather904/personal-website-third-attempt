@@ -1,290 +1,403 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-140856740-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140856740-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+      gtag('config', 'UA-140856740-1');
+    </script>
+    <title>Tony Scialo</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/sass/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+      integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+      integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+      integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
 
-	  gtag('config', 'UA-140856740-1');
-	</script>
-  <title>Tony Scialo</title>
-  <meta name="viewport" content="initial-scale=1" />
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/sass/app.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
-    integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
-    integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
-    integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-</head>
-
-<body>
-  <header id="pageHeader" class="page-header top">
-    <div class="my-name-container">
-      tony<span>writes</span>code
-    </div>
-    <div class="menu-button" onclick="menuClick();">
-      <span class="horizontal-line horizontal-top-line"></span>
-      <span class="horizontal-line horizontal-middle-line"></span>
-      <span class="horizontal-line horizontal-bottom-line"></span>
-    </div>
-  </header>
-  <nav class="diminsion-navigation">
-    <div class="menu">
-      <div class="menu-inner">
-        <div class="box-outline-shadow">
-          <div class="menu-items">
-            <ul id="menuList">
-              <li class="menu-item" onclick="menuItemClick('alternateDimension', this, false)">
-                <a class="current-section">home</a>
-              </li>
-              <li class="menu-item" onclick="menuItemClick('aboutMeSection', this, false)">
-                <a>me</a>
-              </li>
-              <li class="menu-item" onclick="menuItemClick('quotesSection', this, false)">
-                <a>quotes</a>
-              </li>
-              <li class="menu-item" onclick="menuItemClick('contactSection', this, false)">
-                <a>contact</a>
-              </li>
-            </ul>
+  <body>
+    <header id="pageHeader" class="page-header top">
+      <div class="my-name-container">
+        tony<span>writes</span>code
+      </div>
+      <div class="menu-button" onclick="menuClick();">
+        <span class="horizontal-line horizontal-top-line"></span>
+        <span class="horizontal-line horizontal-middle-line"></span>
+        <span class="horizontal-line horizontal-bottom-line"></span>
+      </div>
+    </header>
+    <nav class="diminsion-navigation">
+      <div class="menu">
+        <div class="menu-inner">
+          <div class="box-outline-shadow">
+            <div class="menu-items">
+              <ul id="menuList">
+                <li
+                  class="menu-item"
+                  onclick="menuItemClick('alternateDimension', this, false)"
+                >
+                  <a class="current-section">home</a>
+                </li>
+                <li
+                  class="menu-item"
+                  onclick="menuItemClick('aboutMeSection', this, false)"
+                >
+                  <a>me</a>
+                </li>
+                <li
+                  class="menu-item"
+                  onclick="menuItemClick('quotesSection', this, false)"
+                >
+                  <a>quotes</a>
+                </li>
+                <li
+                  class="menu-item"
+                  onclick="menuItemClick('contactSection', this, false)"
+                >
+                  <a>contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="box-outline"></div>
-      </div>
-    </div>
-  </nav>
-  <main id="mainPageContent" class="main-page-content">
-    <section id="alternateDimension" class="title-section">
-      <div id="titleOverlay" class="title-overlay"></div>
-      <div class="stars-container">
-        <canvas id="alternateDiminsionStar" class="star-canvas"></canvas>
-      </div>
-      <div class="title-type-container">
-        <div id="typewriteTitle" class="typewrite"></div>
-        <div id="buildTitle" class="typewrite"></div>
-        <div id="diminsionTitle" class="typewrite"></div>
-      </div>
-      <div id="pulseArrowScroller" class="pulse-arrow-container">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </div>
-    </section>
-    <section id="aboutMeSection" class="about-me-section">
-      <div class="about-me-description">
-        <div class="adele">hello.</div>
-        <div class="description first-description">
-          i am a software developer currently based in jacksonville, fl and i
-          build awesome web based applications designed to run across
-          platforms. with a strong passion for web development and user
-          experience i can insert myself successfully into any cycle of a
-          project. some of my skills include:
+          <div class="box-outline"></div>
         </div>
       </div>
-      <div class="skills-wrapper">
-        <div id="skillsContainer" class="skills-container">
-          <div class="skills-block">
-            <div class="skill">angular</div>
-            <div class="skills-circle">NG</div>
-          </div>
-          <div class="skills-block">
-            <div class="skill">java</div>
-            <div class="skills-circle">8</div>
-          </div>
-          <div class="skills-block skills-block-small">
-            <div class="skill">javascript</div>
-            <div class="skills-circle">6</div>
-          </div>
-          <div class="skills-block">
-            <div class="skill">css</div>
-            <div class="skills-circle">3</div>
-          </div>
+    </nav>
+    <main id="mainPageContent" class="main-page-content">
+      <section id="alternateDimension" class="title-section">
+        <div id="titleOverlay" class="title-overlay"></div>
+        <div class="stars-container">
+          <canvas id="alternateDiminsionStar" class="star-canvas"></canvas>
         </div>
-        <div id="skillsContainerHidden" class="skills-container hidden">
-          <div class="skills-block">
-            <div class="skill">sass</div>
-            <div class="skills-circle">S</div>
-          </div>
-          <div class="skills-block">
-            <div class="skill">jsf</div>
-            <div class="skills-circle">2.2</div>
-          </div>
-          <div class="skills-block skills-block-small">
-            <div class="skill">primefaces</div>
-            <div class="skills-circle">6</div>
-          </div>
-          <div class="skills-block">
-            <div class="skill">git</div>
-            <div class="skills-circle">G</div>
-          </div>
+        <div class="title-type-container">
+          <div id="typewriteTitle" class="typewrite"></div>
+          <div id="buildTitle" class="typewrite"></div>
+          <div id="diminsionTitle" class="typewrite"></div>
         </div>
-      </div>
-    </section>
-    <div class="divider-section-wrapper">
-      <section class="divider-section">
-        <canvas id="dividerCanvas"></canvas>
+        <div id="pulseArrowScroller" class="pulse-arrow-container">
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
+        </div>
       </section>
-      <div id="dividerOverlay" class="divider-overlay"></div>
-    </div>
-    <section id="quotesSection" class="quotes-section">
-      <div class="quote-slick">
-        <div class="quote">
-          <div class="header">
-            <div class="person">
-              Pato Vargas
-            </div>
-            <div class="company">
-              uX Software Engineer - CSX
-            </div>
-          </div>
-          <div class="actual-quote">
-            Tony has been my mentor for several years now and has greatly
-            helped my career. He has a deep knowledge of Angular and CSS and
-            has helped me learn these skills as well. We work extensively on
-            uX projects together and even though it's difficult it's also
-            really fun!
+      <section id="aboutMeSection" class="about-me-section">
+        <div class="about-me-description">
+          <div class="adele">hello.</div>
+          <div class="description first-description">
+            i am a software developer currently based in jacksonville, fl and i
+            build awesome web based applications designed to run across
+            platforms. with a strong passion for web development and user
+            experience i can insert myself successfully into any cycle of a
+            project. some of my skills include:
           </div>
         </div>
-        <div class="quote">
-          <div class="header">
-            <div class="person">
-              Diana Sorfleet
+        <div class="skills-wrapper">
+          <div id="skillsContainer" class="skills-container">
+            <div class="skills-block">
+              <div class="skill">angular</div>
+              <div class="skills-circle">NG</div>
             </div>
-            <div class="company">
-              EVP & Chieft Administrative Officer - CSX
+            <div class="skills-block">
+              <div class="skill">java</div>
+              <div class="skills-circle">8</div>
+            </div>
+            <div class="skills-block skills-block-small">
+              <div class="skill">javascript</div>
+              <div class="skills-circle">6</div>
+            </div>
+            <div class="skills-block">
+              <div class="skill">css</div>
+              <div class="skills-circle">3</div>
             </div>
           </div>
-          <div class="actual-quote">
-            Thank you for your significant contributions to CSX - from ShipCSX to IARS to creating CodeBytes. I
-            appreciate your mentorships of others and making sure people understand context.
+          <div id="skillsContainerHidden" class="skills-container hidden">
+            <div class="skills-block">
+              <div class="skill">sass</div>
+              <div class="skills-circle">S</div>
+            </div>
+            <div class="skills-block">
+              <div class="skill">jsf</div>
+              <div class="skills-circle">2.2</div>
+            </div>
+            <div class="skills-block skills-block-small">
+              <div class="skill">primefaces</div>
+              <div class="skills-circle">6</div>
+            </div>
+            <div class="skills-block">
+              <div class="skill">git</div>
+              <div class="skills-circle">G</div>
+            </div>
           </div>
         </div>
-        <div class="quote">
-          <div class="header">
-            <div class="person">
-              Healy Dwyer
+      </section>
+      <div class="divider-section-wrapper">
+        <section class="divider-section">
+          <canvas id="dividerCanvas"></canvas>
+        </section>
+        <div id="dividerOverlay" class="divider-overlay"></div>
+      </div>
+      <section id="quotesSection" class="quotes-section">
+        <div class="quote-slick">
+          <div class="quote">
+            <div class="header">
+              <div class="person">
+                Pato Vargas
+              </div>
+              <div class="company">
+                uX Software Engineer - CSX
+              </div>
             </div>
-            <div class="company">
-              Software Engineer - CSX
+            <div class="actual-quote">
+              Tony has been my mentor for several years now and has greatly
+              helped my career. He has a deep knowledge of Angular and CSS and
+              has helped me learn these skills as well. We work extensively on
+              uX projects together and even though it's difficult it's also
+              really fun!
             </div>
           </div>
-          <div class="actual-quote">
-            Tony and I have worked on several projects together here at CSX
-            and it is always a pleasure. Tony is really great at breaking up
-            complex problems into managable chunks to attack. I am extremely happy with Tony and
-            would definitely recommend his skills to other teams :)
+          <div class="quote">
+            <div class="header">
+              <div class="person">
+                Diana Sorfleet
+              </div>
+              <div class="company">
+                EVP & Chieft Administrative Officer - CSX
+              </div>
+            </div>
+            <div class="actual-quote">
+              Thank you for your significant contributions to CSX - from ShipCSX
+              to IARS to creating CodeBytes. I appreciate your mentorships of
+              others and making sure people understand context.
+            </div>
+          </div>
+          <div class="quote">
+            <div class="header">
+              <div class="person">
+                Healy Dwyer
+              </div>
+              <div class="company">
+                Software Engineer - CSX
+              </div>
+            </div>
+            <div class="actual-quote">
+              Tony and I have worked on several projects together here at CSX
+              and it is always a pleasure. Tony is really great at breaking up
+              complex problems into managable chunks to attack. I am extremely
+              happy with Tony and would definitely recommend his skills to other
+              teams :)
+            </div>
+          </div>
+          <div class="quote">
+            <div class="header">
+              <div class="person">
+                Kathleen Brandt
+              </div>
+              <div class="company">
+                President of Technology - CSX
+              </div>
+            </div>
+            <div class="actual-quote">
+              Congratulations on exceeding expectations significantlly - well
+              done! Your innovative ideas, creation of CodeBytes, and mentorship
+              of others is appreciated.
+            </div>
           </div>
         </div>
-        <div class="quote">
-          <div class="header">
-            <div class="person">
-              Kathleen Brandt
+      </section>
+      <div id="viewMoreSection" class="view-more-section">
+        <div
+          id="continueExploringContainer"
+          class="vm-container continue-exploring"
+        >
+          <div class="vm-inner">
+            <div id="vmTextWrapper" class="text-wrapper">
+              <div class="small">
+                explore further?
+              </div>
+              <div class="big">
+                about me
+              </div>
             </div>
-            <div class="company">
-              President of Technology - CSX
+            <div id="funFactsWrapper" class="vm-hidden-wrapper">
+              UNDER CONSTRUCTION COMING SOON!!!!
             </div>
           </div>
-          <div class="actual-quote">
-            Congratulations on exceeding expectations significantlly - well done! Your innovative ideas, creation of
-            CodeBytes, and mentorship of others is appreciated.
+        </div>
+        <div id="contactMeContainer" class="vm-container contact-me">
+          <div id="vmContactMeInner" class="vm-inner contact-me-inner">
+            <div id="vmContactMeTextWrapper" class="text-wrapper">
+              <div class="small">
+                interested?
+              </div>
+              <div class="big">
+                contact me
+              </div>
+            </div>
+          </div>
+          <div id="vmEmailWrapper" class="vm-hidden-wrapper vm-hidden-email">
+            tonywritescode@gmail.com
           </div>
         </div>
       </div>
-    </section>
-    <div id="viewMoreSection" class="view-more-section">
-      <div id="continueExploringContainer" class="vm-container continue-exploring">
-        <div class="vm-inner">
-          <div id="vmTextWrapper" class="text-wrapper">
-            <div class="small">
-              explore further?
+      <div class="slides-section">
+        <div class="slides-wrapper">
+          <div class="title">
+            it me the public speaker
+          </div>
+          <div class="slides-row border-bottom">
+            <div class="slide border-right">
+              <i class="fab fa-angular"></i>
+              <div class="title">ngrx</div>
+              <div class="tag">
+                the magic of state management and angular
+              </div>
             </div>
-            <div class="big">
-              about me
+            <div class="slide border-right">
+              <i class="fas fa-code-branch"></i>
+              <div class="title">gitflow</div>
+              <div class="tag">
+                manage git workflows with gitflow
+              </div>
+            </div>
+            <div class="slide">
+              <i class="fas fa-square-root-alt"></i>
+              <div class="title">fp</div>
+              <div class="tag">
+                a new world of functional programming
+              </div>
             </div>
           </div>
-          <div id="funFactsWrapper" class="vm-hidden-wrapper">
-            UNDER CONSTRUCTION COMING SOON!!!!
+          <div class="slides-row">
+            <div class="slide border-right">
+              <i class="fab fa-css3-alt"></i>
+              <div class="title">flex vs grid</div>
+              <div class="tag">
+                it me confused on modern css
+              </div>
+            </div>
+            <div class="slide border-right">
+              <i class="fas fa-unlock-alt"></i>
+              <div class="title">passwords</div>
+              <div class="tag">
+                i can use a picture as a password?
+              </div>
+            </div>
+            <div class="slide">
+              <i class="fas fa-volume-up"></i>
+              <div class="title">next talk</div>
+              <div class="tag">
+                could be at your conference, contact me :)
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="contactMeContainer" class="vm-container contact-me">
-        <div id="vmContactMeInner" class="vm-inner contact-me-inner">
-          <div id="vmContactMeTextWrapper" class="text-wrapper">
-            <div class="small">
-              interested?
-            </div>
-            <div class="big">
-              contact me
-            </div>
+      <section id="contactSection" class="contact-section">
+        <div class="share-me">
+          <div class="share-me-title">
+            find me here
+          </div>
+          <div class="share-me-links">
+            <a
+              href="mailto:tonywritescode@gmail.com"
+              target="_blank"
+              class="share-me-link"
+            >
+              <span id="shareMeEmail" class="share-me-item">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </a>
+            <a
+              href="https://github.com/tony-scialo/personal-website-dimension"
+              target="_blank"
+              class="share-me-link"
+            >
+              <span id="shareMeGit" class="share-me-item">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/4912604/tony-scialo"
+              target="_blank"
+              class="share-me-link"
+            >
+              <span id="shareMeStackOverflow" class="share-me-item">
+                <i class="fab fa-stack-overflow"></i>
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tony-scialo"
+              target="_blank"
+              class="share-me-link"
+            >
+              <span id="shareMeLinkedIn" class="share-me-item">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+            </a>
           </div>
         </div>
-        <div id="vmEmailWrapper" class="vm-hidden-wrapper vm-hidden-email">
-          tonywritescode@gmail.com
+        <div class="share-me">
+          <div class="share-me-title">
+            or see my old stuff
+          </div>
+          <div class="share-me-links">
+            <a
+              href="http://www.tonyscialo.me"
+              target="_blank"
+              class="share-me-link"
+            >
+              <span id="shareMeOldSite" class="share-me-item">
+                <i class="fas fa-vector-square"></i>
+              </span>
+            </a>
+            <a
+              href="http://www.tonywritescode.wtf"
+              target="_blank"
+              class="share-me-link"
+            >
+              <span id="shareMeOldSite" class="share-me-item">
+                <i class="fas fa-draw-polygon"></i>
+              </span>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <section id="contactSection" class="contact-section">
-      <div class="share-me">
-        <div class="share-me-title">
-          find me here
+        <div class="copyright">
+          &copy; 2019, made with <i class="fas fa-heart"></i> by tony scialo
         </div>
-        <div class="share-me-links">
-          <a href="mailto:tonywritescode@gmail.com" target="_blank" class="share-me-link">
-            <span id="shareMeEmail" class="share-me-item">
-              <i class="fas fa-envelope"></i>
-            </span>
-          </a>
-          <a href="https://github.com/tony-scialo/personal-website-dimension" target="_blank" class="share-me-link">
-            <span id="shareMeGit" class="share-me-item">
-              <i class="fab fa-github"></i>
-            </span>
-          </a>
-          <a href="https://stackoverflow.com/users/4912604/tony-scialo" target="_blank" class="share-me-link">
-            <span id="shareMeStackOverflow" class="share-me-item">
-              <i class="fab fa-stack-overflow"></i>
-            </span>
-          </a>
-          <a href="https://www.linkedin.com/in/tony-scialo" target="_blank" class="share-me-link">
-            <span id="shareMeLinkedIn" class="share-me-item">
-              <i class="fab fa-linkedin-in"></i>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="share-me">
-        <div class="share-me-title">
-          or see my old stuff
-        </div>
-        <div class="share-me-links">
-          <a href="http://www.tonyscialo.me" target="_blank" class="share-me-link">
-            <span id="shareMeOldSite" class="share-me-item">
-              <i class="fas fa-vector-square"></i>
-            </span>
-          </a>
-          <a href="http://www.tonywritescode.wtf" target="_blank" class="share-me-link">
-            <span id="shareMeOldSite" class="share-me-item">
-              <i class="fas fa-draw-polygon"></i>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="copyright">
-        &copy; 2019, made with <i class="fas fa-heart"></i> by tony scialo
-      </div>
-    </section>
-  </main>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script src="js/app.js "></script>
-  <script src="js/particle.js "></script>
-  <script src="js/type.js "></script>
-</body>
-
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/app.js "></script>
+    <script src="js/particle.js "></script>
+    <script src="js/type.js "></script>
+  </body>
 </html>

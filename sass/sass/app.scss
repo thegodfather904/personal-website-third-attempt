@@ -1,93 +1,93 @@
 /*Site colors*/
 $lite-green: #2ecc71;
-$purple: #2C1B3D;
+$purple: #2c1b3d;
 $white: #fff;
-$lite-grey: #57595B;
+$lite-grey: #57595b;
 $red: #e21838;
 
 /*Mixins*/
 @mixin keyframes($animationName) {
-    @-webkit-keyframes #{$animationName} {
-        @content;
-    }
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
 
-    @-moz-keyframes #{$animationName} {
-        @content;
-    }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
 
-    @-o-keyframes #{$animationName} {
-        @content;
-    }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
 
-    @keyframes #{$animationName} {
-        @content;
-    }
+  @keyframes #{$animationName} {
+    @content;
+  }
 }
 
 @mixin animation($animation) {
-    -webkit-animation: $animation;
-    -moz-animation: $animation;
-    -o-animation: $animation;
-    -ms-animation: $animation;
-    animation: $animation;
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -o-animation: $animation;
+  -ms-animation: $animation;
+  animation: $animation;
 }
 
 @mixin transform($transform) {
-    -webkit-transform: $transform;
-    -moz-transform: $transform;
-    -o-transform: $transform;
-    -ms-transform: $transform;
-    transform: $transform;
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -o-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
 }
 
 @mixin transition($transition) {
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -o-transition: $transition;
-    -ms-transition: $transition;
-    transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
 }
 
 @mixin angle-after($skew, $height, $transformOrigin, $background-color) {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    &:after {
-        background: inherit;
-        content: '';
-        display: block;
-        height: $height;
-        left: 0;
-        position: absolute;
-        right: 0;
-        z-index: -1;
-        -webkit-backface-visibility: hidden; // for Chrome Windows
-        bottom: 0;
-        transform: skewY($skew);
-        transform-origin: $transformOrigin;
-        background-color: $background-color;
-    }
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: $height;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+    bottom: 0;
+    transform: skewY($skew);
+    transform-origin: $transformOrigin;
+    background-color: $background-color;
+  }
 }
 
 @mixin angle-before($skew, $height, $transformOrigin, $background-color) {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    &:before {
-        background: inherit;
-        content: '';
-        display: block;
-        height: $height;
-        left: 0;
-        position: absolute;
-        right: 0;
-        z-index: -1;
-        -webkit-backface-visibility: hidden; // for Chrome Windows
-        top: 0;
-        transform: skewY($skew);
-        transform-origin: $transformOrigin;
-        background-color: $background-color;
-    }
+  &:before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: $height;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+    top: 0;
+    transform: skewY($skew);
+    transform-origin: $transformOrigin;
+    background-color: $background-color;
+  }
 }
 
 @import 'header';
@@ -98,31 +98,32 @@ $red: #e21838;
 @import 'contact';
 @import '_quotes.scss';
 @import '_viewmore.scss';
+@import '_slides.scss';
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .section-title {
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 100px;
-    position: relative;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
 }
 
 .main-page-content {
-    overflow: hidden;
+  overflow: hidden;
 }
