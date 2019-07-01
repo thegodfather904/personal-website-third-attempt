@@ -1700,16 +1700,38 @@
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  position: relative;
+  z-index: 1;
 }
-/* line 7, ../../sass/sass/_slides.scss */
+/* line 76, ../../sass/sass/app.scss */
+.slides-section:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  top: 0;
+  transform: skewY(-4deg);
+  transform-origin: -100%;
+  background-color: #fff;
+}
+/* line 8, ../../sass/sass/_slides.scss */
+.slides-section:before {
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+/* line 12, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper {
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
 }
-/* line 10, ../../sass/sass/_slides.scss */
+/* line 15, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .title {
   text-align: center;
   font-size: 36px;
@@ -1717,16 +1739,16 @@
   font-weight: 100;
   margin-bottom: 60px;
 }
-/* line 17, ../../sass/sass/_slides.scss */
+/* line 22, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row {
   display: flex;
   justify-content: space-evenly;
 }
-/* line 21, ../../sass/sass/_slides.scss */
+/* line 26, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row.border-bottom {
   border-bottom: 1px solid #e21838;
 }
-/* line 25, ../../sass/sass/_slides.scss */
+/* line 30, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row a {
   text-decoration: none;
   color: #000;
@@ -1734,29 +1756,29 @@
   flex-grow: 1;
   padding: 26px;
 }
-/* line 32, ../../sass/sass/_slides.scss */
+/* line 37, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row a.slide {
   text-align: center;
 }
-/* line 35, ../../sass/sass/_slides.scss */
+/* line 40, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row a.slide.border-right {
   border-right: 1px solid #e21838;
 }
-/* line 39, ../../sass/sass/_slides.scss */
+/* line 44, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row a.slide i {
   width: 100%;
   text-align: center;
   font-size: 64px;
   color: #e21838;
 }
-/* line 45, ../../sass/sass/_slides.scss */
+/* line 50, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row a.slide .title {
   font-size: 30px;
   letter-spacing: 4px;
   margin-top: 60px;
   font-weight: bold;
 }
-/* line 51, ../../sass/sass/_slides.scss */
+/* line 56, ../../sass/sass/_slides.scss */
 .slides-section .slides-wrapper .slides-row a.slide .tag {
   width: 80%;
   letter-spacing: 2px;

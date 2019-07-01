@@ -3,9 +3,14 @@
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  @include angle-before(-4deg, 200px, -100%, $white);
+
+  &:before {
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
 
   .slides-wrapper {
-    @include transform(rotate(-5deg));
+    @include transform(rotate(-4deg));
 
     .title {
       text-align: center;
