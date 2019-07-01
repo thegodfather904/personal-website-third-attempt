@@ -1235,7 +1235,7 @@
     transform: scale(1);
   }
 }
-/* line 30, ../../sass/sass/_contact.scss */
+/* line 29, ../../sass/sass/_contact.scss */
 .contact-section {
   position: relative;
   z-index: 1;
@@ -1245,7 +1245,7 @@
   background: inherit;
   content: '';
   display: block;
-  height: 200px;
+  height: 60px;
   left: 0;
   position: absolute;
   right: 0;
@@ -1257,12 +1257,12 @@
   background-color: #fff;
 }
 
-/* line 34, ../../sass/sass/_contact.scss */
+/* line 33, ../../sass/sass/_contact.scss */
 .contact-section:before {
-  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 38, ../../sass/sass/_contact.scss */
+/* line 37, ../../sass/sass/_contact.scss */
 .share-me {
   width: 312px;
   margin: 0 auto;
@@ -1270,7 +1270,7 @@
   margin-bottom: 40px;
 }
 
-/* line 45, ../../sass/sass/_contact.scss */
+/* line 44, ../../sass/sass/_contact.scss */
 .share-me-title {
   letter-spacing: 2px;
   font-size: 16px;
@@ -1279,63 +1279,63 @@
   text-align: center;
 }
 
-/* line 53, ../../sass/sass/_contact.scss */
+/* line 52, ../../sass/sass/_contact.scss */
 .share-me span {
   display: block;
   padding: 20px 20px;
   border-radius: 5px;
 }
 
-/* line 59, ../../sass/sass/_contact.scss */
+/* line 58, ../../sass/sass/_contact.scss */
 .share-me span:hover {
   cursor: pointer;
   color: #fff;
 }
 
-/* line 64, ../../sass/sass/_contact.scss */
+/* line 63, ../../sass/sass/_contact.scss */
 .share-me-links {
   display: flex;
   justify-content: space-evenly;
 }
 
-/* line 69, ../../sass/sass/_contact.scss */
+/* line 68, ../../sass/sass/_contact.scss */
 .share-me-link {
   color: #000;
 }
 
-/* line 73, ../../sass/sass/_contact.scss */
+/* line 72, ../../sass/sass/_contact.scss */
 #shareMeEmail:hover {
   color: #d92f26;
 }
 
-/* line 77, ../../sass/sass/_contact.scss */
+/* line 76, ../../sass/sass/_contact.scss */
 #shareMeStackOverflow:hover {
   color: #f48024;
 }
 
-/* line 81, ../../sass/sass/_contact.scss */
+/* line 80, ../../sass/sass/_contact.scss */
 #shareMeLinkedIn:hover {
   color: #3498db;
 }
 
-/* line 85, ../../sass/sass/_contact.scss */
+/* line 84, ../../sass/sass/_contact.scss */
 #shareMeGit:hover {
-  color: #66B849;
+  color: #66b849;
 }
 
-/* line 89, ../../sass/sass/_contact.scss */
+/* line 88, ../../sass/sass/_contact.scss */
 #shareMeOldSite:hover {
   color: #e21838;
 }
 
-/* line 93, ../../sass/sass/_contact.scss */
+/* line 92, ../../sass/sass/_contact.scss */
 .copyright {
   padding-bottom: 5px;
   font-weight: 100;
   text-align: center;
   color: #57595b;
 }
-/* line 99, ../../sass/sass/_contact.scss */
+/* line 98, ../../sass/sass/_contact.scss */
 .copyright i {
   color: red;
   margin: 0 2px;
@@ -1708,7 +1708,7 @@
   background: inherit;
   content: '';
   display: block;
-  height: 200px;
+  height: 150px;
   left: 0;
   position: absolute;
   right: 0;
@@ -1785,6 +1785,50 @@
   margin: 12px auto;
 }
 
+@media only screen and (max-width: 750px) {
+  /* line 68, ../../sass/sass/_slides.scss */
+  .slides-section {
+    height: 1350px;
+  }
+  /* line 70, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  /* line 73, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper .title {
+    font-size: 28px;
+  }
+  /* line 76, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper .slides-row {
+    flex-wrap: wrap;
+  }
+  /* line 79, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper .slides-row.border-bottom {
+    border: none;
+  }
+  /* line 83, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper .slides-row a {
+    padding: 28px;
+    flex-basis: 100%;
+  }
+  /* line 87, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper .slides-row a.slide i {
+    font-size: 42px;
+  }
+  /* line 91, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper .slides-row a.slide .title {
+    margin: 12px;
+    font-size: 24px;
+  }
+  /* line 96, ../../sass/sass/_slides.scss */
+  .slides-section .slides-wrapper .slides-row a.slide.border-right {
+    border: none;
+  }
+}
 /* line 103, ../../sass/sass/app.scss */
 body {
   margin: 0;

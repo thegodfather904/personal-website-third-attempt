@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  @include angle-before(-4deg, 200px, -100%, $white);
+  @include angle-before(-4deg, 150px, -100%, $white);
 
   &:before {
     box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -57,6 +57,45 @@
             width: 80%;
             letter-spacing: 2px;
             margin: 12px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .slides-section {
+    height: 1350px;
+    .slides-wrapper {
+      @include transform(rotate(0deg));
+
+      .title {
+        font-size: 28px;
+      }
+      .slides-row {
+        flex-wrap: wrap;
+
+        &.border-bottom {
+          border: none;
+        }
+
+        a {
+          padding: 28px;
+          flex-basis: 100%;
+          &.slide {
+            i {
+              font-size: 42px;
+            }
+
+            .title {
+              margin: 12px;
+              font-size: 24px;
+            }
+
+            &.border-right {
+              border: none;
+            }
           }
         }
       }
